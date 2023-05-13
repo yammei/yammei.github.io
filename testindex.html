@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mei's Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <style>
+    body {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        background: linear-gradient(to bottom, #ffffff, #969cb9);
+        height: 100vh;
+        background-size: auto 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+      font-size: 36px;
+      margin-top: 100px;
+    }
+    h2 {
+        font-size: 24px;
+        color: #666;
+        margin-top: 20px;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        max-width: calc(100vw / 3);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section {
+      display: none;
+      width: 100%;
+      margin: 0;
+      vertical-align: top;
+      position: relative;
+    }
+    .section img {
+      margin-top: 100px;
+      width: 100%;
+    }
+    .section h3 {
+      margin-top: 25px;
+    }
+    .section p {
+      color: #999;
+    }
+    .slider {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider .slides {
+      width: calc(100% * 3);
+      height: 100%;
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+    .slider .slides .section {
+      width: calc(100% / 3);
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    .slider .slider-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .slider .slider-dots .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 10px;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .slider .slider-dots .dot.active {
+      opacity: 1;
+    }
+    /* Navigation bar styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to bottom, #383838, #333333);
+      color: #fff;
+      padding: 10px 0;
+      z-index: 9999;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  
+    <h1><span id="typed"></span></h1>
+    <h2 id="subheading">I'm an aspiring software engineer with a passion for AI and robotics.</h2>
+    
+    <div class="section">
+      <img src="https://placehold.it/300x300" alt="Image 1">
+      <h3>Title 1</h3>
+      <p>Subheading 1</p>
+    </div>
+    
+    <div class="section">
+      <img src="https://placehold.it/300x300" alt="Image 2">
+      <h3>Title 2</h3>
+      <p>Subheading 2</p>
+    </div>
+    
+    <div class="section">
+      <img src="https://placehold.it/300x300" alt="Image 3">
+      <h3>Title 3</h3>
+      <p>Subheading 3</p>
+    </div>
+    
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ['Hello world, I\'m Mei!'],
+        typeSpeed: 50,
+        onComplete: function() {
+          $('#subheading').css('opacity', 1);
+        }
+      });
+    </script>
+  </body>
+  </html>
+  

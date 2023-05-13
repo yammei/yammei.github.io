@@ -1,0 +1,110 @@
+/* BODY */
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  background-color: rgb(13, 2, 30);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* H1 H2 */
+h1 {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  pointer-events: none;
+}
+h2 {
+  font-size: 24px;
+  color: rgb(179, 179, 179);
+  margin-top: -20px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  max-width: calc(100vw / 3);
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.7);
+  color: #fff;
+  padding: 10px 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  pointer-events: none;
+}
+
+/* PROFILE IMAGE */
+.image-container {
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* PERSPECTIVE IMAGE SLIDES */
+.image-container2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+.image-container2 img {
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0; 
+  transform: rotateY(0deg);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+  pointer-events: none;
+}
+
+/* PARALLAX BACKGROUND */
+.parallax-container {
+  margin-top: -800px;
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  z-index: -1;
+  pointer-events: all;
+}
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/space.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(85%);
+}
