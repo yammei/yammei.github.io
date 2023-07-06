@@ -1,0 +1,135 @@
+/* BODY */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  overflow: hidden;
+}
+
+/* H1 "Hello World, I'm Mei Zhang!" */
+h1 {
+  top: -5%;
+  left: 2.5%;
+  position: fixed;
+  text-align: left;
+  line-height: .75;
+  font-size: 180px;
+  color: rgb(255, 255, 255);
+  margin-right: 50%;
+  pointer-events: none;
+}
+
+/* H2 "I'm an aspiring software engineer with a passion for" */
+h2 {
+  font-size: 24px;
+  color: rgb(179, 179, 179);
+  margin-top: -20px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  max-width: calc(100vw / 3);
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.7);
+  color: #fff;
+  padding: 10px 0;
+  z-index: 9999;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* PROFILE IMAGE */
+.image-container {
+  position: fixed;
+  top: 7%;
+  left: 62.5%;
+  margin-top: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+}
+
+/* PERSPECTIVE IMAGE SLIDES */
+.image-container-mirror {
+  position: fixed;
+  top: 29%;
+  left: 62.0%;
+  margin-top: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+.image-container-mirror img {
+  width: 105%;
+  height: auto;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+}
+
+/* PARALLAX BACKGROUND */
+.parallax-container {
+  filter:none;
+
+}
+.parallax-bg {
+  background-image: url('../img/gradient.jpg');
+  background-position:left;
+  width:fit-content;
+  height: fit-content;
+  /* filter: blur(1px) brightness(100%); */
+  /* pointer-events: all; */
+  z-index: 999;
+
+
+}
+
+.yeseva-font {
+  font-family: 'Yeseva One', cursive;
+  font-style: italic;
+}
+
+.intro-text {
+  position: relative;
+  margin-top: 10%;
+  color: #fff;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.typed {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4vw;
+}
+
+.typed2 {
+  font-family: 'Yeseva One', cursive;
+  font-style: italic;
+  font-size: 17vw;
+  line-height: .75;
+  transform: scaleY(150%);
+}
+
