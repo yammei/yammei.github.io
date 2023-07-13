@@ -143,15 +143,11 @@ p {
 
 .ad-img1 {
     width: 70%;
-    background-color: red;
-
 }
 
 .ad-text {
     display: flex;
-    flex-direction: column;
-    background-color: #e100ff;
-}
+    flex-direction: column;}
 
 .ad-text1 {
     color: #151515;
@@ -168,7 +164,6 @@ p {
 }
 
 .ad-text3 {
-    color: #2600ff;
     font-size: 15pt;
     text-decoration: none;
 }
