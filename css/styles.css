@@ -135,20 +135,22 @@ p {
 .ad {
     display: flex;
     flex-direction: column;
-
     text-align: center;
     padding-left: 5em;
     padding-right: 5em;
+    background-color: rgb(170, 169, 146);
 }
 
 .ad-img1 {
-    max-width: 70%;
+    width: 70%;
+    background-color: red;
+
 }
 
 .ad-text {
     display: flex;
     flex-direction: column;
-    align-self: left;
+    background-color: #e100ff;
 }
 
 .ad-text1 {
