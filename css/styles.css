@@ -1,0 +1,225 @@
+/* ####################################### Navition Bar ####################################### */
+/* ####################################### Navition Bar ####################################### */
+/* ####################################### Navition Bar ####################################### */
+
+.navbar-list li {
+    display: inline;
+    vertical-align: middle;
+}
+
+.navbar-list a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #878787;
+    margin-right: 1.5em;
+}
+
+.home-icon {
+    height: 1.6em;
+    fill: #878787;
+    margin-right: 1.5em;
+}
+
+/* ####################################### Default Values ####################################### */
+/* ####################################### Default Values ####################################### */
+/* ####################################### Default Values ####################################### */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    /* font-family: "SF Pro", Arial, sans-serif; */
+
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    /* font-family: "SF Pro", Arial, sans-serif; */
+}
+
+/* ####################################### Index ####################################### */
+/* ####################################### Index ####################################### */
+/* ####################################### Index ####################################### */
+
+.pf {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60em;
+    margin: auto;
+    /* background-color: #c4acac; */
+}
+
+
+.pf-img {
+    margin-top: 20%;
+    margin-right: 3em;
+    /* background-color: red; */
+}
+
+.pf-img1 {
+
+    width: 15em;
+    border-radius: 100%;
+    align-items: center;
+}
+
+
+.pf-text {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #6b6b6b;
+    font-size: 48pt;
+    font-style: normal;
+    text-align: left;
+    /* background-color: blue; */
+}
+
+.pf-text1 {
+    margin-bottom: -.25em;
+}
+
+.pf-text b {
+    color: #151515;
+}
+
+.pf-text2 {
+    font-size: 24pt;
+}
+
+@media screen and (max-width: 800pt){
+    .pf {
+        padding-top: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30em;
+        height: auto;
+        margin: auto;
+    }
+    .pf-img {
+        margin-top: 0;
+        margin-right: 0em;
+    }
+    .pf-img1 {
+        margin-bottom: -3em;
+        width: 10em;
+    }
+    .pf-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+}
+
+/* ####################################### Projects ####################################### */
+/* ####################################### Projects ####################################### */
+/* ####################################### Projects ####################################### */
+
+.projects {
+    padding-top: 5em;
+}
+
+/* ################ Projects/ad ################ */
+/* ################ Projects/ad ################ */
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.ad-img1 {
+    max-width: 70%;
+}
+
+.ad-text {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+}
+
+.ad-text1 {
+    color: #151515;
+    font-size: 35pt;
+    font-weight: bold;
+    margin-bottom: 0em;
+}
+
+.ad-text2 {
+    color: #6b6b6b;
+    font-size: 15pt;
+    align-self: center;
+    width: 55%;
+}
+
+.ad-text3 {
+    color: #2600ff;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+/* ################ Projects/cl ################ */
+/* ################ Projects/cl ################ */
+
+
+.cl {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    /* background-color: rgb(173, 173, 173); */
+}
+
+
+.cl-img1 {
+    margin-left: -10em;
+    width: 150%;
+    max-height: auto;
+    z-index: 1;
+
+}
+
+.cl-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+.cl-text1 {
+    color: #151515;
+    font-size: 35pt;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0em;
+}
+
+.cl-text2 {
+    color: #6b6b6b;
+    font-size: 15pt;
+    width: 100%;
+    text-align: right;
+    align-self: center;
+}
+
+.cl-text3 {
+    color: #2600ff;
+    font-size: 15pt;
+    text-decoration: none;
+    text-align: right;
+}
+
+/* ################ CONTENT: PROJECTS | Project3 ################ */
