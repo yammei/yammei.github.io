@@ -15,9 +15,16 @@
 }
 
 .home-icon {
-    height: 1.6em;
+    height: 1.3em;
     fill: #878787;
     margin-right: 1.5em;
+}
+
+/* ###### Too Small ###### */
+@media screen and (max-width: 300pt){
+    .navbar {
+        display: none;
+    }
 }
 
 /* ####################################### Default Values ####################################### */
@@ -49,7 +56,6 @@ p {
 /* ####################################### Index ####################################### */
 
 .pf {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,6 +127,11 @@ p {
 
 }
 
+/* ###### Too Small ###### */
+@media screen and (max-width: 300pt){
+
+}
+
 /* ####################################### Projects ####################################### */
 /* ####################################### Projects ####################################### */
 /* ####################################### Projects ####################################### */
@@ -146,7 +157,9 @@ p {
 
 .ad-text {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    align-items: center;
+}
 
 .ad-text1 {
     color: #151515;
@@ -158,7 +171,6 @@ p {
 .ad-text2 {
     color: #6b6b6b;
     font-size: 15pt;
-    align-self: center;
     width: 55%;
 }
 
@@ -167,6 +179,37 @@ p {
     text-decoration: none;
 }
 
+@media screen and (max-width: 500pt){
+    .ad-img1 {
+        width: 100%;
+    }
+    .ad-text {
+        align-items: self-start;
+    }
+    .ad-text1 {
+        text-align: left;
+    }
+    .ad-text2 {
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+/* ###### Too Small ###### */
+@media screen and (max-width: 300pt){
+    .ad-img1 {
+        width: 80%;
+    }
+    .ad-text1 {
+        align-self: center;
+    }
+    .ad-text2 {
+        display: none;
+    }
+    .ad-text3 {
+        align-self: center;
+    }
+}
 
 /* ################ Projects/cl ################ */
 /* ################ Projects/cl ################ */
@@ -177,16 +220,13 @@ p {
     flex-direction: column;
     margin-top: 5em;
     margin-bottom: 5em;
-    /* background-color: rgb(173, 173, 173); */
 }
 
 
 .cl-img1 {
-    margin-left: -10em;
+    margin-left: -12vw;
     width: 150%;
     max-height: auto;
-    z-index: 1;
-
 }
 
 .cl-text {
