@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Craigslist Redesigned</title>
+        <title>Contact Me</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://apple.com/assets/stylesheet/sf-font.css">
@@ -34,12 +34,109 @@
         </nav>
 
       <div class="contact">
-        <p>Contacts Page</p>
-        <p class="contact-text1">Name</p>
-        <p class="contact-text2">Email</p>
-        <p class="contact-text3">Subject</p>
-        <p class="contact-text4">Content</p>
+        <div class="c">
 
+          <p>Contacts Page - Under Construction</p>
+          <p>Please message me via Linkedin https://www.linkedin.com/in/a-mei-zhang/</p>
+
+  
+          <form action="./submit.php">
+
+            <div class="c-names">
+              <div class="c-names1">
+                <label for="fname">First Name</label><br>
+                <input type="text" class="fname"><br>  
+              </div>
+              <div class="c-names2">
+                <label for="lname">Last Name</label><br>
+                <input type="text" class="lname"><br> 
+              </div>
+            </div>
+
+            <label for="email">Email</label><br>
+            <input type="text" class="email" placeholder="example@address.com"><br> 
+
+            <label for="subj">Subject</label><br>
+            <input type="text" class="subj"><br> 
+
+            <label for="cont">Content</label><br>
+            <textarea class="cont" type="text" rows="4" cols="50"></textarea>   
+
+          </form>
+
+          <button class="c-btn" type="button">Submit</button>
+
+          <style>
+            .contact {
+              display: flex;
+              flex: column;
+              background-color: aliceblue;
+            }
+            .c {
+            }
+            .c label {
+              font-size: 15pt;
+              color: rgb(59, 59, 59);
+              margin-bottom: 20em;            
+            }
+            .c input {
+              height: 2.5em;
+              border-style: solid;
+              border-radius: 10pt;
+              border-width: 1pt;
+              border-color: rgb(200, 200, 200);
+              background-color: rgb(245, 245, 245);
+              margin-bottom: 1em;
+            }
+            .c input[type=text] {
+              font-family: 'Inter', sans-serif;
+              padding-left: 1em;
+              color:rgb(69, 69, 69);
+            }
+            .c-names {
+              display: flex;
+              flex-direction: row;
+            }
+            .fname {
+              width: 10em;
+              margin-right: 1em;
+            }
+            .lname {
+              width: 10em;
+            }
+            .email {
+              width: 15em;
+            }
+            .subj {
+              width: 15em;
+            }
+            .cont {
+              resize: none;
+              height: 10em;
+              width: auto;
+              border-radius: 20pt;
+              border-color: rgb(200, 200, 200);
+              background-color: rgb(245, 245, 245);
+              font-family: 'Inter', sans-serif;
+            }
+            .c textarea[type=text]{
+              padding: 1.5em;
+            }
+            .c-btn {
+              margin-top: 1em;
+              font-size: 10pt;
+              width: 6em;
+              height: 3em;
+              border-style: none;
+              border-radius: 20pt;
+              border-width: 1pt;
+              border-color: rgb(36, 237, 237);
+              background-color: rgb(0, 26, 255);
+              color: rgb(255, 255, 255);
+            }
+          </style>
+
+        </div>
       </div>
 
     </body>

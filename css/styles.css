@@ -21,7 +21,7 @@
 }
 
 /* ###### Too Small ###### */
-@media screen and (max-width: 300pt){
+@media screen and (max-width: 250pt){
     .navbar {
         display: none;
     }
@@ -128,7 +128,7 @@ p {
 }
 
 /* ###### Too Small ###### */
-@media screen and (max-width: 300pt){
+@media screen and (max-width: 400pt){
 
 }
 
@@ -196,7 +196,7 @@ p {
 }
 
 /* ###### Too Small ###### */
-@media screen and (max-width: 300pt){
+@media screen and (max-width: 400pt){
     .ad-img1 {
         width: 80%;
     }
