@@ -17,7 +17,7 @@
 .home-icon {
     height: 1.3em;
     fill: #878787;
-    margin-right: 1.5em;
+    margin-right: 1em;
 }
 
 /* ###### Too Small ###### */
@@ -56,38 +56,42 @@ p {
 /* ####################################### Index ####################################### */
 
 .pf {
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 60em;
-    margin: auto;
+    width: fit-content;
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: #c4acac; */
+    
 }
 
-
 .pf-img {
-    margin-top: 20%;
-    margin-right: 3em;
+
     /* background-color: red; */
 }
 
 .pf-img1 {
-
-    width: 15em;
-    border-radius: 100%;
+    width: 30em;
+    border-radius: 10%;
     align-items: center;
 }
 
-
 .pf-text {
-    margin-top: 20%;
     display: flex;
     flex-direction: column;
     color: #6b6b6b;
     font-size: 48pt;
     font-style: normal;
-    text-align: left;
+    text-align: center;
     /* background-color: blue; */
+}
+
+.pf-text0 {
+    margin-bottom: -2em;
+    font-size: 24pt;
 }
 
 .pf-text1 {
@@ -95,16 +99,18 @@ p {
 }
 
 .pf-text b {
-    color: #151515;
+    /* background: -webkit-linear-gradient(45deg, rgb(89, 150, 188), rgb(97, 113, 190), rgb(162, 105, 195), rgb(196, 96, 128)); */
+    background: -webkit-linear-gradient(45deg, rgb(223, 196, 119), rgb(226, 127, 92), rgb(191, 103, 180), rgb(104, 121, 179));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pf-text2 {
-    font-size: 24pt;
+    font-size: 16pt;
 }
 
 @media screen and (max-width: 800pt){
     .pf {
-        padding-top: 10em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +124,7 @@ p {
     }
     .pf-img1 {
         margin-bottom: -3em;
-        width: 10em;
+        width: 20em;
     }
     .pf-text {
         text-align: center;

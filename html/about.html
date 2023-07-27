@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Craigslist Redesigned</title>
+        <title>About Mei</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://apple.com/assets/stylesheet/sf-font.css">
@@ -27,17 +27,19 @@
               </a>
             </li>
             <li>  <a href="./about.html">About</a></li>
-            <li>  <a href="./projects.html"">Projects</a></li>
+            <li>  <a href="./projects.html">Projects</a></li>
             <li>  <a href="./contacts.html">Contacts</a></li>
           </ul>
         </nav>
 
         <div class="txt">
           <p class="txt1">Hello Traveller! 👋</p>
-          <p class="txt2">So you wanted to learn a little bit more about me? 🔍🤨</p>
+          <p class="txt2">Have some coffee ☕️</p>
           <p class="txt3"></p>
           <p class="txt4"></p>
         </div>
+
+        <img class="abg-img1" src="../imgs/coffee.png">
 
       </div>
 
@@ -49,22 +51,30 @@
         flex-direction: column;
         align-items: center;
         width: 100vw;
-        height: 100vh;
-        background-color: black;
+        height: 200vh;
+        background: linear-gradient(rgb(255, 255, 255), rgb(219, 216, 205) 25%, rgb(138, 133, 124));
       }
       .txt{
         display: flex;
         flex-direction: column;
       }
       .txt p {
-        color: white;
+        color: rgb(101, 101, 101);
+        text-align: center;
       }
       .txt1{
         font-size: 30pt;
         font-weight: bold;
       }
       .txt2{
+        margin-top: -1em;
         font-size: 15pt;
+      }
+      .abg-img1 {
+        height: 90em;
+        margin-top: -10em;
+        margin-left: 90em;
+        filter: blur(5px);
       }
     </style>
 
