@@ -19,6 +19,14 @@
     fill: #878787;
     margin-right: 1em;
 }
+.home-icon:hover {
+    fill: rgb(54, 54, 54);
+    transition: fill 150ms linear;
+}
+.navbar-list a:hover {
+    color: rgb(54, 54, 54);
+    transition: color 150ms linear;
+}
 
 /* ###### Too Small ###### */
 @media screen and (max-width: 250pt){
@@ -143,7 +151,9 @@ p {
 /* ####################################### Projects ####################################### */
 
 .projects {
-    padding-top: 5em;
+    padding-top: 2em;
+    display: flex;
+    flex: row;
 }
 
 /* ################ Projects/ad ################ */
@@ -152,68 +162,88 @@ p {
 .ad {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-left: 5em;
-    padding-right: 5em;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    width:45vw;
+    height: 42em;
+    border-radius: 4em 0 0 4em;
+    background-color: rgb(40, 40, 40);
+}
+
+.ad-img {
+    margin-top: 4em;
 }
 
 .ad-img1 {
-    width: 70%;
+    width: 40em;
+    margin-top: -10em;
+    margin-left: 0em;
 }
 
 .ad-text {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    z-index: 1;
 }
 
 .ad-text1 {
-    color: #151515;
+    color: #ffffff;
     font-size: 35pt;
     font-weight: bold;
     margin-bottom: 0em;
+    width: fit-content;
 }
 
 .ad-text2 {
-    color: #6b6b6b;
+    color: #d8d8d800;
     font-size: 15pt;
-    width: 55%;
+    width: 80%;
+    margin-top: -3em;
 }
 
 .ad-text3 {
     font-size: 15pt;
     text-decoration: none;
+    color: rgb(255, 136, 0);
+    width: max-content;
 }
+
+.ad:hover .ad-img1{
+    margin-top: -7em;
+    transition: margin-top 1000ms ease-in-out;
+    z-index: 0;
+}
+.ad:hover .ad-text2{
+    margin-top: 0em;
+    color: #d8d8d8;
+    transition: color 1300ms linear, margin-top 550ms linear;
+}
+
 
 @media screen and (max-width: 500pt){
+    .ad {
+        overflow: hidden;
+    }
     .ad-img1 {
-        width: 100%;
-    }
-    .ad-text {
-        align-items: self-start;
-    }
-    .ad-text1 {
-        text-align: left;
-    }
-    .ad-text2 {
-        text-align: left;
+        width: 35em;
+        margin-top: -3em;
+        margin-left: auto;
         margin-right: auto;
     }
-}
-
-/* ###### Too Small ###### */
-@media screen and (max-width: 400pt){
-    .ad-img1 {
-        width: 80%;
+    .ad-text {
     }
     .ad-text1 {
-        align-self: center;
+        text-align: center;
     }
     .ad-text2 {
         display: none;
     }
     .ad-text3 {
-        align-self: center;
+        margin-top: 1em;
     }
 }
 
@@ -224,15 +254,25 @@ p {
 .cl {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    overflow: hidden;
+    width: 45vw;
+    height: 42em;
+    border-radius: 0 4em 4em 0;
+    background-color: rgb(240, 240, 240);
 }
 
+.cl-img {
+    /* background-color: red; */
+    width: 40em;
+    z-index: 0;
+}
 
 .cl-img1 {
-    margin-left: -12vw;
-    width: 150%;
-    max-height: auto;
+    /* background-color: rgb(31, 31, 31); */
+    width: 60vw;
+    height: auto;
+    margin-top: 0em;
+    margin-left: -2em;
 }
 
 .cl-text {
@@ -240,6 +280,8 @@ p {
     flex-direction: column;
     padding-right: 5em;
     padding-left: 5em;
+    z-index: 1;
+    align-items:flex-end;
 }
 
 .cl-text1 {
@@ -263,6 +305,28 @@ p {
     font-size: 15pt;
     text-decoration: none;
     text-align: right;
+    width: max-content;
+}
+
+@media screen and (max-width: 500pt){
+    .cl-img1 {
+        margin-top: 1em;
+        margin-left: -5em;
+        width: 32em;
+    }
+    .cl-text {
+        align-items: center;
+    }
+    .cl-text1 {
+        text-align: center;
+    }
+    .cl-text2 {
+        display: none;
+    }
+    .cl-text3 {
+        margin-top: 1em;
+        text-align: center;
+    }
 }
 
 /* ################ CONTENT: PROJECTS | Project3 ################ */
