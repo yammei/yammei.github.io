@@ -16,29 +16,66 @@
     </head>
 
     <body>
-      <div class="abg">
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li>
-              <a href="../index.html">
-                <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                  <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-                </svg>
-              </a>
-            </li>
-            <li>  <a href="./about.html">About</a></li>
-            <li>  <a href="./projects.html">Projects</a></li>
-            <li>  <a href="./contacts.html">Contacts</a></li>
-          </ul>
-        </nav>
 
-        <div class="txt">
-          <p>(Page is under development.)</p>
-          <p class="txt1">Hello Traveller! 👋</p>
-          <p class="txt2">If you're searching for someone to develop application interfaces, then I'm your gal! 👩‍💻</p>
-          <p class="txt3">In a sense, a digital alchemist! 🧪</p>
-          <p class="txt4"></p>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="../index.html">
+              <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+              </svg>
+            </a>
+          </li>
+          <li>  <a href="./about.html">About</a></li>
+          <li>  <a href="./projects.html">Projects</a></li>
+          <li>  <a href="./contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <p>(Page is under development.)</p>
+
+      <div class="abg">
+
+        <p class="abg-banner-txt">[Greeting here soon]</p>
+        <img class="abg-banner-img" src="../imgs/meistare.jpg">
+
+      <div class="txt">
+
+        <div class="section1">
+          <div class="section1-txt">
+            <p class="section1-txt1" id="title">Odyssey 💫</p>
+            <p class="section1-txt2">
+              I'm Mei Zhang, a Santa Clara based software engineer with a background in UX/UI. 
+              I studied Computer Science at CSU Stanislaus and had the opportunity to develop a variety of applications such as: 
+              database management systems, ecommerce websites, and mobile Android applications. And on my own time, I've develop automations 
+              and AI-integrated bots to help me work more efficiently.
+            </p>
+          </div>
         </div>
+
+        <div class="section2">
+          <div class="section2-img">
+            <img class="section2-img1" src="../imgs/star.png">
+          </div>
+          <div class="section2-txt">
+            <p class="section2-txt1" id="title">Ethics 👩‍💻</p>
+            <p class="section2-txt2">
+              Organization is my forté. 
+              From the client-side of developing scalable and dynamic UI to 
+              the developer-side of writing comprehensive design documentations. 
+              An organized and human-centered design benefits everyone.   
+            </p>
+            <p class="section2-txt3">
+              I'm a ball of sunshine! 
+              Happiness is contagious and it's wonderful to see everyone around me have their spirits uplifted. 
+              Spreading positive vibes in the workplace makes for a fun and stress-free environment.
+            </p>
+          </div>
+        </div>
+
+        <p class="footer">[About me page continuation here]</p>
+
+      </div>
 
         <img class="abg-img1" src="../imgs/coffee.png">
 
@@ -52,30 +89,105 @@
         flex-direction: column;
         align-items: center;
         width: 100vw;
-        height: 200vh;
-        background: linear-gradient(rgb(255, 255, 255), rgb(219, 216, 205) 25%, rgb(138, 133, 124));
+        height: auto;
+        background: rgb(255, 255, 255);
+        overflow-x: hidden;
       }
+
+      .abg-banner-txt {
+        font-size: 64pt;
+        margin-top: 6em;
+        margin-bottom: -6em;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        color: rgb(255, 255, 255);
+        /* background-color: red; */
+        z-index: 1; 
+        animation: fadeIn 5s ease-in-out;
+      }
+      .abg-banner-img {
+        width: auto;
+        height: 100vh;
+        filter: saturate(0);
+        z-index: 0; 
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1; 
+        }
+      }
+
       .txt{
         display: flex;
         flex-direction: column;
+        width: 60em;
+      }
+      #title {
+        font-size: 40pt;
       }
       .txt p {
         color: rgb(101, 101, 101);
+      }
+
+      .section1 {
+        width: 40em;
+        align-self: center;
+      }
+      .section1-txt1 {
+        text-align: center;
+        /* background-color: red; */
+      }
+      .section1-txt2 {
+        margin-top: -1em;
         text-align: center;
       }
-      .txt1{
-        font-size: 30pt;
-        font-weight: bold;
+
+      .section2 {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        height: fit-content;
+        margin-top: 5em;
+        padding-top: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 5em;
+        background-color: rgb(240, 240, 240);
       }
-      .txt2{
-        margin-top: -1em;
-        font-size: 15pt;
+      .section2-img {
+        display: flex;
       }
+      .section2-img1 {
+        width: 30em;
+        height: auto;
+        border-radius: 2em;
+      }
+      .section2-txt {
+        display: flex;
+        flex-direction: column;
+        width: 30em;
+        margin-left: 5em;
+      }
+      .section2-txt1{
+      }
+      .section2-txt2{
+      }
+      .section2-txt3{
+      }
+
+      .footer {
+        align-self: center;
+        font-size: 10pt;
+        margin-top: 10em;
+      }
+
       .abg-img1 {
-        height: 90em;
-        margin-top: -10em;
-        margin-left: 90em;
-        filter: blur(5px);
+        display: none;
       }
     </style>
 

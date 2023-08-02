@@ -2,19 +2,31 @@
 /* ####################################### Navition Bar ####################################### */
 /* ####################################### Navition Bar ####################################### */
 
+.navbar {
+    position: sticky;
+    top: 0px;
+    height: 4em;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+.navbar-list {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 .navbar-list li {
     display: inline;
     vertical-align: middle;
 }
-
 .navbar-list a {
     font-size: 1em;
     text-decoration: none;
     color: #878787;
     margin-right: 1.5em;
 }
-
 .home-icon {
+    position: sticky;
     height: 1.3em;
     fill: #878787;
     margin-right: 1em;
