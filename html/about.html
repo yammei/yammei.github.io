@@ -36,61 +36,68 @@
 
       <div class="abg">
 
-        <p class="abg-banner-txt">The Trailblazing Traveller.</p>
-        <img class="abg-banner-img" src="../imgs/scenery.jpg">
+        <p class="abg-banner-txt">Ode to Odyssey.</p>
+        <img class="abg-banner-img-fg" src="../imgs/scenery_fg.png">
+        <img class="abg-banner-img-bg" src="../imgs/scenery.jpg">
+        <img class="abg-banner-img2" src="../imgs/output2.gif">
 
       <div class="txt">
 
         <div class="section1">
           <div class="section1-txt">
-            <p class="section1-txt0">💫</p>
-            <p class="section1-txt1" id="title">Odyssey</p>
+            <p class="section1-txt1">Home.</p>
             <p class="section1-txt2">
-              I'm Mei Zhang, a Santa Clara based software engineer with a background in UX/UI. 
-              I studied Computer Science at CSU Stanislaus and had the opportunity to develop a variety of applications such as: 
-              database management systems, ecommerce websites, and mobile Android applications. And on my own time, I've develop automations 
-              and AI-integrated bots to help me work more efficiently.
+              I'm from Merced, a quiet city with peaceful mornings and beautiful views of Yosemite. 
+              This lovely alcove from the world is home. 
             </p>
           </div>
         </div>
 
         <div class="section2">
           <div class="section2-img">
-            <img class="section2-img1" src="../imgs/star.png">
+            <img class="section2-img1" src="../imgs/output.gif">
           </div>
           <div class="section2-txt">
-            <p class="section2-txt1" id="title">Ethics 👩‍💻</p>
-            <p class="section2-txt2">
-              Organization is my forté. 
-              From the client-side of developing scalable and dynamic UI to 
-              the developer-side of writing comprehensive design documentations. 
-              An organized and human-centered design benefits everyone.   
+            <p class="section2-txt1" id="title">Eureka!</p>
+            <p class="section2-txt2" id="content">
+              I studied Computer Science at CSU Stanislaus and had the opportunity to develop a variety of applications such as: 
+              database management systems, ecommerce websites, and mobile Android applications.
             </p>
-            <p class="section2-txt3">
-              I'm a ball of sunshine! 
-              Happiness is contagious and it's wonderful to see everyone around me have their spirits uplifted. 
-              Spreading positive vibes in the workplace makes for a fun and stress-free environment.
+            <p class="section2-txt3" id="content">
+
             </p>
           </div>
         </div>
 
         <div class="section3">
           <div class="section3-txt">
-            <p class="section3-txt1" id="title">New Section</p>
-            <p class="section3-txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quos odio ipsum sit quae consequuntur perspiciatis cum harum provident. Voluptatem optio commodi modi eveniet, voluptas aut expedita consectetur reiciendis illo.</p>
+            <p class="section3-txt1" id="title">Pursue.</p>
+            <p class="section3-txt2" id="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quos odio ipsum sit quae consequuntur perspiciatis cum harum provident. Voluptatem optio commodi modi eveniet, voluptas aut expedita consectetur reiciendis illo.</p>
           </div>
-          <div class="section3-img">
-            <img class="section3-img1" src="../imgs/meistare.jpg">
+          <div class="section3-img" id="content">
+            <img class="section3-img1" src="../imgs/dome.jpg">
           </div>
         </div>
 
-        <p class="footer">[About me page continuation here]</p>
+        <p class="bottom">[About me page continuation here]</p>
 
       </div>
 
         <img class="abg-img1" src="../imgs/coffee.png">
 
       </div>
+
+      <script>
+        window.addEventListener('scroll', function() {
+          if (window.scrollY >= 0) {
+            const element = document.querySelector('.abg-banner-img2');
+            const opacity = (window.scrollY) / 500;
+            element.style.opacity = opacity.toString();
+            element.style.zIndex = '2';
+          }
+        });
+      </script>
 
     </body>
 
@@ -106,31 +113,55 @@
       }
 
       .abg-banner-txt {
-        font-size: 64pt;
-        margin-top: 4.5em;
-        margin-bottom: -4.5em;
+        font-size: 120pt;
+        font-weight: bold;
+        margin-top: .5em;
+        margin-bottom: 3em;
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
+        text-align: center;
         color: rgb(255, 255, 255);
-        mix-blend-mode: difference;
+        /* mix-blend-mode: difference; */
         /* background-color: red; */
         z-index: 1; 
-        animation: fadeIn 3.5s ease-in-out;
+        animation: txtAnim1 3s ease-in-out;
+        animation-delay: .5s;
       }
-      .abg-banner-img {
-        width: 60vw;
+
+      .abg-banner-img-fg {
+        position: fixed;
+        width: 100%;
         height: auto;
-        border-radius: 2em;
-        filter: hue-rotate(150deg);
+        scale: 1.05;
+        margin-top: 0em;
+        z-index: 1; 
+      }
+      .abg-banner-img-bg {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        scale: 1.05;
+        margin-top: 0em;
         z-index: 0; 
       }
-      @keyframes fadeIn {
+      .abg-banner-img2 {
+        position: fixed;
+        width: auto;
+        height: 50em;
+        scale: 1.05;
+        opacity: 0;
+        filter: blur(2px) contrast(.8) brightness(.5) saturate(1.3) hue-rotate(-0deg);
+;
+        transform: scaleX(-1);
+        z-index: 0; 
+      }
+      @keyframes txtAnim1 {
         from {
-          opacity: 0;
+          margin-top: 10em;
         }
         to {
-          opacity: 1; 
+          margin-top: .5em;
         }
       }
 
@@ -138,37 +169,52 @@
         display: flex;
         flex-direction: column;
         width: 60em;
+        z-index: 5;
+      }
+      #category {
+        font-size: 20pt;
+        color: rgb(100, 100, 100);
       }
       #title {
         font-size: 40pt;
+        font-weight: bold;
         color: rgb(50, 50, 50);
       }
-      .txt p {
+      #content {
         color: rgb(100, 100, 100);
       }
 
       .section1 {
-        width: 40em;
-        padding-top: 5em;
-        padding-bottom: 5em;
+        width: 35em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-bottom: 250px;
         align-self: center;
-        /* background-color: red; */
+        /* background-color: white; */
+        border-radius: 2em;
       }
       .section1-txt0 {
-        font-size: 24pt;
+        color: white;
         margin-top: 0em;
         margin-bottom: 0em;
         text-align: center;
       }
       .section1-txt1 {
+        color: white;
+        font-size: 60pt;
+        font-weight: bold;
         margin-top: 0em;
         margin-bottom: 0em;
-        text-align: center;
+        text-align: left;
         /* background-color: red; */
       }
       .section1-txt2 {
+        color: rgb(230, 230, 230);
+        font-size: 20pt;
         margin-bottom: 0em;
-        text-align: center;
+        text-align: left;
       }
 
       .section2 {
@@ -178,8 +224,8 @@
         align-items: center;
         height: fit-content;
         padding-top: 5em;
-        padding-left: 10em;
-        padding-right: 10em;
+        padding-left: 15em;
+        padding-right: 15em;
         padding-bottom: 5em;
         background-color: rgb(240, 240, 240);
       }
@@ -201,6 +247,10 @@
         margin-bottom: 0em;
         /* background-color: red; */
       }
+      .section-txt0 {
+        margin-top: 0em;
+        margin-bottom: 0em;
+      }
       .section2-txt1{
         margin-top: 0em;
         margin-bottom: 0em;
@@ -219,8 +269,13 @@
       .section3 {
         display: flex;
         flex-direction: row;
+        width: fit-content;
+        align-self: center;
         padding-top: 5em;
+        padding-left: 15em;
+        padding-right: 15em;
         padding-bottom: 5em;
+        background-color: white;
       }
       .section3-img1 {
         border-radius: 2em;
@@ -229,17 +284,25 @@
         /* background-color: red; */
       }
       .section3-txt {
+        height: fit-content;
         width: 30em;
+        margin-top: auto;
         margin-right: 5em;
+        margin-bottom: auto;
         /* background-color: blue; */
       }
       .section3-txt1 {
+        margin-top: 0em;
+        margin-bottom: 0em;
       }
       .section3-txt2 {
+        margin-top: 0em;
+        margin-bottom: 0em;
       }
 
-      .footer {
+      .bottom {
         align-self: center;
+        color: white;
         font-size: 10pt;
         padding-top: 10em;
         padding-bottom: 10em;
@@ -250,5 +313,6 @@
         display: none;
       }
     </style>
+
 
 </html>
