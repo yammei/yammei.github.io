@@ -55,18 +55,22 @@
 
         <div class="section2">
           <div class="section2-img">
-            <img class="section2-img1" src="../imgs/output.gif">
+            <img class="section2-img1" src="../imgs/dome.jpg">
           </div>
           <div class="section2-txt">
             <p class="section2-txt1" id="title">Eureka!</p>
             <p class="section2-txt2" id="content">
-              I studied Computer Science at CSU Stanislaus and had the opportunity to develop a variety of applications such as: 
-              database management systems, ecommerce websites, and mobile Android applications.
+              I studied Computer Science at CSU Stanislaus and had the opportunities to collaberate with a range of talents. 
+              From studying concepts and theories to solution-based implementation, Stanislaus State has prepared me with industry skills 
+              to help succeed in my career as an aspiring Software Engineer.
             </p>
           </div>
         </div>
 
         <div class="section3">
+          <div class="section3-img" id="content">
+            <img class="section3-img1" src="../imgs/dome.jpg">
+          </div>
           <div class="section3-txt">
             <p class="section3-txt1" id="title">Pursue.</p>
             <p class="section3-txt2" id="content">
@@ -75,13 +79,10 @@
               I'm enthusiastic for the potential of AI to help breakthrough solutions for real-world challenges.
            </p>
           </div>
-          <div class="section3-img" id="content">
-            <img class="section3-img1" src="../imgs/dome.jpg">
-          </div>
         </div>
 
         <p class="bottom">[About me page continuation here]</p>
-
+    
       </div>
 
         <img class="abg-img1" src="../imgs/coffee.png">
@@ -171,7 +172,7 @@
         z-index: 5;
       }
       #category {
-        font-size: 20pt;
+        font-size: 30pt;
         color: rgb(100, 100, 100);
       }
       #title {
@@ -180,7 +181,9 @@
         color: rgb(50, 50, 50);
       }
       #content {
-        color: rgb(100, 100, 100);
+        font-size: 15pt;
+        font-weight: 600;
+        color: rgb(125, 125, 125);
       }
 
       .section1 {
@@ -208,82 +211,108 @@
         text-align: left;
       }
       .section1-txt2 {
-        color: rgb(230, 230, 230);
+        color: rgb(200, 200, 200);
         font-size: 20pt;
+        font-weight: 600;
         margin-bottom: 0em;
         text-align: left;
       }
 
       .section2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-self: center;
         align-items: center;
         height: fit-content;
         padding-top: 5em;
-        padding-left: 15em;
-        padding-right: 15em;
+        padding-left: 50vw;
+        padding-right: 50vw;
         padding-bottom: 5em;
         background-color: rgb(240, 240, 240);
       }
       .section2-img {
         display: flex;
+        width: 1000px;
+        height: 200px;
+        overflow: hidden;
       }
       .section2-img1 {
-        width: 30em;
-        height: auto;
+        height: 100%;
+        width: 100%;
         border-radius: 2em;
+        object-fit: cover;
+
       }
       .section2-txt {
         display: flex;
-        flex-direction: column;
-        width: 30em;
+        flex-direction: row;
         height: fit-content;
-        margin-top: auto;
-        margin-left: 5em;
-        margin-bottom: auto;
+        width: 800px;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        background-color: grey;
+
       }
       .section2-txt1{
+        height: fit-content;
         margin-top: 0em;
+        margin-right: 100px;
         margin-bottom: 0em;
+        background-color: red;
+
       }
-      .section-txt0 {
+      .section2-txt2 {
         margin-top: 0em;
         margin-bottom: 0em;
+        background-color: blue;
       }
 
 
 
       .section3 {
         display: flex;
-        flex-direction: row;
-        width: fit-content;
+        flex-direction: column;
         align-self: center;
+        align-items: center;
+        height: fit-content;
         padding-top: 5em;
-        padding-left: 15em;
-        padding-right: 15em;
+        padding-left: 50vw;
+        padding-right: 50vw;
         padding-bottom: 5em;
         background-color: white;
       }
+      .section3-img {
+        display: flex;
+        width: 1000px;
+        height: 200px;
+        overflow: hidden;
+      }
       .section3-img1 {
+        height: 100%;
+        width: 100%;
         border-radius: 2em;
-        height: auto;
-        width: 30em;
+        object-fit: cover;
       }
       .section3-txt {
+        display: flex;
+        flex-direction: row;
         height: fit-content;
-        width: 30em;
-        margin-top: auto;
-        margin-right: 5em;
-        margin-bottom: auto;
+        width: 800px;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        background-color: grey;
       }
       .section3-txt1 {
+        height: fit-content;
         margin-top: 0em;
-        margin-bottom: .5em;
+        margin-right: 100px;
+        margin-bottom: 0em;
+        background-color: red;
       }
       .section3-txt2 {
         margin-top: 0em;
         margin-bottom: 0em;
+        background-color: blue;
       }
 
       .bottom {
