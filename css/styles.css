@@ -179,12 +179,15 @@ p {
     overflow: hidden;
     width: 600px;
     height: 600px;
-    border-radius: 25px 0 0 25px;
+    margin-right: 50px;
+    border-radius: 25px;
     background-color: rgb(40, 40, 40);
 }
 
 .ad-img {
-    margin-top: 0em;
+    scale: 2;
+    margin-top: -100px;
+    margin-left: -700px;
     width: inherit;
     vertical-align: bottom;
 
@@ -222,6 +225,7 @@ p {
 .ad-text2 {
     color: #d8d8d8;
     font-size: 15pt;
+    font-weight: 600;
     width: inherit;
     margin-top: 0em;
     /* background-color: blue; */
@@ -229,6 +233,7 @@ p {
 
 .ad-text3 {
     font-size: 15pt;
+    font-weight: 400;
     text-decoration: none;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -237,8 +242,10 @@ p {
 }
 
 .ad:hover .ad-img1{
-    scale: 1.015;
-    transition: scale 1000ms ease-in-out;
+    scale: 1;
+    margin-top: 120px;
+    margin-left: 333px;
+    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out;
     z-index: 0;
 }
 
@@ -272,8 +279,18 @@ p {
     overflow: hidden;
     width: 600px;
     height: 600px;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px;
     background-color: rgb(240, 240, 240);
+}
+
+.cl-shade {
+    height: 300px;
+    width: 600px;
+    margin-bottom: -300px;
+    align-self: center;
+    opacity: .7;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(240, 240, 240, 0));
+    z-index: -1;
 }
 
 .cl-img {
@@ -285,10 +302,10 @@ p {
 .cl-img1 {
     /* background-color: rgb(31, 31, 31); */
     width: inherit;
-    margin-top: 3em;
-    margin-left: 5em;
+    margin-top: 100px;
+    margin-left: 125px;
     rotate: 9.6deg;
-    scale: 1.35;
+    scale: 1.65;
 }
 
 .cl-text {
@@ -296,14 +313,15 @@ p {
     flex-direction: column;
     padding-right: 5em;
     padding-left: 5em;
-    width: 400px;
+    height: fit-content;
+    width: 500px;
     align-self: center;
-    z-index: 1;
+    z-index: 2;
     /* background-color: green; */
 }
 
 .cl-text1 {
-    color: #151515;
+    color: black;
     font-size: 35pt;
     font-weight: bold;
     text-align: center;
@@ -312,8 +330,9 @@ p {
 }
 
 .cl-text2 {
-    color: #6b6b6b;
+    color: #474747;
     font-size: 15pt;
+    font-weight: 600;
     width: 100%;
     text-align: center;
     /* align-self: center; */
@@ -322,8 +341,9 @@ p {
 }
 
 .cl-text3 {
-    color: #2600ff;
+    color: rgb(255, 136, 0);
     font-size: 15pt;
+    font-weight: 400;
     text-decoration: none;
     align-self: center;
     text-align: center;
@@ -333,11 +353,13 @@ p {
 }
 
 .cl:hover .cl-img1{
-    margin-top: -10em;
-    scale: 1.675;
-    rotate: -10deg;
-    transition: scale 1000ms ease-in-out, rotate 1000ms ease-in-out, margin-top 1000ms ease-in-out;
-    z-index: 0;
+    scale: 1.7;
+    transition: scale 1000ms ease-in-out;
+    z-index: 1;
+}
+.cl:hover .cl-shade{
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
 }
 
 @media screen and (max-width: 500pt){
