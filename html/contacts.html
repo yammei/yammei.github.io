@@ -35,10 +35,10 @@
 
     <div class="icon-list">
       <a href="https://linkedin.com/in/a-mei-zhang/" id="icon-container">
-        <img class="li-icon" src="../imgs/LI-In-Bug.png" alt="Linkedin">
+        <img class="li-icon" id="icon" src="../imgs/LI-In-Bug.png" alt="Linkedin">
       </a>
       <a href="https://github.com/yammei/" id="icon-container">
-        <img class="gh-icon" src="../imgs/github-mark.png" alt="Github">
+        <img class="gh-icon" id="icon" src="../imgs/github-mark.png" alt="Github">
       </a>
     </div>
 
@@ -84,24 +84,41 @@
     </div>
 
     <style>
+
+      .contact {
+        display: none;
+      }
+      
       .icon-list {
-        display: block;
+        display: flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items: center;
+        margin-top: 40vh;
       }
       #icon-container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        /* background-color: red; */
         overflow: hidden;
       }
+      #icon {
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+      }
       .li-icon {
-        height: 40px;
+        height: 60px;
         width: auto;
-        margin-right: 40px;
-        /* background-color: red; */
+        background: linear-gradient(45deg, rgb(14, 47, 194), rgb(60, 119, 201));
       }
       .gh-icon {
-        height: 40px;
+        height: 60px;
         width: auto;
-        /* background-color: blue; */
+        background: linear-gradient(45deg, rgb(48, 48, 48), rgb(90, 90, 90));
       }
       form {
         width: 30em;
