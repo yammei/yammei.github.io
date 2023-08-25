@@ -182,14 +182,15 @@
 }
 
 #img-ad {
-    scale: .9;
-    margin-top: 40px;
+    scale: 1;
+    margin-top: 50px;
     margin-left: 0px;
     width: inherit;
     vertical-align: bottom;
 }
 
 #img1-ad {
+    scale: .95; 
     width: inherit;
     margin-top: -3em;
     /* background-color: cyan; */
@@ -213,7 +214,6 @@
 #ad:hover #img1-ad{
     scale: 1.025;
     transition: scale 1000ms ease-in-out;
-    z-index: 0;
 }
 
 
@@ -245,15 +245,20 @@
 }
 
 #img-cl {
+    margin-top: 25px;
+
     /* background-color: red; */
 }
 
 #img1-cl {
+}
+
+#img1-cl {
     /* background-color: rgb(31, 31, 31); */
-    margin-top: calc(.75*100px);
-    margin-left: calc(.75*125px);
+    margin-top: 150px;
+    margin-left: 0px;
     rotate: 0deg;
-    scale: 1.65;
+    scale: 2;
 }
 
 #txt-cl {
@@ -275,7 +280,8 @@
 
 #cl:hover #img1-cl{
     scale: 1.7;
-    transition: scale 1000ms ease-in-out;
+    margin-top: 100px;
+    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out;
     z-index: 1;
 }
 
