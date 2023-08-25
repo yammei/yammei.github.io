@@ -6,15 +6,14 @@
 }
 
 .project-banner-container {
+    display: flex;
+    flex-direction: row;
     height: 400px;
     width: 110vw;
-
-    background-color: red;
+    overflow: hidden;
 }
 .project-banner-img1 {
-    height: auto;
-    width: 300px;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .project-section1 {
