@@ -2,122 +2,199 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 .project-banner-container {
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    width: 110vw;
     overflow: hidden;
 }
 .project-banner-img1 {
+    height: 400px;
+    width: 110vw;
     object-fit: cover
 }
 
 .project-section1 {
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(240,240,240);
+    width: fit-content;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    background-color: rgb(240, 240, 240);
 }
+
 .project-section1-img1-container {
-    height: 400px;
-    width: 400px;
-    margin-right: 50px;
+    height: auto;
+    max-height: 600px;
+    width: 600px;
+    margin-right: 25px;
     overflow: hidden;
-    border-radius: 15px;
 }
 .project-section1-img1 {
     object-fit: cover;
-    margin-right: 50px;
 }
+
 .project-section1-txt-container {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
+    margin-top: auto;
+    margin-right: 25px;
+    margin-bottom: auto;
 }
 .project-section1-txt-title {
+    width: fit-content;
+    max-width: 500px;
+    text-align: center;
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+}
+.project-section1-txt1 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.project-section1-txt2 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
 
 
 .project-section2 {
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(240,240,240);
+    width: fit-content;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    background-color: rgb(240, 240, 240);
 }
 .project-section2-img1-container {
-    height: 400px;
-    width: 400px;
-    margin-right: 50px;
+    height: auto;
+    max-height: 600px;
+    width: 600px;
+    margin-left: 25px;
     overflow: hidden;
-    border-radius: 15px;
 }
 .project-section2-img1 {
     object-fit: cover;
-    margin-right: 50px;
 }
+
 .project-section2-txt-container {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
+    margin-top: auto;
+    margin-left: 25px;
+    margin-bottom: auto;
 }
 .project-section2-txt-title {
+    width: fit-content;
+    max-width: 500px;
+    text-align: center;
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+}
+.project-section2-txt1 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.project-section2-txt2 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .project-section3 {
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(240,240,240);
+    width: fit-content;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    background-color: rgb(240, 240, 240);
 }
+
 .project-section3-img1-container {
-    height: 400px;
-    width: 400px;
-    margin-right: 50px;
+    height: auto;
+    max-height: 600px;
+    width: 600px;
+    margin-right: 25px;
     overflow: hidden;
-    border-radius: 15px;
 }
 .project-section3-img1 {
     object-fit: cover;
-    margin-right: 50px;
 }
+
 .project-section3-txt-container {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
+    margin-top: auto;
+    margin-right: 25px;
+    margin-bottom: auto;
 }
 .project-section3-txt-title {
+    width: fit-content;
+    max-width: 500px;
+    text-align: center;
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+}
+.project-section3-txt1 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.project-section3-txt2 {
+    color: rgb(40,40,40);
+    font-size: 13pt;
+    width: fit-content;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
