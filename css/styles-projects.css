@@ -183,16 +183,16 @@
 
 #img-ad {
     scale: 1;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 0px;
     width: inherit;
     vertical-align: bottom;
 }
 
 #img1-ad {
-    scale: .95; 
+    scale: 1.2; 
     width: inherit;
-    margin-top: -3em;
+    margin-top: 55px;
     /* background-color: cyan; */
     vertical-align: bottom;
 }
@@ -212,8 +212,9 @@
 }
 
 #ad:hover #img1-ad{
-    scale: 1.025;
-    transition: scale 1000ms ease-in-out;
+    scale: .975;
+    margin-top: 0px;
+    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out;
 }
 
 
