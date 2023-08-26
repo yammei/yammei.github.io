@@ -6,19 +6,23 @@
 }
 
 .project-banner-container {
+    height: auto;
+    width: 1920px;
     overflow: hidden;
 }
 .project-banner-img1 {
-    height: 400px;
-    width: 110vw;
-    object-fit: cover
+    position: fixed;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .project-section1 {
     display: flex;
     flex-direction: row;
     width: fit-content;
-    margin-top: 250px;
+    margin-top: 100px;
     margin-bottom: 250px;
     background-color: rgb(240, 240, 240);
 }
@@ -49,30 +53,30 @@
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .project-section1-txt1 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .project-section1-txt2 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
 
@@ -112,30 +116,30 @@
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .project-section2-txt1 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .project-section2-txt2 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
 .project-section3 {
@@ -173,28 +177,28 @@
     font-size: 45pt;
     font-weight: bold;
     color: rgb(40,40,40);
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .project-section3-txt1 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .project-section3-txt2 {
     color: rgb(40,40,40);
     font-size: 13pt;
     width: fit-content;
     width: 450px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
