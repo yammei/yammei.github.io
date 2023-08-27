@@ -88,7 +88,7 @@
     padding-right: 0vw;
     margin-top: 250px;
     margin-bottom: 250px;
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
 }
 .project-section2-img1-container {
     height: auto;
@@ -98,6 +98,7 @@
     overflow: hidden;
 }
 .project-section2-img1 {
+    width: 600px;
     object-fit: cover;
 }
 
