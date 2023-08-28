@@ -12,9 +12,10 @@
 }
 .project-banner-img1 {
     position: fixed;
-    height: inherit;
+    height: 1920px;
     width: inherit;
     object-fit: cover;
+    background-color: red;
     z-index: -1;
 }
 
@@ -24,7 +25,7 @@
     width: fit-content;
     margin-top: 100px;
     margin-bottom: 250px;
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
 }
 
 .project-section1-img1-container {
@@ -35,6 +36,8 @@
     overflow: hidden;
 }
 .project-section1-img1 {
+    max-height: 600px;
+    width: 600px;
     object-fit: cover;
 }
 
@@ -149,7 +152,7 @@
     width: fit-content;
     margin-top: 250px;
     margin-bottom: 250px;
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
 }
 
 .project-section3-img1-container {

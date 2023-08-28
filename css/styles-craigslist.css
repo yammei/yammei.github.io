@@ -1,0 +1,18 @@
+#craigslist-banner-img1 {
+    filter: brightness(.9) saturate(.8) hue-rotate(-30deg);
+}
+
+#craigslist-section1-txt-title,
+#craigslist-section2-txt-title,
+#craigslist-section3-txt-title {
+    color: rgb(40,40,40);
+}
+
+#craigslist-section1-txt1,
+#craigslist-section1-txt2,
+#craigslist-section2-txt1,
+#craigslist-section2-txt2,
+#craigslist-section3-txt1,
+#craigslist-section3-txt2 {
+    color: rgb(65,65,65);
+}
