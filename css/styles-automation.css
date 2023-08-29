@@ -1,0 +1,7 @@
+#automation-section2-img1-container {
+
+}
+#automation-section2-img1 {
+    height: calc(0.5625*600px);
+    width: 600px;
+}
