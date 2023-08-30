@@ -3,27 +3,24 @@
 /* ####################################### Index ####################################### */
 
 .pf {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 125px;
     /* background-color: #c4acac; */
-    
 }
 
 .pf-img {
-
+    height: auto;
+    width: 500px;
     /* background-color: red; */
 }
 
 .pf-img1 {
-    width: 30em;
+    height: auto;
+    width: inherit;
     border-radius: 15px;
-    align-items: center;
 }
 
 .pf-text {
@@ -37,12 +34,18 @@
 }
 
 .pf-text0 {
-    margin-bottom: -2em;
     font-size: 24pt;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .pf-text1 {
-    margin-bottom: -.25em;
+    margin-top: 0px;
+    margin-bottom: 0em;
+}
+.pf-text1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .pf-text b {
@@ -54,34 +57,24 @@
 
 .pf-text2 {
     font-size: 16pt;
+    margin-top: 0em;
+    margin-bottom: 30px;
 }
 
-@media screen and (max-width: 800pt){
-    .pf {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30em;
-        height: auto;
-        margin: auto;
-    }
+.pf-note {
+    text-align: center;
+    display: flex;
+    font-size: small;
+    color: rgb(140, 140, 140);
+    margin-top: 10px;
+  }
+
+@media screen and (max-width: 1000pt){
     .pf-img {
-        margin-top: 0;
-        margin-right: 0em;
+        width: 400px;
     }
-    .pf-img1 {
-        margin-bottom: -3em;
-        width: 20em;
-    }
-    .pf-text {
-        text-align: center;
-        margin-top: 0;
+    .pf-note {
+        width: 400px;
     }
 
 }
-
-/* ###### Too Small ###### */
-@media screen and (max-width: 400pt){
-
-}
-

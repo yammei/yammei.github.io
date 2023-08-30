@@ -28,15 +28,14 @@
 }
 #projects-banner-container {
     display: flex;
-    flex-direction: row;
-    margin-bottom: -100px;
+    flex-direction: row;    margin-bottom: -100px;
     overflow: hidden;
     height: 500px;
     width: auto;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: auto;
     margin-right: auto;
-    margin-bottom: -100px
+    margin-bottom: -100px;
     /* background-color: red; */
 }
 #projects-banner {
@@ -44,6 +43,7 @@
     width: auto;
     margin-top: -200px;
     margin-right: 100px;
+    padding-left: 50px;
     object-fit: cover;
     animation: txtAnim2 2s ease-in-out;
 }
@@ -51,8 +51,11 @@
     color: rgb(70,70,70);
     font-size: 100px;
     font-weight: 600;
+    width: min-content;
+    max-width: 1000px;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 50px;
     animation: txtAnim3 2s ease-in-out;
 }
 @keyframes txtAnim2 {
@@ -148,7 +151,7 @@
     font-size: 14pt;
     font-weight: 400;
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -172,7 +175,45 @@
     flex-grow: 1;
     /* background-color: red; */
 }
+@media screen and (max-width: 1000px){
+    #projects-banner-txt {
+        display: none;
+    }
+    #projects-banner-container {
+        height: 400px;
+        margin-top: 50px;
+    }
+    #projects-banner {
+        height: auto;
+        width: 95vw;
+        margin-right: 0px;
+        padding-left: 0px;
+        margin-top: -0px;
+        animation: txtAnim2 2s ease-in-out;
+    }
+    @keyframes txtAnim2 {
+        from {
+          margin-top: -600px;
+        }
+        to {
+          margin-top: 0px;
+        }
+      }
+    .set1,
+    .set2 {
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 25px;
 
+    }
+    .project-container {
+        margin-bottom: 25px;
+    }
+    #section-title {
+        max-width: 600px;
+        padding-top: 75px;
+    }
+}
 /* ################ Projects/ad ################ */
 /* ################ Projects/ad ################ */
 
@@ -215,26 +256,6 @@
     scale: .975;
     margin-top: 0px;
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out;
-}
-
-
-@media screen and (max-width: 500pt){
-    .ad {
-        overflow: hidden;
-    }
-    .ad-img1 {
-        scale: .9;
-    }
-    .ad-text {
-    }
-    .ad-text1 {
-        text-align: center;
-    }
-    .ad-text2 {
-        display: none;
-    }
-    .ad-text3 {
-    }
 }
 
 /* ################ Projects/cl ################ */
