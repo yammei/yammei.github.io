@@ -14,7 +14,7 @@
     font-weight: 600;
     text-align: center;
     height: fit-content;
-    width: 820px;
+    width: 80vw;
     padding-top: 100px;
     padding-left: 50vw;
     padding-right: 50vw;
@@ -191,6 +191,9 @@
         margin-top: -0px;
         animation: txtAnim2 2s ease-in-out;
     }
+    #section-title {
+        font-size: 36pt;
+    }
     @keyframes txtAnim2 {
         from {
           margin-top: -600px;
@@ -204,7 +207,6 @@
         flex-direction: column;
         padding-top: 25px;
         padding-bottom: 25px;
-
     }
     .project-container {
         margin-bottom: 25px;

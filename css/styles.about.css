@@ -1,3 +1,15 @@
+.navbar-list a {
+  color: rgb(200,200,200);
+}
+.navbar-list a:hover {
+  color: rgb(150, 150, 150);
+  transition: color 150ms linear;
+}
+.navbar {
+  background-color: rgba(30, 30, 30, .1);
+  backdrop-filter: blur(5px) brightness(.3);
+}
+
 .abg {
     display: flex;
     flex-direction: column;
@@ -31,7 +43,7 @@
     height: auto;
     scale: 1.05;
     margin-top: -50px;
-    filter: brightness(.7);
+    filter: brightness(.7) hue-rotate(0deg);
     z-index: 1;
   }
   .abg-banner-img-bg {
@@ -39,6 +51,7 @@
     width: 1920px;
     height: auto;
     scale: 1.05;
+    filter: brightness(.7) hue-rotate(0deg);
     z-index: 0;
   }
   .abg-banner-img2 {
@@ -63,7 +76,7 @@
   }
   @keyframes txtAnim1 {
     from {
-      margin-top: 150px;
+      margin-top: 1000px;
     }
     to {
       margin-top: 150px;
@@ -244,7 +257,7 @@
     .abg-banner-txt {
       font-size: 72pt;
       max-width: 600px;
-      margin-top: 65px;
+      margin-top: 150px;
       line-height: .9;
       animation: txtAnim1 1.2s ease-in-out;
     }
@@ -253,7 +266,7 @@
         margin-top: 200px;
       }
       to {
-        margin-top: 65px;
+        margin-top: 150px;
       }
     }
     .section1-txt,

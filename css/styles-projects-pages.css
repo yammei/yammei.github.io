@@ -14,8 +14,9 @@
     position: fixed;
     height: 1920px;
     width: inherit;
+    margin-top: -100px;
     object-fit: cover;
-    background-color: red;
+    /* background-color: red; */
     z-index: -1;
 }
 

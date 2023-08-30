@@ -3,27 +3,35 @@
 /* ####################################### Navigation Bar ####################################### */
 
 .navbar {
+    display: flex;
+    flex-direction: row;
     position: fixed;
-    height: 60px;
+    height: 40px;
     width: 100vw;
     top: 0px;
-    background-color: rgb(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     z-index: 9999;
 }
 .navbar-list {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: min-content;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+    /* background-color: rgb(191, 191, 212); */
 }
 .navbar-list li {
-    display: inline;
     vertical-align: middle;
 }
 .navbar-list a {
-    font-size: 11pt;
+    color: rgb(100,100,100);
+    font-size: 9pt;
+    margin-left: 20px;
+    margin-right: 20px;
     text-decoration: none;
-    color: #737373;
-    margin-right: 1.5em;
 }
 .home-icon {
     position: sticky;
@@ -32,6 +40,12 @@
     margin-top: 1px;
     margin-right: 1em;
     /* background-color: red; */
+}
+#mz {
+    font-weight: bold;
+    vertical-align: middle;
+    list-style-type: none;
+    background-color: red;
 }
 
 .home-icon:hover {
