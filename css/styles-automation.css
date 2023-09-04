@@ -5,3 +5,11 @@
     height: calc(0.5625*600px);
     width: 600px;
 }
+
+#automation-section3-img1-container {
+
+}
+#automation-section3-img1 {
+    height: 600px;
+    width: auto;
+}

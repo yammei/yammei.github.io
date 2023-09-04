@@ -2,6 +2,23 @@
     filter: brightness(.9) saturate(.8) hue-rotate(-30deg);
 }
 
+#craigslist-section1-img1-container {
+    display: flex;
+    height: 700px;
+    width: 700px;
+    perspective: 1000px;
+    /* background-color: red; */
+    overflow: visible;
+}
+#craigslist-section1-img1 {
+    width: fit-content;
+    /* transform: skew(0deg,0deg); */
+    transform-origin: top left; 
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #craigslist-section1-txt-title,
 #craigslist-section2-txt-title,
 #craigslist-section3-txt-title {
