@@ -12,7 +12,9 @@
     margin-bottom: 25px;
     padding: 0px;
     border-radius: 10px;
-    background-color: rgb(52, 52, 52);
+    /* background-color: rgb(52, 52, 52); */
+    background-color: rgb(240, 240, 240);
+
 }
 
 #engineering-section1-txt-container,
@@ -41,22 +43,22 @@
 #engineering-section2-txt-title,
 #engineering-section3-txt-title {
     font-size: 24pt;
-    color: white;
+    /* color: white; */
 }
 #engineering-section1-txt1,
 #engineering-section2-txt1,
 #engineering-section3-txt1 {
     font-size: 11pt;
-    color: rgb(200,200,200);
+    /* color: rgb(200,200,200); */
 }
 #engineering-section1-txt2,
 #engineering-section2-txt2,
 #engineering-section3-txt2 {
     font-size: 11pt;
-    color: rgb(200,200,200);
+    /* color: rgb(200,200,200); */
 }
 #engineering-section1-pdf {
-    color: rgb(255, 226, 5);
+    /* color: rgb(255, 226, 5); */
 }
 #engineering-section1-img1-container,
 #engineering-section2-img1-container,
