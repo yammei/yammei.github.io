@@ -21,7 +21,7 @@
     width: fit-content;
     max-width: fit-content;
     margin-top: 50px;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
     margin-bottom: 50px;
     padding-left: 10px;
@@ -66,13 +66,15 @@
     margin-left: 0px;
     margin-right: 50px;
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 50px;
     border-radius: 10px 0px 0px 10px;
     background-color: rgb(255, 255, 255);
 }
 #engineering-section2-img1-container {
+    height: fit-content;
+    width: 400px;
     margin-right: 0px;
     margin-left: auto;
     padding-top: 100px;
@@ -91,6 +93,7 @@
     width: auto;
     object-fit: cover;
 }
+#engineering-section2-img1,
 #engineering-section3-img1 {
     height: auto;
     width: 400px;
