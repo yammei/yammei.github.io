@@ -26,7 +26,7 @@
 
 .pf-img1 {
     height: auto;
-    width: 275px;
+    width: 400px;
     border-radius: 15px;
 }
 
@@ -55,7 +55,7 @@
 
 .pf-text2 {
     color: rgb(100, 100, 100);
-    font-size: 11pt;
+    font-size: 15pt;
     margin-top: 5px;
     margin-bottom: 30px;
 }
@@ -63,7 +63,7 @@
 .pf-note {
     color: rgb(140, 140, 140);
     text-align: center;
-    font-size: 8pt;
+    font-size: 10pt;
     max-width: 275px;
     margin-top: 10px;
     /* background-color: red; */
@@ -71,7 +71,7 @@
 
 #pf-name {
     color: rgb(75,75,75);
-    font-size: 36pt;
+    font-size: 48pt;
     font-family: 'Cedarville Cursive';
     font-weight: 1000;
     /* background: -webkit-linear-gradient(0deg, rgb(217, 121, 146), rgb(213, 143, 58)); */
@@ -80,6 +80,72 @@
 }
 
 @media screen and (max-width: 1000pt){
+    .pf-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* background-color: red; */
+        z-index: 5;
+    }
+    
+    .pf-img1 {
+        height: auto;
+        width: 275px;
+        border-radius: 15px;
+    }
+    
+    .pf-text {
+        display: flex;
+        flex-direction: column;
+        color: rgb(100,100,100);
+        font-style: normal;
+        text-align: center;
+        margin-bottom: -20px;
+        /* background-color: blue; */
+    }
+    
+    .pf-text0 {
+        display: none;
+        font-size: 20pt;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .pf-text1 {
+        font-size: 20pt;
+        margin-top: 0px;
+        margin-bottom: 0em;
+    }
+    
+    .pf-text2 {
+        color: rgb(100, 100, 100);
+        font-size: 11pt;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    
+    .pf-note {
+        color: rgb(140, 140, 140);
+        text-align: center;
+        font-size: 8pt;
+        max-width: 275px;
+        margin-top: 10px;
+        /* background-color: red; */
+      }
+    
+    #pf-name {
+        color: rgb(75,75,75);
+        font-size: 36pt;
+        font-family: 'Cedarville Cursive';
+        font-weight: 1000;
+        /* background: -webkit-linear-gradient(0deg, rgb(217, 121, 146), rgb(213, 143, 58)); */
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
     .pf-img {
         width: 400px;
     }
