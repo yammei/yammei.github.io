@@ -1,6 +1,5 @@
 window.addEventListener('scroll', function() {
   const element1 = document.querySelector('#craigslist-section1-img1');
-  const element2 = document.querySelector('#craigslist-section1-img1-container');
   const element3 = document.querySelector('#craigslist-section2-img1');
   const element4 = document.querySelector('#craigslist-section2-img1-container');
 

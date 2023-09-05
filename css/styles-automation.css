@@ -1,3 +1,7 @@
+#automation-banner-img1 {
+    filter: brightness(.9) saturate(.3) hue-rotate(250deg);
+}
+
 #automation-section2-img1-container {
 
 }

@@ -1,7 +1,100 @@
-.project-section1-img1-container {
-    
+#engineering-banner-img1-container {
+}
+#engineering-banner-img1 {
+    filter: brightness(1.1) saturate(.1) hue-rotate(50deg);
 }
 
-.project-section1-img1-container {
-    
+#engineering-section1,
+#engineering-section2,
+#engineering-section3 {
+    width: 1100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0px;
+    border-radius: 10px;
+    background-color: rgb(52, 52, 52);
 }
+
+#engineering-section1-txt-container,
+#engineering-section2-txt-container,
+#engineering-section3-txt-container {
+    width: fit-content;
+    max-width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: red; */
+}
+#engineering-section2-txt-container {
+    margin-left: auto;
+    margin-right: 0px;
+}
+#engineering-section3-txt-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#engineering-section1-txt-title,
+#engineering-section2-txt-title,
+#engineering-section3-txt-title {
+    font-size: 24pt;
+    color: white;
+}
+#engineering-section1-txt1,
+#engineering-section2-txt1,
+#engineering-section3-txt1 {
+    font-size: 11pt;
+    color: rgb(200,200,200);
+}
+#engineering-section1-txt2,
+#engineering-section2-txt2,
+#engineering-section3-txt2 {
+    font-size: 11pt;
+    color: rgb(200,200,200);
+}
+#engineering-section1-pdf {
+    color: rgb(255, 226, 5);
+}
+#engineering-section1-img1-container,
+#engineering-section2-img1-container,
+#engineering-section3-img1-container  {
+    height: 400px;
+    width: fit-content;
+    margin-left: 0px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(255, 255, 255);
+}
+#engineering-section2-img1-container {
+    margin-right: 0px;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 0px 10px 10px 0px;
+}
+#engineering-section3-img1-container {
+    height: fit-content;
+    width: 400px;
+}
+
+#engineering-section1-img1,
+#engineering-section2-img1,
+#engineering-section3-img1 {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+#engineering-section3-img1 {
+    height: auto;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
