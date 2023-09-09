@@ -1,7 +1,20 @@
 
 
 #mymaestro-banner-container {
+    background-color: rgb(170, 187, 200);
 }
+#mymaestro-banner-img1 {
+    display: none;
+    filter: brightness(.5) saturate(0.2) hue-rotate(70deg);
+}
+
+hr {
+    width: 450px;
+    border: 1px solid rgb(50,50,50); 
+    /* border: 1px solid rgb(240,240,240);  */
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 #mymaestro-section1,
 #mymaestro-section2,
@@ -15,6 +28,8 @@
 }
 #mymaestro-section1-img1-container,
 #mymaestro-section3-img1-container {
+    display: flex;
+    flex-direction: row;
     max-height: none;
     height: inherit;
     width: 700px;
@@ -22,10 +37,14 @@
     margin-left: auto;
     margin-right: 0px;
     margin-bottom: 00px;
-    backdrop-filter: blur(5px);
     /* background-color: blue; */
+    backdrop-filter: blur(5px);
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(166, 177, 207);
 }
 #mymaestro-section2-img1-container {
+    display: flex;
+    flex-direction: row;
     max-height: none;
     height: inherit;
     width: 700px;
@@ -33,15 +52,19 @@
     margin-left: 00px;
     margin-right: auto;
     margin-bottom: 00px;
-    backdrop-filter: blur(5px);
     /* background-color: blue; */
+    backdrop-filter: blur(5px);
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(166, 177, 207);
 }
 #mymaestro-section1-img1,
 #mymaestro-section2-img1,
 #mymaestro-section3-img1 {
     /* display: none; */
+    scale: .8;
     height: auto;
     width: inherit;
+    align-self: center;
     object-fit: cover;
 }
 #mymaestro-section1-txt-container,
@@ -50,24 +73,40 @@
     width: 700px;
     margin-right: auto;
     backdrop-filter: blur(5px);
-    background-color: rgb(240,240,240, .8);
-    
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(240, 240, 240);
 }
 #mymaestro-section2-txt-container {
     height: inherit;
     width: 700px;
     margin-left: auto;
     backdrop-filter: blur(5px);
-    background-color: rgb(240,240,240, .8);
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(240, 240, 240);
 }
 #mymaestro-section1-txt-title,
 #mymaestro-section2-txt-title,
 #mymaestro-section3-txt-title {
+    /* color: white; */
+    font-family: 'Playfair Display', serif;
+    font-size: 36pt;
     text-align: center;
+    font-weight:lighter;
     margin-top: auto;
+}
+#mymaestro-section1-txt1,
+#mymaestro-section2-txt1,
+#mymaestro-section3-txt1 {
+    /* color: rgb(240,240,240); */
+    /* text-align: center; */
 }
 #mymaestro-section1-txt2,
 #mymaestro-section2-txt2,
 #mymaestro-section3-txt2 {
+    /* color: rgb(240,240,240); */
+    /* text-align: center; */
     margin-bottom: auto;
+}
+#mymaestro-section1-pdf {
+    color: rgb(0, 102, 255);
 }
