@@ -55,7 +55,7 @@
     /* font-family: 'Playfair Display', serif; */
     color: rgb(70,70,70);
     font-size: 100px;
-    font-weight: 500;
+    font-weight: 600;
     width: min-content;
     max-width: 1000px;
     margin-top: auto;
@@ -256,7 +256,7 @@
 #cl {
     /* background: linear-gradient(-165deg, rgb(94, 168, 211), rgb(48, 86, 162)) */
     /* background: linear-gradient(45deg, rgb(134, 146, 201),rgb(174, 190, 238)); */
-    background-color: rgb(167, 152, 187);
+    background-color: rgb(170, 145, 203);
 }
 
 #img-cl {
@@ -307,7 +307,7 @@
     z-index: 1;
 }
 #cl:hover {
-    background-color: rgb(121, 101, 148);
+    background-color: rgb(154, 128, 188);
     transition: background-color 750ms ease-in-out;
 }
 
@@ -395,7 +395,7 @@
 
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
-    background-color: #c2b582;
+    background-color: #d9c782;
 }
 
 #img-swe {
@@ -443,14 +443,14 @@
 #swe:hover #img1-swe {
     scale: .6;
     margin-top: -125px;
-    margin-left: -25px;
+    margin-left: -0px;
     transform: none;
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img2-swe {
     scale: .5;
     margin-top: -1100px;
-    margin-left: 0px;
+    margin-left: 50px;
     transform: rotate(5deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
@@ -462,6 +462,6 @@
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover {
-    background-color: #b4a465;
+    background-color: #baa862;
     transition: background-color 750ms ease-in-out;
 }
