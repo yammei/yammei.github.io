@@ -22,9 +22,11 @@
   }
 
   .abg-banner-txt {
+    /* font-family: 'Cinzel Decorative', sans-serif; */
     font-size: 120pt;
-    font-weight: bold;
-    margin-top: .5em;
+    font-weight: 500;
+    letter-spacing: -10px;
+    margin-top: 80px;
     margin-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +45,7 @@
     height: auto;
     scale: 1.05;
     margin-top: -50px;
-    filter: brightness(.7) hue-rotate(0deg);
+    filter: brightness(.7) hue-rotate(150deg);
     z-index: 1;
   }
   .abg-banner-img-bg {
@@ -51,7 +53,7 @@
     width: 1920px;
     height: auto;
     scale: 1.05;
-    filter: brightness(.7) hue-rotate(0deg);
+    filter: brightness(.7) hue-rotate(150deg);
     z-index: 0;
   }
   .abg-banner-img2 {
@@ -79,7 +81,7 @@
       margin-top: 1000px;
     }
     to {
-      margin-top: 150px;
+      margin-top: 80px;
     }
   }
 
@@ -136,20 +138,6 @@
     text-align: left;
   }
 
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    height: fit-content;
-    padding-top: 50px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* background-color: rgb(240, 240, 240); */
-  }
   .section2-img {
     display: flex;
     width: 1000px;
@@ -166,32 +154,7 @@
     font-size: 64pt;
     margin-bottom: -25px;
   }
-
-  .section2-txt {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    width: 800px;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    /* background-color: grey; */
-  }
-  .section2-txt1{
-    height: fit-content;
-    margin-right: 100px;
-    margin-top: 0px;
-    margin-bottom: auto;
-    /* background-color: red; */
-
-  }
-  .section2-txt2 {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    /* background-color: blue; */
-  }
-
-
-
+  .section2, 
   .section3 {
     display: flex;
     flex-direction: column;
@@ -218,26 +181,33 @@
     border-radius: 2em;
     object-fit: cover;
   }
+  
+  .section2-txt,
   .section3-txt {
     display: flex;
     flex-direction: row;
-    height: fit-content;
+    /* align-items:center; */
+    height: 200px;
     width: 800px;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    /* background-color: grey; */
-  }
-  .section3-txt1 {
-    height: fit-content;
-    margin-top: 0em;
-    margin-right: 100px;
-    margin-bottom: 0em;
     /* background-color: red; */
   }
-  .section3-txt2 {
-    margin-top: 0em;
-    margin-bottom: 0em;
+  .section2-txt1,
+  .section3-txt1 {
+    text-align: right;
+    height: inherit;
+    width: 200px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: auto;
     /* background-color: blue; */
+  }
+  .section2-txt2,
+  .section3-txt2 {
+    height: inherit;
+    margin-top: 0px;
+    margin-bottom: auto;
+    width: 500px;
+    /* background-color: green; */
   }
 
   .bottom {

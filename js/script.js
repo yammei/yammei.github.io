@@ -1,38 +1,10 @@
-window.addEventListener('scroll', function() {
-  const element1 = document.querySelector('#craigslist-section1-img1');
-  const element3 = document.querySelector('#craigslist-section2-img1');
-  const element4 = document.querySelector('#craigslist-section2-img1-container');
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
 
-  if (window.scrollY >= 0 && window.scrollY < 500) {
+const topSection = document.querySelector(".set1"); 
+const bottomSection = document.querySelector(".set2"); 
 
-    const opacity = (250 - window.scrollY) / 250;
-    element1.style.opacity = opacity.toString();
+topSection.style.width = `${screenWidth / 2}px`;
+bottomSection.style.width = `${screenWidth / 2}px`; 
 
-    const rotateXValue = scrollY * -0.2; 
-    const rotateYValue = scrollY * -0.2; 
-    element1.style.transform = `perspective(1000px) rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;  
-    console.log(`rotateX(${rotateXValue}deg), rotateY(${rotateYValue}deg)`);
-
-    const marginLeft = -(window.scrollY / 100) * 100;
-
-    element1.style.marginLeft = `${marginLeft}px`;
-
-  }
-
-  if (window.scrollY > 500 && window.scrollY < 1000) {
-
-    const opacity = (250 - window.scrollY) / 250;
-    element1.style.opacity = opacity.toString();
-
-    const rotateXValue = scrollY * -0.2; 
-    const rotateYValue = scrollY * -0.2; 
-    element1.style.transform = `perspective(1000px) rotateX(${rotateXValue}deg) rotateY(${rotateYValue}deg)`;  
-    console.log(`rotateX(${rotateXValue}deg), rotateY(${rotateYValue}deg)`);
-
-    const marginLeft = -(window.scrollY / 100) * 100;
-
-    element1.style.marginLeft = `${marginLeft}px`;
-
-  }
-
-});
+console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);

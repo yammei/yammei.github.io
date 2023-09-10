@@ -9,14 +9,15 @@
     margin-top: 100px;
     /* background-color: red; */
 }
-#section-title {
-    font-family: 'Playfair Display', serif;
+.section-title {
+    display: none;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 48pt;
     font-weight: 500;
     text-align: center;
     height: fit-content;
     width: 80vw;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 50vw;
     padding-right: 50vw;
     padding-bottom: 50px;
@@ -24,6 +25,7 @@
     margin-right: 10px; */
     margin-bottom: 0px;
     background-color: rgb(240, 240, 240);
+    /* background-color: red; */
     border-radius: 15px;
     color: rgb(50, 50, 50);
 }
@@ -37,7 +39,8 @@
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -100px;
+    margin-bottom: 00px;
+    /* background-color: red; */
 }
 #projects-banner {
     height: 900px;
@@ -50,7 +53,6 @@
 }
 #projects-banner-txt {
     font-family: 'Playfair Display', serif;
-
     color: rgb(70,70,70);
     font-size: 100px;
     font-weight: 500;
@@ -77,27 +79,15 @@
         padding-top: 0px;
     }
   }
-.set1 {
-    padding-top: 50px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(240, 240, 240);
-}
+.set1,
 .set2 {
-    padding-top: 50px;
-    padding-left: 50vw;
-    padding-right: 50vw;
-    padding-bottom: 150px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
-    background-color: rgb(240, 240, 240);
+    width: 1500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* background-color: rgb(240, 240, 240); */
+    background-color: blue;
 }
 
 .project-container {
@@ -105,11 +95,8 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    width: 450px;
-    height: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 15px;
+    width: 750px;
+    height: 750px;
 }
 
 .img {
@@ -131,9 +118,9 @@
     /* background-color: rgb(245, 220, 220); */
 }
 .txt1 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 30pt;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     width: fit-content;
     margin-left: auto;
@@ -142,7 +129,7 @@
     /* background-color: red; */
 }
 .txt2 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 14pt;
     font-weight: 400;
     text-align: center;
@@ -153,20 +140,7 @@
     /* background-color: blue; */
 }
 .txt3 {
-    font-size: 14pt;
-    font-weight: 400;
     text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    background-color: rgb(100, 100, 100, .5);
-    border-radius: 20px;
-    color: rgb(50, 50, 50);
-    /* background: green; */
 }
 .link-center {
     display: flex;
@@ -226,7 +200,7 @@
 
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
-    background-color: #474747;
+    background-color: #de9e9e;
 }
 
 #img-ad {
@@ -270,6 +244,10 @@
     transform: skew(0deg, 0deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
+#ad:hover {
+    background-color: #d58080;
+    transition: background-color 750ms ease-in-out;
+}
 
 /* ################ Projects/cl ################ */
 /* ################ Projects/cl ################ */
@@ -278,7 +256,7 @@
 #cl {
     /* background: linear-gradient(-165deg, rgb(94, 168, 211), rgb(48, 86, 162)) */
     /* background: linear-gradient(45deg, rgb(134, 146, 201),rgb(174, 190, 238)); */
-    background-color: #474747;
+    background-color: rgb(167, 152, 187);
 }
 
 #img-cl {
@@ -292,7 +270,7 @@
 
 #img1-cl {
     /* background-color: rgb(31, 31, 31); */
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 0px;
     rotate: 0deg;
     scale: 2;
@@ -320,13 +298,17 @@
     /* color: rgb(50, 50, 50); */
 }
 
-#cl:hover #img1-cl{
+#cl:hover #img1-cl {
     scale: 1.75;
     margin-top: 70px;
     margin-left: 120px;
     transform: skew(45deg, -20deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
     z-index: 1;
+}
+#cl:hover {
+    background-color: rgb(121, 101, 148);
+    transition: background-color 750ms ease-in-out;
 }
 
 
@@ -357,7 +339,7 @@
 
 #am {
     /* background: linear-gradient(45deg, rgb(182, 187, 192), rgb(225, 229, 232)) */
-    background-color: #474747;
+    background-color: #8294c2;
 }
 
 #img-am {
@@ -421,13 +403,17 @@
     opacity: 1;
     transition: opacity 600ms ease-in-out, scale 600ms ease-in-out;
 }
+#am:hover {
+    background-color: #6178b3;
+    transition: background-color 750ms ease-in-out;
+}
 
 /* ################ Projects/swe ################ */
 /* ################ Projects/swe ################ */
 
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
-    background-color: #474747;
+    background-color: #c2b582;
 }
 
 #img-swe {
@@ -461,4 +447,8 @@
     margin-left: 0;
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out;
     z-index: 0;
+}
+#swe:hover {
+    background-color: #b4a465;
+    transition: background-color 750ms ease-in-out;
 }

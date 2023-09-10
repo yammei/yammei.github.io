@@ -54,7 +54,7 @@
 }
 
 .pf-text2 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     color: rgb(100, 100, 100);
     font-size: 14pt;
     margin-top: 15px;
@@ -62,7 +62,7 @@
 }
 
 .pf-note {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     color: rgb(140, 140, 140);
     text-align: center;
     font-size: 10pt;
