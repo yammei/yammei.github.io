@@ -61,20 +61,25 @@
 }
 
 .pf-text2 {
+    /* display: none; */
     /* font-family: 'Playfair Display', serif; */
     color: rgb(100, 100, 100);
-    font-size: 14pt;
+    font-size: 12pt;
+    max-width: 400px;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .pf-note {
     /* font-family: 'Playfair Display', serif; */
     color: rgb(140, 140, 140);
     text-align: center;
-    font-size: 10pt;
+    font-size: 8pt;
     max-width: 275px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
     /* background-color: red; */
   }
 
@@ -93,11 +98,13 @@
     flex: row;
 }
 .pf-icon {
-    height: 25px;
+    height: 30px;
     width: auto;
+    margin-top: px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 4px;
+    filter: saturate(0) brightness(3.5);
 }
 
 @media screen and (max-width: 1000pt){
@@ -144,7 +151,7 @@
     
     .pf-text2 {
         color: rgb(100, 100, 100);
-        font-size: 11pt;
+        font-size: 20pt;
         margin-top: 5px;
         margin-bottom: 30px;
     }
@@ -152,7 +159,7 @@
     .pf-note {
         color: rgb(140, 140, 140);
         text-align: center;
-        font-size: 8pt;
+        font-size: 11pt;
         max-width: 275px;
         margin-top: 10px;
         /* background-color: red; */
