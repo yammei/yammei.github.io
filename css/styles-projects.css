@@ -325,7 +325,7 @@
 
 #am {
     /* background: linear-gradient(45deg, rgb(182, 187, 192), rgb(225, 229, 232)) */
-    background-color: #989898;
+    background-color: #6b84b5;
 }
 
 #img-am {
@@ -372,7 +372,7 @@
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
 }
 #am:hover {
-    background-color: #868686;
+    background-color: #4665a1;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -381,7 +381,7 @@
 
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
-    background-color: #8488b8;
+    background-color: #699cb9;
 }
 
 #img-swe {
@@ -451,6 +451,6 @@
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover {
-    background-color: #6a6faa;
+    background-color: #4684a9;
     transition: background-color 750ms ease-in-out;
 }
