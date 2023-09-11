@@ -5,11 +5,12 @@
 .projects {
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-top: auto;
     margin-bottom: auto;
-    /* background-color: red; */
-    height: 800px;
-    width: 800px;
 }
+
 .section-title {
     display: none;
     /* font-family: 'Playfair Display', serif; */
@@ -453,4 +454,21 @@
 #swe:hover {
     background-color: #4684a9;
     transition: background-color 750ms ease-in-out;
+}
+
+@media screen and (max-width: 1000pt){
+    .projects {
+        width: fit-content;
+    }
+    .set1,
+    .set2 {
+        flex-direction: column;
+    }
+    .set1 {
+        margin-top: 50px;
+        margin-bottom: -50px;
+    }
+
+
+
 }
