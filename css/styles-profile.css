@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    /* background-color: aquamarine; */
+    background-color: rgb(250, 250, 250);
 }
 
 .pf {
@@ -14,7 +14,6 @@
     align-items: center;
     height: fit-content;
     width: 800px;
-    /* padding-top: 70px; */
     margin-top: auto;
     margin-bottom: auto;
     /* background-color: rgba(255, 0, 0, 0.5); */
@@ -26,15 +25,12 @@
     align-items: center;
     height: fit-content;
     width: inherit;
-    margin-top: 0px;
-    margin-bottom: 0px;
     z-index: 5;
 }
 
 .pf-img1 {
     height: auto;
     width: 150px;
-    border-radius: 15px;
 }
 
 .pf-text {
@@ -44,7 +40,6 @@
     font-style: normal;
     text-align: center;
     margin-bottom: -20px;
-    /* background-color: blue; */
 }
 
 .pf-text0 {
@@ -108,66 +103,55 @@
 }
 
 @media screen and (max-width: 1000pt){
-    .pf-img {
-        display: flex;
+    .main-content {
         flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        width: fit-content;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        /* background-color: red; */
-        z-index: 5;
+        width: 400px;
     }
-    
+    .pf {
+        padding-top: 100px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pf-img {
+        max-width: 250px;
+    }
+
     .pf-img1 {
-        height: auto;
-        width: 275px;
-        border-radius: 15px;
+        width: 150px;
     }
-    
     .pf-text {
         display: flex;
         flex-direction: column;
         color: rgb(100,100,100);
-        font-style: normal;
-        text-align: center;
+        width: 250px;
         margin-bottom: -20px;
-        /* background-color: blue; */
     }
-    
-    .pf-text0 {
-        display: none;
-        font-size: 20pt;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    
     .pf-text1 {
-        font-size: 20pt;
-        margin-top: 0px;
-        margin-bottom: 0em;
+        font-size: 10pt;
+        width: inherit;
+        margin-top: 10px;
+
     }
-    
     .pf-text2 {
         color: rgb(100, 100, 100);
-        font-size: 20pt;
+        font-size: 10pt;
+        width: inherit;
         margin-top: 5px;
         margin-bottom: 30px;
     }
-    
     .pf-note {
         color: rgb(140, 140, 140);
         text-align: center;
         font-size: 11pt;
-        max-width: 275px;
+        height: fit-content;
+        max-width: 200px;
         margin-top: 10px;
-        /* background-color: red; */
       }
-    
+
     #pf-name {
         color: rgb(75,75,75);
-        font-size: 36pt;
+        font-size: 28pt;
         font-family: 'Cedarville Cursive';
         font-weight: 1000;
         /* background: -webkit-linear-gradient(0deg, rgb(217, 121, 146), rgb(213, 143, 58)); */
@@ -178,7 +162,9 @@
         width: 400px;
     }
     .pf-note {
+        font-size: 7pt;
         width: 400px;
     }
-
+    .pf-icon {
+    }
 }
