@@ -40,7 +40,7 @@ hr {
     /* background-color: blue; */
     backdrop-filter: blur(5px);
     border-radius: 10px 0px 0px 10px;
-    background-color: rgb(166, 177, 207);
+    background-color: rgb(100, 100, 100);
 }
 #mymaestro-section2-img1-container {
     display: flex;
@@ -55,7 +55,7 @@ hr {
     /* background-color: blue; */
     backdrop-filter: blur(5px);
     border-radius: 0px 10px 10px 0px;
-    background-color: rgb(166, 177, 207);
+    background-color: rgb(100, 100, 100);
 }
 #mymaestro-section1-img1,
 #mymaestro-section2-img1,
@@ -66,6 +66,12 @@ hr {
     width: inherit;
     align-self: center;
     object-fit: cover;
+}
+#mymaestro-section2-img1 {
+    height: inherit;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 #mymaestro-section1-txt-container,
 #mymaestro-section3-txt-container {

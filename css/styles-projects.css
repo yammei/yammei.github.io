@@ -201,7 +201,7 @@
 
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
-    background-color: #9c587f;
+    background-color: #a873ae;
 }
 
 #img-ad {
@@ -216,7 +216,7 @@
     scale: 1.4; 
     width: inherit;
     margin-top: 100px;
-    transform: skew(0deg, 15deg);
+    transform: skew(0deg, 7.5deg);
     /* background-color: cyan; */
     vertical-align: bottom;
 }
@@ -246,7 +246,7 @@
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #ad:hover {
-    background-color: #803861;
+    background-color: #916096;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -286,7 +286,7 @@
 #cl:hover #img1-cl {
     scale: 2;
     margin-top: 00px;
-    margin-left: 80px;
+    margin-left: 95px;
     transform: skew(40.5deg, 0deg) rotateX(-40deg) rotate(-35deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
     z-index: 1;
