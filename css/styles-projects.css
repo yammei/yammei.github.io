@@ -202,7 +202,7 @@
 
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
-    background-color: #a873ae;
+    background-color: #ae7399;
 }
 
 #img-ad {
@@ -247,7 +247,7 @@
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #ad:hover {
-    background-color: #916096;
+    background-color: #ab5f91;
     transition: background-color 750ms ease-in-out;
 }
 
