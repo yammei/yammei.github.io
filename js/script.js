@@ -1,10 +1,12 @@
-const screenWidth = window.screen.width;
-const screenHeight = window.screen.height;
 
-const topSection = document.querySelector(".set1"); 
-const bottomSection = document.querySelector(".set2"); 
+// window.addEventListener('scroll', function() {
+//     const scrollYValue = window.scrollY;
 
-topSection.style.width = `${screenWidth / 4}px`;
-bottomSection.style.width = `${screenWidth / 4}px`; 
+//     const firstSection = document.querySelector(".section1"); 
+//     const secondSection = document.querySelector(".section2"); 
 
-console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
+//     firstSection.style.opacity = `${ scrollYValue / 500 }px`;
+//     secondSection.style.opacity = `${ (scrollYValue+500) / 1000 }px`; 
+
+//     console.log(`Screen Scrolled: ${scrollYValue}px`);
+// });

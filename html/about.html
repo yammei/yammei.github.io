@@ -46,28 +46,73 @@
           <div id="section1-txt">
             <p id="section1-txt1">abt</p>
             <p id="section1-txt2">
-              I'm Mei Zhang; a sushi lover, karaoke enthusiast, and haver of sleepless nights. 
+              Hey, I'm Mei! <br>
+              I'm a sushi enjoyer, car-aoke singer, and sightseer of large landmarks.
             </p>
           </div>
         </div>
 
-        <div class="section2">
-          <!-- <div class="section2-img">
-            <img class="section2-img1" src="../imgs/meistare.png">
-          </div> -->
+        <div id="section2">
           <div id="section2-txt">
-            <p id="section2-txt1" class="title">edu</p>
-            <p id="section2-txt2" class="content">
-              I studied Computer Science at CSU Stanislaus with coursework centered around software development, 
-              where I've built Android applications, ecommerce web platforms, automations, and machine learning models. 
-            </p>
+            <div id="section2-txt-top">
+              <p id="section2-txt1" class="title">edu</p>
+              <p id="section2-txt2" class="content">
+                I studied Computer Science at CSU Stanislaus with a well-balanced breadth of coursework; 
+                learning new technologies and techniques to effectively solve modern-day challenges.
+              </p>
+            </div>
+            <div id="section2-txt-bottom">
+              <ul id="section2-txt3-pt1">
+                <p>Software Development</p>
+                <li>Software Engineering</li>
+                <li>Ecommerce Systems Design</li>
+                <li>Android Mobile App Development</li>
+                <li>Human-Centered Design</li>
+
+                <p>AI/ML</p>
+                <li>Artificial Intelligence</li>
+                <li>Research Methods</li>
+
+                <p>Data & Theory</p>
+                <li>Coding and Information Theory</li>
+                <li>Theory of Algorithms</li>
+                <li>Cybersecurity</li>
+
+                <p>Regular Coursework</p>
+                <li>Data Structures & Algorithms</li>
+                <li>Operating Systems</li>
+                <li>Programming Languages</li>
+                <li>Seminar in Computer Science</li>
+
+              </ul>
+              <div id="learn-more-container"><span id="learn-more">›</span></div>
+              <ul id="section2-txt3-pt2">
+                <pre>| </pre>
+                <li>[Tools: Java, Apache Tomcat, JDBC, Git, Agile SDLC]</li>
+                <li>[Tools: HTML/CSS, PHP, Javascript, MySQL, WordPress, GCP]</li>
+                <li>[Tools: Android Studio, Java, Kotlin, SQLite, XML]</li>
+                <li>[Research: Improving Site Navigation; Tools: Figma]</li>
+
+                <pre>| </pre>
+                <li>[Tools: Python, Scikit-Learn, RL Algorithm]</li>
+                <li>[Research: ML Approaches in Bioinformatics; Tools: C++]</li>
+
+                <pre>| </pre>
+                <li>[Topic: Reducing Error in Data Communication]</li>
+                <li>[Topic: Deducing Algorithm Effectiveness]</li>
+                <li>[Tools: VirtualBox, Ubuntu, MySQL, PHP, C, Bash]</li>
+
+                <pre>| </pre>
+                <li>[Tools: Python, Hash, BST, VLDB, .csv,]</li>
+                <li>[Tools: C, Bash, Unix/Linux]</li>
+                <li>[Tools: Swift, SwiftUI, UIKit, Xcode]</li>
+                <li>[Research: Performance Optimization in DNN Data Access]</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div id="section3">
-          <!-- <div class="section3-img" id="content">
-            <img class="section3-img1" src="../imgs/meistare.png">
-          </div> -->
           <div id="section3-txt">
             <p id="section3-txt1" class="title">impct</p>
             <p id="section3-txt2" class="content">
@@ -84,19 +129,69 @@
 
       <script>
         window.addEventListener('scroll', function() {
-          const element1 = document.querySelector('.abg-banner-img2');
-          const element2 = document.querySelector('.abg-banner-img3');
+          const bg1 = document.querySelector('.abg-banner-img2');
+          const bg2 = document.querySelector('.abg-banner-img3');
+          const txt0 = document.querySelector('#section1');
+          const txt1 = document.querySelector('#section2');
+          const txt2 = document.querySelector('#section3');
+          const transitionSize = 750; // Change this value for size of fade transitions
+          const sectionSize1 = transitionSize*2;
+          const sectionSize2 = sectionSize1 + transitionSize*2;
+          const sectionSize3 = sectionSize2 + transitionSize*2;
+          const transThreshold1 = 0 + transitionSize;
+          const transThreshold2 = transThreshold1 + transitionSize*2;
+          const transThreshold3 = transThreshold2 + transitionSize*2;
+          bg2.style.opacity = "0";
+          txt2.style.opacity = "0";
 
-          if (window.scrollY >= 0 && window.scrollY < 1500) {
-            const opacity = (window.scrollY) / 500;
-            element2.style.opacity = "0";
-            element1.style.opacity = opacity.toString();
-            element1.style.zIndex = '2';
+
+          if (window.scrollY >= 0 && window.scrollY < sectionSize1) {
+            transThreshold = transThreshold1;
+            // 1 -> 0
+            const fadeOut = (transThreshold - window.scrollY) / transitionSize;
+            // 0 -> 1
+            const fadeIn = (window.scrollY - transThreshold) / transitionSize;
+
+            // Console log
+            console.log(`
+            Section 1\n
+            Window Scroll-Y: ${window.scrollY}, Trans-Threshold: ${transThreshold}\n
+            Fade In: ${fadeIn}, Fade Out: ${fadeOut}
+            `);
+
+            // To fade out
+            txt0.style.opacity = fadeOut.toString();
+
+            // To fade in
+            bg1.style.opacity = fadeIn.toString();
+            txt1.style.opacity = fadeIn.toString();
+
+            // Misc
+            bg1.style.zIndex = '2';
           }
-          if (window.scrollY > 1200) {
-            const opacity = ((window.scrollY)-1200) / 400;
-            element2.style.opacity = opacity.toString();
-            element2.style.zIndex = '3';
+          if (window.scrollY > sectionSize1 && window.scrollY < 99999) {
+            transThreshold = transThreshold2;
+            // 1 -> 0
+            const fadeOut = (transThreshold - window.scrollY) / transitionSize;
+            // 0 -> 1
+            const fadeIn = (window.scrollY - transThreshold) / transitionSize;
+
+            // Console log
+            console.log(`
+            Section 2\n
+            Window Scroll-Y: ${window.scrollY}, Trans-Threshold: ${transThreshold}\n
+            Fade In: ${fadeIn}, Fade Out: ${fadeOut}
+            `);
+
+            // To fade out
+            txt1.style.opacity = fadeOut.toString();
+
+            // To fade in
+            txt2.style.opacity = fadeIn.toString();
+            bg2.style.opacity = fadeIn.toString();
+
+            // Misc
+            bg2.style.zIndex = '3';
           }
         });
       </script>
