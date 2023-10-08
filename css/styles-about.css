@@ -28,7 +28,7 @@
     font-size: 120pt;
     font-weight: 500;
     letter-spacing: -10px;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +83,7 @@
       margin-top: 1000px;
     }
     to {
-      margin-top: 80px;
+      margin-top: 0px;
     }
   }
 
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60em;
+    width: 100vw;
     z-index: 5;
   }
   .category {
@@ -111,29 +111,32 @@
 
   #section1 {
     position: fixed;
-    width: fit-content;
-    max-width: 350px;
     text-align: center;
+    height: auto;
+    width: fit-content;
+    max-width: 600px;
+    margin-top: 100px;
     /* background-color: red; */
   }
-  #section1-txt0 {
-    color: white;
-    margin-top: 0em;
-    margin-bottom: 0em;
-  }
   #section1-txt1 {
-    color: rgb(245,245,245);
-    font-size:48pt;
+    color: rgb(200, 200, 200);
+    font-size: 36pt;
     font-weight: 600;
+    text-align: left;
     margin-top: 0em;
     margin-bottom: 25px;
-    text-align: center;
   }
   #section1-txt2 {
     color: rgb(200, 200, 200);
     font-size: 15pt;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
+  }
+  #scroll-nav {
+    color: rgb(200, 200, 200);
+    font-size: 10pt;
+    margin-top: 100px;
+    letter-spacing: 2px;
   }
   #section2-icon {
     font-size: 64pt;
@@ -147,6 +150,7 @@
     align-self: center;
     align-items: center;
     height: fit-content;
+    margin-top: 100px;
     padding-left: 50vw;
     padding-right: 50vw;
     opacity: 0;
@@ -162,15 +166,17 @@
     margin-right: auto;
   }
   #section2-txt1 {
-    font-size:48pt;
+    color: rgb(200, 200, 200);
+    font-size: 36pt;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     margin-top: 00px;
     margin-bottom: 0px;
   }
   #section2-txt2 {
     color: rgb(200, 200, 200);
     text-align: left;
+    font-weight: 500;
     max-width: 600px;
 
   }
@@ -274,6 +280,7 @@
     margin-bottom: auto;
   }
   #section3-txt2 {
+    font-weight: 500;
     height: inherit;
     margin-top: 0px;
     margin-bottom: auto;
