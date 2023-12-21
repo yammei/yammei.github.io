@@ -96,7 +96,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    width: 400px;
+    width: 350px;
     height: 400px;
     /* background-color: aquamarine; */
 }
@@ -121,7 +121,8 @@
 }
 .txt1 {
     /* font-family: 'Playfair Display', serif; */
-    font-size: 24pt;
+    color: rgba(0, 0, 0, .55);
+    font-size: 36pt;
     font-weight: 600;
     text-align: center;
     width: fit-content;
@@ -190,7 +191,6 @@
         padding-bottom: 25px;
     }
     .project-container {
-        margin-bottom: 25px;
     }
     #section-title {
         max-width: 600px;
@@ -223,11 +223,9 @@
 }
 
 #txt-ad {
-    color: white;
 }
 
 #txt1-ad {
-    color: rgb(240,240,240);
     /* color: rgb(50, 50, 50); */
 }
 
@@ -271,7 +269,6 @@
 #txt-cl {
 }
 #txt1-cl {
-    color:white;
     /* color: rgb(50, 50, 50); */
     /* background-color: red; */
 }
@@ -286,9 +283,9 @@
 }
 #cl:hover #img1-cl {
     scale: 2;
-    margin-top: 00px;
+    margin-top: 60px;
     margin-left: 95px;
-    transform: skew(40.5deg, 0deg) rotateX(-40deg) rotate(-35deg);
+    transform: skew(20deg, 0deg) rotateX(0deg) rotate(0deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
     z-index: 1;
 }
@@ -341,7 +338,7 @@
     height: inherit;
     width: auto;
     margin-top: 20px;
-    margin-left: 75px;
+    margin-left: 50px;
     transform: skew(0deg, 10deg);
     z-index: 2;
     /* background-color: cyan; */
@@ -352,7 +349,6 @@
 }
 
 #txt1-am {
-    color: white;    
     /* background-color: red; */
 }
 
@@ -368,7 +364,7 @@
 #am:hover #img1-am {
     scale: 1.2;
     margin-top: 20px;
-    margin-left: 75px;
+    margin-left: 50px;
     transform: skew(0deg, 00deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
 }
@@ -419,7 +415,6 @@
 }
 
 #txt1-swe {
-    color: white;
 }
 #txt2-swe {
     color: rgb(240, 240, 240);
@@ -431,14 +426,14 @@
 #swe:hover #img1-swe {
     width: 300px;
     margin-top: -100px;
-    margin-left: 50px;
+    margin-left: 20px;
     transform: none;
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img2-swe {
     width: 300px;
     margin-top: -1300px;
-    margin-left: 150px;
+    margin-left: 120px;
     margin-bottom: 80px;
     transform: rotate(5deg);
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
@@ -446,7 +441,7 @@
 #swe:hover #img3-swe {
     width: 300px;
     margin-top: -1300px;
-    margin-left: -50px;
+    margin-left: -70px;
     margin-bottom: 100px;
     transform: rotate(-5deg);
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
@@ -465,8 +460,7 @@
         flex-direction: column;
     }
     .set1 {
-        margin-top: 50px;
-        margin-bottom: -50px;
+
     }
 
 

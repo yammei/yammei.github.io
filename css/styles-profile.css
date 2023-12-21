@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    width: 800px;
+    width: 700px;
     margin-top: auto;
     margin-bottom: auto;
     /* background-color: rgba(255, 0, 0, 0.5); */
@@ -105,7 +105,7 @@
 @media screen and (max-width: 1000pt){
     .main-content {
         flex-direction: column;
-        width: 400px;
+        width: 350px;
     }
     .pf {
         padding-top: 100px;

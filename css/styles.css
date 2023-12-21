@@ -9,6 +9,7 @@
     height: 40px;
     width: 100vw;
     top: 0px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
     z-index: 9999;
@@ -28,7 +29,7 @@
 }
 .navbar-list a {
     color: rgb(100,100,100);
-    font-size: 9pt;
+    font-size: 10pt;
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;

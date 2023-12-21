@@ -6,16 +6,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Craigslist Redesigned</title>
+        <title>Frontend Development</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://apple.com/assets/stylesheet/sf-font.css">
-        <link rel="stylesheet" href="/./css/styles-craigslist.css">
+        <link rel="stylesheet" href="/./css/styles-mymaestro.css">
         <link rel="stylesheet" href="/./css/styles-projects-pages.css">
         <link rel="stylesheet" href="/./css/styles.css">
 
-        <!-- <script src="/../js/script.js"></script> -->
+        <script src="/../js/script.js"></script>
 
     </head>
 
@@ -24,89 +23,69 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li>  <a href="/index.html">    Home      </a></li>
-          <li>  <a href="/html/about.html">     About     </a></li>
+          <!-- <li>  <a href="/html/about.html">     About     </a></li> -->
           <li>  <a href="/./imgs/Mei_Zhang_Resume.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
 
-      <div class="project-page" id="craigslist">
-    
-        <!-- <p>Craigslist Revision Page</p> -->
+          <div class="project-page">
 
-        <div class="project-banner-container" id="craigslist-banner-container">
-          <img class="project-banner-img1" id="craigslist-banner-img1" src="/./imgs/gradient.jpeg">
-          <!-- <div class="project-banner-img1" id="craigslist-banner-img1"> -->
-        </div>
+            <div class="project-banner-container">
+              <img class="project-banner-img1" src="/./imgs/grad.jpg">
+            </div>
 
-        <div class="project-section1" id="craigslist-section1">
+            <div class="project-section1" id="mymaestro-section1">
+              <div class="project-section1-img1-container">
+                <img class="project-section1-img1" src="/./imgs/mm-section1-img1.png">
+              </div>
+              <div class="project-section1-txt-container">
+                <p class="project-section1-txt-title">Database API</p>
+                <div class="project-section1-txt-stack">
+                  <p class="project-section1-txt-stack-element" style="color: white; background-color: rgb(108, 194, 74);">Node.js</p>
+                  <p class="project-section1-txt-stack-element" style="color: white; background-color: #00758F;">MySQL</p>
+                </div>
+                <p class="project-section1-txt1">
+                  Provides database management for a distributed system.
+                </p>
+              </div>
+            </div>
 
-          <div class="project-section1-img1-container" id="craigslist-section1-img1-container">
-            <img class="project-section1-img1" id="craigslist-section1-img1" src="/./imgs/cl-section1-img1.png">
+            <div class="project-section2">
+              <div class="project-section2-txt-container">
+                <p class="project-section2-txt-title">Secure Login</p>
+                <div class="project-section1-txt-stack">
+                  <p class="project-section1-txt-stack-element" style="color: white; background-color: #f89820;">Java</p>
+                  <p class="project-section1-txt-stack-element" style="color: white; background-color: #2f9ceb;">JDBC</p>
+                </div>
+                <p class="project-section2-txt1">
+                  Implements SHA-256 to encrypt user information.
+                </p>
+              </div>
+
+              <div class="project-section2-img1-container">
+                <img class="project-section2-img1" src="/./imgs/mm-section2-img1.png">
+              </div>
+
+            </div>
+
+            <div class="project-section3">
+              <div class="project-section3-img1-container">
+                <img class="project-section3-img1" src="/./imgs/mm-section3-img1.png">
+              </div>
+              <div class="project-section3-txt-container">
+                <p class="project-section3-txt-title">Automation</p>
+                <div class="project-section1-txt-stack">
+                  <p class="project-section1-txt-stack-element" style="color: white; background-color: rgb(75,75,75);">AHK</p>
+                </div>
+                <p class="project-section3-txt1">
+                  Detects unique pixel pattern for dynamic task automation.
+                </p>
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="project-section1-txt-container" id="craigslist-section1-txt-container">
-            <p class="project-section1-txt-title" id="craigslist-section1-txt-title">A Strive for More</p>
-            <hr>
-            <p class="project-section1-txt1" id="craigslist-section1-txt1">
-              The Craigslist UX/UI redesign is my case study for Human-Centered Design class. 
-              Despite having already finished during Summer 2023, I felt as if more could have been improved. 
-              Thus, a further two month endeavor of redesign and user testing began.  
-            </p>
-            <p class="project-section1-txt2" id="craigslist-section1-txt2">
-              <a href="/./imgs/Mei Zhang - Craigslist Redesign.pdf" id="craigslist-section1-pdf" target="_blank">Click here</a> to read the original comprehensive case study.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="project-section2" id="craigslist-section2">
-
-          <div class="project-section2-txt-container" id="craigslist-section2-txt-container">
-            <p class="project-section2-txt-title" id="craigslist-section2-txt-title">Your Cup of Tea</p>
-            <hr>
-            <p class="project-section2-txt1" id="craigslist-section2-txt1">
-              I conducted qualitative research in the format of A/B testing, which has helped increase the overall site retention rate. 
-              Valuable user feedback is taken into consideration and UI adjustments are made to better user experience.
-            </p>
-            <p class="project-section2-txt2" id="craigslist-section2-txt2">
-              One example of a UI improvement made known by UI testers is the size of product cards. 
-              By building smaller playing-card-like views, users are able to view more products at a quicker rate. 
-              Thus, also implying quicker product information processing.            
-            </p>
-          </div>
-
-          <div class="project-section2-img1-container" id="craigslist-section2-img1-container">
-            <img class="project-section2-img1" id="craigslist-section2-img1" src="/./imgs/cl-section2-img1.png">
-          </div>
-
-        </div>
-
-        <div class="project-section3" id="craigslist-section3">
-
-          <div class="project-section3-img1-container" id="craigslist-section3-img1-container">
-            <img class="project-section3-img1" id="craigslist-section3-img1" src="/./imgs/cl-section3-img1.png">
-          </div>
-
-          <div class="project-section3-txt-container" id="craigslist-section3-txt-container">
-            <p class="project-section3-txt-title" id="craigslist-section3-txt-title">For All to See</p>
-            <hr>
-            <p class="project-section3-txt1" id="craigslist-section3-txt1">
-              Given Craigslist's large demographic reach. It is important, as it always has, to consider for user accessibility.
-              As an individual with a family of inherited vision problems, 
-              we tend to have issues with webpages with seemingly indistinguishable color palletes. 
-              Thus, straining our eye muscles and causing an inability to decipher potentially important text.
-            </p>
-            <p class="project-section3-txt2" id="craigslist-section3-txt2">
-              By designing light and dark themes with sufficient contrast for text and various UI elements, 
-              we increase the inclusion of those with visual disabilities, 
-              and create a community where everyone can feel welcome.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-  </body>
+    </body>
 
 </html>
