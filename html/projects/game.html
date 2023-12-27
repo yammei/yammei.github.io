@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cat Game</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://apple.com/assets/stylesheet/sf-font.css">
+        <link rel="stylesheet" href="/./css/styles-game.css">
+        <link rel="stylesheet" href="/./css/styles.css">
+
+        <script src="/../js/script.js"></script>
+
+    </head>
+
+    <body>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>  <a href="/index.html">    Home      </a></li>
+          <!-- <li>  <a href="/html/about.html">     About     </a></li> -->
+          <li>  <a href="/./imgs/Mei_Zhang_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <div id="game-window" style="margin-top: 100px;">
+        <div id="game-new-cat">
+            <label for="catName">Enter Cat Name:</label>
+            <input type="text" id="cat-name" placeholder="Enter Kitty Name">
+            <button onclick="createCat()">Create Cat</button>
+        </div>
+        <div>
+            <div id="cat-info"></div>
+            <div id="cat-container">
+                <img id="game-background" src="/imgs/Beach Window.png">
+            </div>
+        </div>
+      </div>
+
+    </body>
+
+</html>

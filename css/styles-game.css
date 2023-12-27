@@ -1,0 +1,10 @@
+#cat-container {
+    position: relative;
+    height: 1000px;
+    width: 1000px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#game-background {
+    z-index: -1;
+}
