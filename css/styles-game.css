@@ -8,3 +8,8 @@
 #game-background {
     z-index: -1;
 }
+#cat-info {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
