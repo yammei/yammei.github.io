@@ -27,7 +27,7 @@ function tick(cat) {
         cat.ageYears++;
         cat.ageMonths = 0;
     }
-    showCatStats(cat);
+    showCatStats(cats[activeSelection]);
 
     // RNG cat movement
     if (getRandomNumber(0,10) > 4 && alternatingTick == 1) {
@@ -46,17 +46,35 @@ function getRandomNumber(min, max) {
     if (cats.length < 2) {
         return;
     }
-    tempCats = cats;
+    var tempCats = cats.slice();
     for (let i=0; i < cats.length; i++)  {
         var catImage = document.getElementById(`cat-image-${cats[i].name}`);
         cats[i].liveYPos = catImage.offsetTop;
     }
     tempCats.sort((catA, catB) => catA.liveYPos - catB.liveYPos);
-    // console.log(`Sorted Y-Pos: ${tempCats[0].name} ${tempCats[1].name}`);
+    // console.log(`tempCats: ${tempCats[0].name} ${tempCats[1].name}`);
     for (let i=tempCats.length-1; i >= 0; i--) {
         var catImage = document.getElementById(`cat-image-${tempCats[i].name}`);
         catImage.style.zIndex = i+1;
     }
+}
+
+function bulge (divID) {
+    console.log(divID);
+    const btn = document.getElementById(`${divID}`);
+    btn.style.scale = "1.1";
+    btn.style.transform = "rotate(-3deg)";
+    btn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+    btn.style.filter = "brightness(1.05)"
+}
+
+function debulge (divID) {
+    console.log(divID);
+    const btn = document.getElementById(`${divID}`);
+    btn.style.scale = "1.0";
+    btn.style.transform = "rotate(0deg)";
+    btn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+    btn.style.filter = "brightness(1)";
 }
 
 async function walk(cat, targetXPosition, targetYPosition) {
@@ -158,19 +176,19 @@ function displayCat(cat) {
 
 function showCatStats (cat) {
     var cat = cats[activeSelection];
-    var catInfo = document.getElementById("cat-info");
+    var catInfo = document.getElementById("cat-info-updates");
     var catStatus = `
-        <strong>${cat.name}</strong><br>
-        Age: ${cat.ageYears} year(s) and ${cat.ageMonths} month(s)<br>
-        Health: ${cat.health}<br>
-        Happiness: ${cat.happiness}
+        <p id="cat-info-title"><strong>${cat.name}</p>
+        <p class="cat-info-all">Age: ${cat.ageYears} year(s) and ${cat.ageMonths} month(s)</p>
+        <p class="cat-info-all">Health: ${cat.health}</p>
+        <p class="cat-info-all">Happiness: ${cat.happiness}</p>
     `;
     catInfo.innerHTML = catStatus;
 }
 
 setInterval(function () {
     for (let i = 0; i < cats.length; i++) {
-        console.log(`Tick ${alternatingTick}: ${cats[i].name}`);
+        // console.log(`Tick ${alternatingTick}: ${cats[i].name}`);
         tick(cats[i]);
     }
     // Change tick status
@@ -196,12 +214,40 @@ class Cat {
     }
 
     feed() {
+        var fedBtn = document.getElementById("cib2");
+        fedBtn.style.scale = ".9";
+        fedBtn.style.transform = "rotate(0deg)";
+        fedBtn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+        setTimeout(function () {
+            fedBtn.style.scale = "1";
+            fedBtn.style.transform = "rotate(0deg)";
+            fedBtn.style.filter = "brightness(.8)"
+            fedBtn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+        }, 100);
+        setTimeout(function () {
+            fedBtn.style.filter = "brightness(1)"
+        }, 150);
+
         console.log(`${this.name} is eating. Nom nom nom.`);
         this.health += 10;
         this.happiness += 5;
     }
 
     play() {
+        var playBtn = document.getElementById("cib3");
+        playBtn.style.scale = ".9";
+        playBtn.style.transform = "rotate(0deg)";
+        playBtn.style.transition = 'scale .05s ease-in-out, transform .05 ease-in-out';
+        setTimeout(function () {
+            playBtn.style.scale = "1";
+            playBtn.style.transform = "rotate(0deg)";
+            playBtn.style.filter = "brightness(.8)"
+            playBtn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+        }, 100);
+        setTimeout(function () {
+            playBtn.style.filter = "brightness(1)"
+        }, 150);
+
         console.log(`${this.name} is playing. Whee!`);
         this.health -= 5;
         this.happiness += 10;
