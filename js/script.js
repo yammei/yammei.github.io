@@ -4,7 +4,7 @@ let activeSelection = 0;
 
 function createCat() {
     var catName = document.getElementById("cat-name").value;
-    if (cats.length < 2) {
+    if (cats.length < 4) {
         var newCat = new Cat(catName, 0);
         var catColor = getRandomNumber(0,200);
         newCat.color = catColor;
@@ -30,9 +30,9 @@ function tick(cat) {
     showCatStats(cats[activeSelection]);
 
     // RNG cat movement
-    if (getRandomNumber(0,10) > 4 && alternatingTick == 1) {
+    if (getRandomNumber(0,10) > 7 && alternatingTick == 1) {
         const targetXPosition = getRandomNumber(0, 600);
-        const targetYPosition = getRandomNumber(400, 700);
+        const targetYPosition = getRandomNumber(450, 700);
         walk(cat, targetXPosition, targetYPosition);
     }
 
@@ -95,11 +95,15 @@ async function walk(cat, targetXPosition, targetYPosition) {
     }, 2000);
 
     catElement.src = `/imgs/Briski Walk.gif`;
+    if (targetXPosition > cat.xPosition) {
+        catElement.style.transform = 'scaleX(-1)';
+    }
     catElement.style.transition = 'top 2s ease-in, left 2s ease-in';
     catElement.style.top = `${targetYPosition}px`;
     catElement.style.left = `${targetXPosition}px`;
     setTimeout(function () {
         catElement.src = "/imgs/Briski.png";
+        catElement.style.transform = 'scaleX(1)';
     }, 1990);
 
     nameElement.style.top = `${cat.yPosition}px`;
@@ -150,13 +154,16 @@ function displayCat(cat) {
     var catName = document.createElement(`p`);
     catName.id = `cat-name-${cat.name}`;
     catName.style.position = "absolute";
+    catName.textContent = `${cat.name}`;
+    catName.style.color = "#fff";
+    // catName.style.webkitTextStroke = "1px #000";
+    catName.style.fontSize = "15pt";
+    catName.style.fontWeight = "bold";
+    catName.style.fontFamily = "Varela Round', sans-serif";
     catName.style.top = `${cat.yPosition}px`;
     catName.style.left = `${cat.xPosition}px`;
     catName.style.marginTop = "150px";
     catName.style.marginLeft = "250px";
-    catName.textContent = `${cat.name}`;
-    catName.style.fontSize = "15pt";
-    catName.style.fontWeight = "bold";
     catName.style.zIndex = "0";
     gameWindow.appendChild(catName);
 
