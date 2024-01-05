@@ -4,16 +4,37 @@ let activeSelection = 0;
 
 function createCat() {
     var catName = document.getElementById("cat-name").value;
+
+    // Set max size of cat pen
     if (cats.length < 4) {
+
+        //Create new cat
         var newCat = new Cat(catName, 0);
         var catColor = getRandomNumber(0,200);
         newCat.color = catColor;
-        console.log(newCat.color);
         cats.push(newCat);
         displayCat(newCat);
         showCatStats(newCat);
+
+        // Button Animation
+        var createBtn = document.getElementById("cib1");
+        createBtn.style.scale = ".9";
+        createBtn.style.transform = "rotate(0deg)";
+        createBtn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+        setTimeout(function () {
+            createBtn.style.scale = "1";
+            createBtn.style.transform = "rotate(0deg)";
+            createBtn.style.filter = "brightness(.8)"
+            createBtn.style.transition = 'scale .1s ease-in-out, transform .1s ease-in-out';
+        }, 100);
+        setTimeout(function () {
+            createBtn.style.filter = "brightness(1)"
+        }, 150);
+
+        // Show cat creation message
+        newMessage('/imgs/Cat Icon.png', `${catName} has joined the yard!`);
     } else {
-        console.log("Cannot have more than 2 cats.");
+        newMessage('/imgs/Cat Icon.png', `The yard is full of friends!`);
     }
   }
 
@@ -167,7 +188,6 @@ function displayCat(cat) {
     catName.style.zIndex = "0";
     gameWindow.appendChild(catName);
 
-
     document.getElementById(`cat-image-${cat.name}`).addEventListener('mouseover', function() {
         this.style.filter = `brightness(110%) hue-rotate(${cat.color}deg)`;
         });
@@ -178,7 +198,106 @@ function displayCat(cat) {
         console.log(`Image ${cat.name} clicked!`);
         activeSelection = cat.id;
         });
+}
 
+document.addEventListener('DOMContentLoaded', function () {
+    const catNameInput = document.getElementById("cat-name");
+    const cib1Button = document.getElementById("cib1");
+
+    catNameInput.addEventListener('input', function () {
+        updateButtonHighlight(catNameInput, cib1Button);
+    });
+    cib1Button.addEventListener('click', function () {
+        clearInput(catNameInput);
+    });
+});
+
+function updateButtonHighlight(inputElement, buttonElement) {
+    if (inputElement.value.trim() !== '') {
+
+        buttonElement.style.transition = 'filter .5s ease-in-out, transform .5s ease-in-out';
+        buttonElement.style.filter = 'brightness(1.1)';
+        buttonElement.style.transform = 'scale(1.1)';
+
+        setTimeout(function () {
+            buttonElement.style.transition = 'filter .5s ease-in-out, transform .5s ease-in-out';
+            buttonElement.style.filter = 'brightness(1)';
+            buttonElement.style.transform = 'scale(1)';
+        }, 500);
+
+    } else {
+        buttonElement.style.filter = 'brightness(1)';
+        buttonElement.style.transform = 'scale(1)';
+    }
+}
+
+function clearInput(inputElement) {
+    inputElement.value = '';
+    console.log("Text Box Cleared.");
+    buttonElement.style.filter = 'brightness(1)';
+    buttonElement.style.transform = 'scale(1)';
+}
+
+function newMessage(imageSrc, textMessage) {
+    console.log("here");
+
+    var gameWindow = document.getElementById("cat-notifications");
+
+    const messageDiv = document.createElement('div');
+    messageDiv.style.position = "relative";
+    messageDiv.style.display = "flex";
+    messageDiv.style.flexDirection = "row";
+    messageDiv.style.height = "100px";
+    messageDiv.style.width = "400px";
+    messageDiv.style.marginBottom = "10px";
+    messageDiv.style.backgroundColor = "#F8EAA1";
+    messageDiv.style.borderRadius = "25px";
+    messageDiv.style.border = '5px solid #DED49E';
+    messageDiv.style.zIndex = "9999";
+
+    const imageElement = document.createElement('img');
+    imageElement.src = imageSrc;
+    // imageElement.style.backgroundColor = "red";
+    imageElement.style.height = "50px";
+    imageElement.style.width = "50px";
+    imageElement.style.margin = "auto 25px";
+
+    const messageElement = document.createElement('p');
+    messageElement.textContent = textMessage;
+    messageElement.style.fontSize = "20pt";
+    messageElement.style.fontWeight = "bold";
+    messageElement.style.color = "#7D7C73"
+    messageElement.style.height = "fit-content";
+    messageElement.style.width = "250px";
+    // messageElement.style.backgroundColor = "blue";
+    messageElement.style.marginTop = "auto";
+    messageElement.style.marginBottom = "auto";
+
+    messageDiv.appendChild(imageElement);
+    messageDiv.appendChild(messageElement);
+    gameWindow.appendChild(messageDiv);
+
+    messageDiv.style.opacity = '0';
+    messageDiv.style.transform = 'scale(0.75)';
+    messageDiv.style.transition = 'opacity .15s ease-in, transform .15s ease-in';
+    setTimeout(function () {
+        messageDiv.style.opacity = '1';
+        messageDiv.style.transform = 'scale(1.1)';
+    }, 0);
+    setTimeout(function () {
+        messageDiv.style.transition = 'transform .1s ease-in';
+        messageDiv.style.transform = 'scale(1)';
+    }, 150);
+
+    setTimeout(function () {
+        messageDiv.style.opacity = '1';
+        messageDiv.style.transition = 'opacity .75s ease-in-out, top .75s ease-in-out';
+        messageDiv.style.opacity = '0';
+        messageDiv.style.top = "0";
+        setTimeout(function () {
+            gameWindow.removeChild(messageDiv);
+        }, 750);
+    }, 3000);
 }
 
 function showCatStats (cat) {
@@ -235,7 +354,7 @@ class Cat {
             fedBtn.style.filter = "brightness(1)"
         }, 150);
 
-        console.log(`${this.name} is eating. Nom nom nom.`);
+        console.log(`${this.name} is eating.`);
         this.health += 10;
         this.happiness += 5;
     }
@@ -267,3 +386,4 @@ class Cat {
         console.log(`Happiness: ${this.happiness}`);
     }
 }
+

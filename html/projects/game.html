@@ -25,17 +25,17 @@
         </div>
         <div>
             <div id="cat-container">
+                <div id="cat-notifications"></div>
                 <img id="game-background" src="/imgs/Yard Window.png">
                 <div id="cat-info">
                     <div id="cat-info-updates"></div>
                     <img id="cat-info-background" src="/imgs/Notebook Menu.png"/>
-                    <input type="text" id="cat-name" placeholder="Enter Kitten Name" maxlength="15">
+                    <input id="cat-name" type="text" placeholder="Enter Kitten Name" maxlength="15">
                     <div id="cat-info-buttons">
                         <img id="cib1" onclick="createCat()" onmouseover="bulge('cib1')" onmouseout="debulge('cib1')" src="/imgs/Button Create V2.png"/>
                         <img id="cib2" onclick="feedCat()" onmouseover="bulge('cib2')"  onmouseout="debulge('cib2')" src="/imgs/Button Feed V2.png"/>
                         <img id="cib3" onclick="playCat()" onmouseover="bulge('cib3')" onmouseout="debulge('cib3')" src="/imgs/Button Play V2.png"/>
-                        <img id="cib4" onclick="" onmouseover="bulge('cib4')" onmouseout="debulge('cib4')" src="/imgs/Button Dress V2.png"/>
-
+                        <img id="cib4" onclick="newMessage('/imgs/Cat Icon.png', 'Feature coming soon!')" onmouseover="bulge('cib4')" onmouseout="debulge('cib4')" src="/imgs/Button Dress V2.png"/>
                     </div>
                 </div>
             </div>

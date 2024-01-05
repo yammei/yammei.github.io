@@ -100,3 +100,14 @@
     position: absolute;
     top: 200px;
 }
+#cat-notifications {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    height: 470px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
