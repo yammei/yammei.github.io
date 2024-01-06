@@ -75,7 +75,7 @@ function tick(cat) {
     showCatStats(cats[activeSelection]);
 
     // RNG cat movement
-    if (getRandomNumber(0,10) > 3 && alternatingTick == 1) {
+    if (getRandomNumber(0,10) > 4 && alternatingTick == 1) {
         const targetXPosition = getRandomNumber(0, 600);
         const targetYPosition = getRandomNumber(450, 700);
         walk(cat, targetXPosition, targetYPosition);
