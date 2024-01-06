@@ -354,7 +354,7 @@ function newMessage(imageSrc, textMessage) {
         setTimeout(function () {
             gameWindow.removeChild(messageDiv);
         }, 750);
-    }, 1000);
+    }, 2000);
 }
 
 // Show actively selected cat's status
