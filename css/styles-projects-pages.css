@@ -46,7 +46,7 @@
 .project-section1-img1,
 .project-section2-img1,
 .project-section3-img1 {
-    scale: .9;
+    scale: .7;
     height: auto;
     width: 450px;
     margin: auto;
@@ -66,7 +66,7 @@
 .project-section2-txt-title,
 .project-section3-txt-title {
     display: inline-block;
-    width: 300px;
+    width: 350px;
     text-align: left;
     font-size: 30pt;
     font-weight: bold;
@@ -79,9 +79,12 @@
 .project-section3-txt-stack {
     display: flex;
     flex-direction: row;
-    width: 300px;
+    flex-wrap: wrap;
+    width: 350px;
     margin: 0px auto;
+    margin-top: 15px;
     /* background-color: aqua; */
+    overflow: hidden;
 }
 .project-section1-txt-stack-element,
 .project-section2-txt-stack-element,
@@ -89,6 +92,9 @@
     display: inline-block;
     font-size: 10pt;
     font-weight: 500;
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 10px;
     margin-right: 10px;
     padding: 5px 12px;
     border-radius: 30px;
@@ -99,7 +105,7 @@
 .project-section3-txt1 {
     color: rgb(40,40,40);
     font-size: 13pt;
-    width: 300px;
+    width: 350px;
     margin: 5px auto;
     /* background-color: bisque; */
 }
