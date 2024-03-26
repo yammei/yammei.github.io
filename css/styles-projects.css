@@ -202,11 +202,11 @@
 
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
-    background-color: #ae7399;
+    background-color: #d2cbc1;
 }
 
 #img-ad {
-    scale: .9;
+    scale: 1;
     margin-top: -10px;
     margin-left: 0px;
     width: inherit;
@@ -214,12 +214,13 @@
 }
 
 #img1-ad {
-    scale: 1.4; 
+    scale: 1.5;
     width: inherit;
-    margin-top: 100px;
-    transform: skew(0deg, 7.5deg);
+    margin-top: 120px;
+    transform: skew(10deg, 15deg);
     /* background-color: cyan; */
     vertical-align: bottom;
+    filter: brightness(.95);
 }
 
 #txt-ad {
@@ -239,32 +240,46 @@
 }
 
 #ad:hover #img1-ad{
-    scale: .975;
-    margin-top: -30px;
-    transform: skew(0deg, 0deg);
-    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
+    scale: 3;
+    margin-top: -10px;
+    transform: skew(-15deg, -10deg);
+    filter: brightness(.75);
+    transition: filter 1000ms ease-in-out, scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #ad:hover {
-    background-color: #ab5f91;
+    background-color: #beb5a9;
     transition: background-color 750ms ease-in-out;
 }
 
 /* CL */
 
 #cl {
-    background-color: rgb(126, 94, 167);
+    background-color: #ccbdba;
+    overflow: hidden;
 }
 #img-cl {
     margin-top: 25px;
 }
 #img1-cl {
-}
-#img1-cl {
-    margin-top: 50px;
+    display: absolute;
+    height: 200px;
+    width: auto;
+    margin-top: -20px;
     margin-left: 0px;
     rotate: 0deg;
     scale: 1.5;
-    transform: skew(0deg, 0deg) rotateX(50deg);
+    filter: brightness(.95) hue-rotate(100deg) saturate(.2);
+    transform: skew(0deg, 0deg);
+}
+#img2-cl {
+    /* display: absolute; */
+    height: 200px;
+    width: auto;
+    margin-top: -00px;
+    margin-left: 150px;
+    scale: 3;
+    filter: brightness(.95);
+    transform: skew(0deg, 0deg);
 }
 #txt-cl {
 }
@@ -282,16 +297,19 @@
     /* color: rgb(50, 50, 50); */
 }
 #cl:hover #img1-cl {
-    scale: 2;
-    margin-top: 60px;
-    margin-left: 95px;
-    transform: skew(20deg, 0deg) rotateX(0deg) rotate(0deg);
-    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
+    scale: 4;
+    margin-top: -60px;
+    transform: skew(10deg, 10deg) rotateX(0deg) rotate(0deg);
+    filter: brightness(.75) hue-rotate(100deg) saturate(.2);
+    transition: filter 1000ms ease-in-out, scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
     z-index: 1;
 }
+#cl:hover #img2-cl {
+    margin-top: -950px;
+    transition: margin-top 1000ms ease-in-out;
+}
 #cl:hover {
-    background-color: rgb(96, 65, 136);
-
+    background-color: #b6a5a2;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -323,7 +341,7 @@
 
 #am {
     /* background: linear-gradient(45deg, rgb(182, 187, 192), rgb(225, 229, 232)) */
-    background-color: #6b84b5;
+    background-color: #b8beb2;
 }
 
 #img-am {
@@ -334,11 +352,11 @@
 
 #img1-am {
     position: relative;
-    scale: 1;
+    scale: .9;
     height: inherit;
     width: auto;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 25px;
     transform: skew(0deg, 10deg);
     z-index: 2;
     /* background-color: cyan; */
@@ -351,7 +369,9 @@
 #txt1-am {
     /* background-color: red; */
 }
-
+#img1-am {
+    filter: brightness(.95);
+}
 #txt2-am {
     color: rgb(240, 240, 240);
     /* background-color: blue; */
@@ -362,14 +382,14 @@
 }
 
 #am:hover #img1-am {
-    scale: 1.2;
-    margin-top: 20px;
-    margin-left: 50px;
+    scale: 1;
+    margin-top: -20px;
+    margin-left: 20px;
     transform: skew(0deg, 00deg);
     transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
 }
 #am:hover {
-    background-color: #4665a1;
+    background-color: #abb1a5;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -378,42 +398,51 @@
 
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
-    background-color: #699cb9;
+    background-color: #bb9e9e;
 }
 
 #img-swe {
-    scale: .6;
+    scale: 1.5;
 }
 #img1-swe {
-    position: relative;
-    width: 200px;
-    margin-top: -100px;
-    margin-left: 50px;
+    position: absolute;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 100px;
     margin-bottom: 90px;
-    transform: skew(10deg, 0deg) perspective(2000px) rotateX(40deg) rotateY(40deg);
+    transform: rotate(-40deg);
     z-index: 3;
 }
 #img2-swe {
-    position: relative;
-    width: 200px;
-    margin-top: -1300px;
-    margin-left: 200px;
+    position: absolute;
+    width: 150px;
+    margin-top: -155px;
+    margin-left: 100px;
     margin-bottom: 0px;
-    transform: skew(-10deg, 0deg) perspective(2000px) rotateX(60deg) rotateY(-40deg);
-    filter:brightness(.966);
+    transform: rotate(180deg);
+    filter: brightness(.966);
     z-index: 2;
 }
 #img3-swe {
-    position: relative;
+    position: absolute;
     width: 180px;
-    margin-top: -1300px;
-    margin-left: 100px;
+    margin-top: -20px;
+    margin-left: -35px;
     margin-bottom: -100px;
-    transform: skew(40deg, 0deg) perspective(2000px) rotateX(50deg) rotateY(20deg);
-    filter:brightness(.933);
+    transform: rotate(90deg);
+    filter: brightness(.933);
     z-index: 1;
 }
-
+#img4-swe {
+    position: absolute;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: -60px;
+    margin-bottom: 00px;
+    /* background-color: red; */
+    scale: 1;
+    z-index: 0;
+}
 #txt1-swe {
 }
 #txt2-swe {
@@ -424,30 +453,32 @@
 }
 
 #swe:hover #img1-swe {
-    width: 300px;
-    margin-top: -100px;
-    margin-left: 20px;
+    width: 100px;
+    margin-top: 80px;
+    margin-left: 120px;
     transform: none;
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img2-swe {
-    width: 300px;
-    margin-top: -1300px;
-    margin-left: 120px;
-    margin-bottom: 80px;
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 200px;
     transform: rotate(5deg);
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img3-swe {
-    width: 300px;
-    margin-top: -1300px;
-    margin-left: -70px;
-    margin-bottom: 100px;
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 40px;
     transform: rotate(-5deg);
     transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
+#swe:hover #img4-swe {
+    margin-top: -200px;
+    transition: margin-top 1000ms ease-in-out;
+}
 #swe:hover {
-    background-color: #4684a9;
+    background-color: #a7beda;
     transition: background-color 750ms ease-in-out;
 }
 
