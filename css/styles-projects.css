@@ -202,7 +202,7 @@
 
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
-    background-color: #d2cbc1;
+    background-color: #575d63;
 }
 
 #img-ad {
@@ -214,13 +214,12 @@
 }
 
 #img1-ad {
-    scale: 1.5;
+    scale: 2;
     width: inherit;
-    margin-top: 120px;
-    transform: skew(10deg, 15deg);
-    /* background-color: cyan; */
+    margin-top: 110px;
+    transform: skew(-15deg, -10deg);
+    filter: brightness(.75) saturate(1);
     vertical-align: bottom;
-    filter: brightness(.95);
 }
 
 #txt-ad {
@@ -240,45 +239,45 @@
 }
 
 #ad:hover #img1-ad{
-    scale: 3;
-    margin-top: -10px;
+    /* scale: 3.2; */
+    margin-top: 100px;
     transform: skew(-15deg, -10deg);
-    filter: brightness(.75);
-    transition: filter 1000ms ease-in-out, scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, transform 1000ms ease-in-out;
+    filter: brightness(.95);
+    transition: filter 500ms ease-in-out, scale 500ms ease-in-out, margin-top 500ms ease-in-out, transform 500ms ease-in-out;
 }
 #ad:hover {
-    background-color: #beb5a9;
+    background-color: #3f454c;
     transition: background-color 750ms ease-in-out;
 }
 
 /* CL */
 
 #cl {
-    background-color: #ccbdba;
+    background-color: #2f3952;
     overflow: hidden;
 }
 #img-cl {
+    display: flex;
+    flex-direction: row;
     margin-top: 25px;
 }
 #img1-cl {
-    display: absolute;
     height: 200px;
     width: auto;
-    margin-top: -20px;
-    margin-left: 0px;
+    margin-top: 20px;
+    margin-left: 45px;
     rotate: 0deg;
     scale: 1.5;
-    filter: brightness(.95) hue-rotate(100deg) saturate(.2);
+    filter: brightness(.75);
     transform: skew(0deg, 0deg);
 }
 #img2-cl {
-    /* display: absolute; */
     height: 200px;
     width: auto;
-    margin-top: -00px;
-    margin-left: 150px;
-    scale: 3;
-    filter: brightness(.95);
+    margin-top: 20px;
+    margin-left: 50px;
+    scale: 1;
+    filter: brightness(.75);
     transform: skew(0deg, 0deg);
 }
 #txt-cl {
@@ -297,19 +296,21 @@
     /* color: rgb(50, 50, 50); */
 }
 #cl:hover #img1-cl {
-    scale: 4;
-    margin-top: -60px;
-    transform: skew(10deg, 10deg) rotateX(0deg) rotate(0deg);
-    filter: brightness(.75) hue-rotate(100deg) saturate(.2);
-    transition: filter 1000ms ease-in-out, scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
-    z-index: 1;
+    /* scale: 5; */
+    margin-top: -00px;
+    /* margin-left: 125px; */
+    /* transform: skew(10deg, 10deg) rotateX(0deg) rotate(0deg); */
+    filter: brightness(.95);
+    transition: margin-left 500ms ease-in-out, filter 500ms ease-in-out, scale 500ms ease-in-out, margin-top 500ms ease-in-out, margin-left 500ms ease-in-out, 500ms ease-in-out;
+    z-index: 0;
 }
 #cl:hover #img2-cl {
-    margin-top: -950px;
-    transition: margin-top 1000ms ease-in-out;
+    margin-top: -00px;
+    filter: brightness(.95);
+    transition: margin-top 500ms ease-in-out, filter 500ms ease-in-out;
 }
 #cl:hover {
-    background-color: #b6a5a2;
+    background-color: #1f2a42;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -341,7 +342,7 @@
 
 #am {
     /* background: linear-gradient(45deg, rgb(182, 187, 192), rgb(225, 229, 232)) */
-    background-color: #b8beb2;
+    background-color: #5e526a;
 }
 
 #img-am {
@@ -355,9 +356,9 @@
     scale: .9;
     height: inherit;
     width: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 25px;
-    transform: skew(0deg, 10deg);
+    transform: skew(0deg, 5deg);
     z-index: 2;
     /* background-color: cyan; */
 }
@@ -370,7 +371,7 @@
     /* background-color: red; */
 }
 #img1-am {
-    filter: brightness(.95);
+    filter: brightness(.75);
 }
 #txt2-am {
     color: rgb(240, 240, 240);
@@ -386,10 +387,11 @@
     margin-top: -20px;
     margin-left: 20px;
     transform: skew(0deg, 00deg);
-    transition: scale 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, 1000ms ease-in-out;
+    filter: brightness(.95);
+    transition: filter 500ms ease-in-out, scale 500ms ease-in-out, margin-top 500ms ease-in-out, margin-left 500ms ease-in-out, 500ms ease-in-out;
 }
 #am:hover {
-    background-color: #abb1a5;
+    background-color: #40364b;
     transition: background-color 750ms ease-in-out;
 }
 
@@ -398,7 +400,7 @@
 
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
-    background-color: #bb9e9e;
+    background-color: #513645;
 }
 
 #img-swe {
@@ -407,20 +409,21 @@
 #img1-swe {
     position: absolute;
     width: 300px;
-    margin-top: 10px;
+    margin-top: -30px;
     margin-left: 100px;
     margin-bottom: 90px;
     transform: rotate(-40deg);
+    filter: brightness(.75);
     z-index: 3;
 }
 #img2-swe {
     position: absolute;
     width: 150px;
-    margin-top: -155px;
+    margin-top: -190px;
     margin-left: 100px;
     margin-bottom: 0px;
     transform: rotate(180deg);
-    filter: brightness(.966);
+    filter: brightness(.75);
     z-index: 2;
 }
 #img3-swe {
@@ -430,13 +433,14 @@
     margin-left: -35px;
     margin-bottom: -100px;
     transform: rotate(90deg);
-    filter: brightness(.933);
+    filter: brightness(.75);
+    filter: saturate(1);
     z-index: 1;
 }
 #img4-swe {
     position: absolute;
     width: 400px;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: -60px;
     margin-bottom: 00px;
     /* background-color: red; */
@@ -454,27 +458,30 @@
 
 #swe:hover #img1-swe {
     width: 100px;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 120px;
     transform: none;
-    transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
+    filter: brightness(1);
+    transition: filter 1000ms ease-in-out, margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img2-swe {
     width: 100px;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 200px;
     transform: rotate(5deg);
-    transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
+    filter: brightness(1);
+    transition: filter 1000ms ease-in-out, margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img3-swe {
     width: 100px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: 40px;
     transform: rotate(-5deg);
-    transition: margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
+    filter: brightness(1);
+    transition: filter 1000ms ease-in-out, margin-bottom 1000ms ease-in-out, width 1000ms ease-in-out, margin-top 1000ms ease-in-out, margin-left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 #swe:hover #img4-swe {
-    margin-top: -200px;
+    margin-top: -230px;
     transition: margin-top 1000ms ease-in-out;
 }
 #swe:hover {

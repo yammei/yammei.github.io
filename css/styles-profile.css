@@ -23,8 +23,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     height: fit-content;
-    width: inherit;
+    width: fit-content;
+    background-color: rgb(210, 210, 210);
+    /* background-color: rgb(68, 153, 192); */
+    border-radius: 100%;
+    overflow: hidden;
     z-index: 5;
 }
 
