@@ -33,7 +33,7 @@
 }
 #projects-banner-container {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     margin-bottom: -100px;
     overflow: hidden;
     height: 500px;
@@ -489,7 +489,7 @@
     transition: background-color 750ms ease-in-out;
 }
 
-@media screen and (max-width: 1000pt){
+@media screen and (max-width: 600pt){
     .projects {
         width: fit-content;
     }
