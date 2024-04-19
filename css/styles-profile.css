@@ -31,6 +31,7 @@
     align-self: center;
     height: 150px;
     width: 150px;
+    margin-bottom: 10px;
     /* background-color: rgb(210, 210, 210); */
     background-color: rgba(245, 245, 245, 1);
     border: 2px solid rgb(225, 225, 225);
