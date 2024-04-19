@@ -92,10 +92,10 @@
 #pf-name {
     color: rgb(75,75,75);
     font-size: 48pt;
-    font-family: 'Cedarville Cursive';
-    font-weight: 1000;
-    /* background: -webkit-linear-gradient(0deg, rgb(217, 121, 146), rgb(213, 143, 58)); */
-    /* -webkit-background-clip: text;
+    font-family: "Sacramento", cursive;
+    font-style: normal;
+    /* background: -webkit-linear-gradient(0deg, rgb(217, 121, 146), rgb(213, 143, 58));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
 

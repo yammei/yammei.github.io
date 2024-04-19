@@ -231,7 +231,7 @@
     width: inherit;
     margin-top: 110px;
     transform: skew(-15deg, -10deg);
-    filter: brightness(.85) saturate(1);
+    filter: brightness(1) saturate(1);
     vertical-align: bottom;
 }
 
@@ -282,7 +282,7 @@
     margin-left: 45px;
     rotate: 0deg;
     scale: 1.5;
-    filter: brightness(.85);
+    filter: brightness(1.1);
     transform: skew(0deg, 0deg);
 }
 #img2-cl {
@@ -291,7 +291,7 @@
     margin-top: 20px;
     margin-left: 50px;
     scale: 1;
-    filter: brightness(.85);
+    filter: brightness(1.1);
     transform: skew(0deg, 0deg);
 }
 #txt-cl {
@@ -386,7 +386,7 @@
     /* background-color: red; */
 }
 #img1-am {
-    filter: brightness(.85);
+    filter: brightness(1);
 }
 #txt2-am {
     color: rgb(240, 240, 240);
