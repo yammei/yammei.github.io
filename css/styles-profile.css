@@ -4,11 +4,11 @@
 .main-content {
     scale: .9;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 50px;
-    padding: 10px;
-    background-color: rgba(240, 240, 240, 0);
-    border: 2px solid #d4d4d4;
+    padding: 0px 10px;
+    /* background-color: rgba(240, 240, 240, 1); */
+    /* border: 2px solid rgb(230, 230, 230); */
     border-radius: 10px;
 
 }
@@ -31,8 +31,9 @@
     align-self: center;
     height: 150px;
     width: 150px;
-    background-color: rgb(210, 210, 210);
-    /* background-color: rgb(68, 153, 192); */
+    /* background-color: rgb(210, 210, 210); */
+    background-color: rgba(245, 245, 245, 1);
+    border: 2px solid rgb(225, 225, 225);
     border-radius: 9999px;
     overflow: hidden;
     z-index: 5;

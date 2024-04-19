@@ -31,7 +31,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(240, 240, 240);
+    border: 2px solid rgb(230, 230, 230);
     overflow: hidden;
 }
 .project-section1-img1-container,
@@ -41,7 +42,7 @@
     height: 300px;
     width: 450px;
     margin-right: 0px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(245, 245, 245);
     overflow: hidden;
 }
 .project-section1-img1,
@@ -69,7 +70,7 @@
     display: inline-block;
     width: 350px;
     text-align: left;
-    font-size: 30pt;
+    font-size: 25pt;
     font-weight: bold;
     color: rgb(40,40,40);
     margin: 0px auto;
@@ -83,23 +84,27 @@
     flex-wrap: wrap;
     width: 350px;
     margin: 0px auto;
-    margin-top: 15px;
+    margin-top: 10px;
     /* background-color: aqua; */
     overflow: hidden;
 }
 .project-section1-txt-stack-element,
 .project-section2-txt-stack-element,
 .project-section3-txt-stack-element {
+    /* color: rgb(20, 20, 20); */
+    color: rgb(245, 245, 245);
     display: inline-block;
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 500;
     height: fit-content;
     margin-top: 0px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 5px 12px;
-    border-radius: 30px;
-    /* background-color: red; */
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(75, 75, 75);
+    /* border-bottom: 1px solid rgb(230, 230, 230); */
+    /* border-bottom: 2px solid rgb(20, 20, 20); */
 }
 .project-section1-txt1,
 .project-section2-txt1,

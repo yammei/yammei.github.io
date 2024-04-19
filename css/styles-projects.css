@@ -100,6 +100,7 @@
     height: 400px;
     margin: 5px;
     border-radius: 10px;
+    border: 2px solid rgb(230, 230, 230);
     /* background-color: aquamarine; */
 }
 
@@ -214,7 +215,7 @@
 #ad {
     /* background: linear-gradient(45deg, rgb(59, 2, 74), rgb(113, 55, 113), rgb(198, 94, 130)); */
     /* background-color: #575d63; */
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(245, 245, 245);
 }
 
 #img-ad {
@@ -230,7 +231,7 @@
     width: inherit;
     margin-top: 110px;
     transform: skew(-15deg, -10deg);
-    filter: brightness(.75) saturate(1);
+    filter: brightness(.85) saturate(1);
     vertical-align: bottom;
 }
 
@@ -258,7 +259,7 @@
     transition: filter 500ms ease-in-out, scale 500ms ease-in-out, margin-top 500ms ease-in-out, transform 500ms ease-in-out;
 }
 #ad:hover {
-    background-color: #3f454c;
+    background-color: rgb(255, 219, 175);
     transition: background-color 750ms ease-in-out;
 }
 
@@ -266,7 +267,7 @@
 
 #cl {
     /* background-color: #2f3952; */
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(245, 245, 245);
     overflow: hidden;
 }
 #img-cl {
@@ -281,7 +282,7 @@
     margin-left: 45px;
     rotate: 0deg;
     scale: 1.5;
-    filter: brightness(.75);
+    filter: brightness(.85);
     transform: skew(0deg, 0deg);
 }
 #img2-cl {
@@ -290,7 +291,7 @@
     margin-top: 20px;
     margin-left: 50px;
     scale: 1;
-    filter: brightness(.75);
+    filter: brightness(.85);
     transform: skew(0deg, 0deg);
 }
 #txt-cl {
@@ -301,7 +302,7 @@
 }
 #txt2-cl {
     color: rgb(240, 240, 240);
-    /* color: rgb(75, 75, 75); */
+    /* color: rgb(240, 240, 240); */
     /* background-color: blue; */
 }
 #txt3-cl {
@@ -323,7 +324,7 @@
     transition: margin-top 500ms ease-in-out, filter 500ms ease-in-out;
 }
 #cl:hover {
-    background-color: #1f2a42;
+    background-color: rgb(255, 219, 175);
     transition: background-color 750ms ease-in-out;
 }
 
@@ -356,7 +357,7 @@
 #am {
     /* background: linear-gradient(45deg, rgb(182, 187, 192), rgb(225, 229, 232)) */
     /* background-color: #5e526a; */
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(245, 245, 245);
 }
 
 #img-am {
@@ -385,7 +386,7 @@
     /* background-color: red; */
 }
 #img1-am {
-    filter: brightness(.75);
+    filter: brightness(.85);
 }
 #txt2-am {
     color: rgb(240, 240, 240);
@@ -405,7 +406,7 @@
     transition: filter 500ms ease-in-out, scale 500ms ease-in-out, margin-top 500ms ease-in-out, margin-left 500ms ease-in-out, 500ms ease-in-out;
 }
 #am:hover {
-    background-color: #40364b;
+    background-color: rgb(255, 219, 175);
     transition: background-color 750ms ease-in-out;
 }
 
@@ -415,7 +416,7 @@
 #swe {
     /* background: linear-gradient(45deg, rgb(192, 182, 182), rgb(232, 225, 225)) */
     /* background-color: #513645; */
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(245, 245, 245);
 }
 
 #img-swe {
@@ -428,7 +429,7 @@
     margin-left: 100px;
     margin-bottom: 90px;
     transform: rotate(-40deg);
-    filter: brightness(.75);
+    filter: brightness(.85);
     z-index: 3;
 }
 #img2-swe {
@@ -448,7 +449,7 @@
     margin-left: -35px;
     margin-bottom: -100px;
     transform: rotate(90deg);
-    filter: brightness(.75);
+    filter: brightness(.85);
     filter: saturate(1);
     z-index: 1;
 }
@@ -500,7 +501,7 @@
     transition: margin-top 1000ms ease-in-out;
 }
 #swe:hover {
-    background-color: #a7beda;
+    background-color: rgb(255, 219, 175);
     transition: background-color 750ms ease-in-out;
 }
 
