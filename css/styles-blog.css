@@ -1,8 +1,16 @@
+.bullet-point-list {
+}
+.bullet-point {
+    color: rgb(35, 35, 35);
+    font-size: 12pt;
+    margin: 0px 0px;
+}
+
 .blog-post {
     height: fit-content;
     max-height: 750px;
     width: 500px;
-    margin: 20p auto;
+    margin: 20px auto;
     padding: 30px;
     border: 2px solid rgb(225, 225, 225);
     border-radius: 10px;
