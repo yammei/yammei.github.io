@@ -41,8 +41,10 @@
 }
 
 .pf-img1 {
-    height: 150px;
+    height: auto;
     width: 150px;
+    margin-top: -15px;
+    scale: 1.5;
 }
 
 .pf-text {
