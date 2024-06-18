@@ -1,2 +1,3 @@
-svg.html
-template.html
+node_modules
+.env
+.next/*
