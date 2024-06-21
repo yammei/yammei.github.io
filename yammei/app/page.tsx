@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { Inter } from 'next/font/google';
 
 import Profile from './components/profile';
 import NavBar from './components/navbar';
 import Projects from './components/portfolio';
 import Project from './components/project';
-
-const inter = Inter({ subsets: ['latin']});
+import BlogFeed from './components/blog_feed';
 
 const Home: React.FC = () => {
 
   return (
+    <div className='scroll h-full w-full bg-gray-300'>
       <div className='w-95p max-w-mobile m-auto'>
         <NavBar/>
         <Profile/>
@@ -22,7 +21,12 @@ const Home: React.FC = () => {
           <Project title='re.wear' imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title='Scarab Scanner' imageSRC='/./imgs/Blueprint Skewed.png'/>
         </Projects>
+
+        <Projects>
+          <BlogFeed/>
+        </Projects>
       </div>
+    </div>
   );
 }
 

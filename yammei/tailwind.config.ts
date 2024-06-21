@@ -24,7 +24,7 @@ const config: Config = {
         'mobile': '600px',
       },
       backgroundColor: {
-        'black-light': 'rgb(5, 5, 5)',
+        'black-light': 'rgb(20, 20, 20)',
       },
       outlineColor: {
         'black-light': 'rgb(5, 5, 5)',

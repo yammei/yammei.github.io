@@ -21,7 +21,7 @@ const Project: React.FC<Props> = ({ imageSRC='/./imgs/Blueprint Skewed.png', tit
                 <Image className='object-cover -mt-48 pt-2 overflow-hidden' src={imageSRC} height={200} width={300} alt='Image of project.' draggable={false}/>
             </motion.div>
 
-            <p className='text-sm text-center text-gray-400 mx-auto'>{title}</p>
+            <p className='text-sm text-center text-gray-700 mx-auto'>{title}</p>
         </a>
 
     );
