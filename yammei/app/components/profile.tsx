@@ -5,7 +5,7 @@ import ProfileContainer from './profile_container';
 const Profile: React.FC = () => {
 
     return (
-        <div>
+        <div className='-mt-10 pt-20'>
             <ProfileContainer>
                 <div className='m-auto mt-10 px-5 min-w-full'>
 

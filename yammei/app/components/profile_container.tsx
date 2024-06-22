@@ -8,9 +8,9 @@ interface Props {
 const ProfileContainer: React.FC<Props> = ({ children }) => {
 
     return (
-        <div className='flex flex-col my-10 overflow-hidden drop-shadow-lg'>
+        <div className='flex flex-col my-10 overflow-hidden drop-shadow'>
             <div className='rounded-t-xl w-auto h-20 bg-gray-200 overflow-y-hidden'>
-                <Image className='-mt-64 bg-cyan-500' height={500} width={600} src='/./imgs/Blueprint Skewed.png' draggable={false}/>
+                <Image className='-mt-64 bg-cyan-500' height={500} width={600} src='/./imgs/Blueprint Skewed.png' draggable={false} alt='Profile picture of Mei Zhang.'/>
             </div>
             <div className='rounded-b-xl pb-5 px-5 w-auto h-auto bg-gray-200'>
                 { children }

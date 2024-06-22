@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
     ];
 
     return (
-        <div className='bg-fixed flex flex-row h-fit w-1000 p-3 bg-gray-200 rounded-b-xl z-10 drop-shadow'>
+        <div className='fixed flex flex-row top-0 h-fit w-full max-w-mobile p-3 bg-gray-200 rounded-b-xl z-10 drop-shadow'>
             <div className='mx-auto'>
                 <motion.a
                     whileHover={{ color: 'rgb(50, 50, 50)', borderBottomWidth: 2, borderColor: bottomBorderColor }}

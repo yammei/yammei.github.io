@@ -2,29 +2,28 @@ import React, { useState } from 'react';
 
 import Profile from './components/profile';
 import NavBar from './components/navbar';
-import Projects from './components/portfolio';
+import Portfolio from './components/portfolio';
 import Project from './components/project';
-import BlogFeed from './components/blog_feed';
+import Blog from './components/blog';
+import Footer from './components/footer';
 
 const Home: React.FC = () => {
 
   return (
-    <div className='scroll h-full w-full bg-gray-300'>
+    <div className='scroll w-full bg-gray-300'>
       <div className='w-95p max-w-mobile m-auto'>
         <NavBar/>
         <Profile/>
-        <Projects>
+        <Portfolio>
           <Project title='Mender' imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title="May's Menu" imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title='Stocked' imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title='Nyeow' imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title='re.wear' imageSRC='/./imgs/Blueprint Skewed.png'/>
           <Project title='Scarab Scanner' imageSRC='/./imgs/Blueprint Skewed.png'/>
-        </Projects>
-
-        <Projects>
-          <BlogFeed/>
-        </Projects>
+        </Portfolio>
+        <Blog/>
+        <Footer/>
       </div>
     </div>
   );

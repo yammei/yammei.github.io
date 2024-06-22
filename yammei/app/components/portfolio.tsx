@@ -8,7 +8,7 @@ interface Props {
     children: ReactNode;
 }
 
-const Projects: React.FC<Props> = ({ children }) => {
+const Portfolio: React.FC<Props> = ({ children }) => {
 
 
     return (
@@ -25,4 +25,4 @@ const Projects: React.FC<Props> = ({ children }) => {
 
 };
 
-export default Projects;
+export default Portfolio;
