@@ -2,22 +2,32 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import ContentContainer from './content_container';
 
 const Blog: React.FC = () => {
 
-    const containerStyles:      string = 'flex flex-col px-5 min-w-full';
-    const imageContainerStyles: string = 'h-20 w-20 overflow-hidden';
-    const imageStyles:          string = 'rounded-full';
-    const titleStyles:          string = 'text-gray-700 text-lg font-semibold my-2';
-    const dateStyles:           string = 'text-gray-500 text-sm my-2';
-    const contentStyles:        string = 'text-gray-500 w-full my-2';
+    // Container Styles
+    const containerStyles:          string = 'flex flex-col px-5 py-5 min-w-full';
+    const imageContainerStyles:     string = 'flex w-fit overflow-hidden';
+    const headerContainerStyles:    string = 'flex flex-row h-fit w-auto';
+    const subheaderContainerStyles: string = 'flex flex-col w-3/4 my-auto ml-10 mr-auto pt-4 pb-3 px-5 bg-gray-300 rounded-lg drop-shadow-sm';
+    const speechContainerStyles:    string = 'absolute h-5 w-5 bg-gray-300 -ml-7 mt-5 rotate-45 drop-shadow-sm';
+    const redirectContainerStyles:  string = 'cursor-pointer flex flex-col w-fit mt-4 mb-2 mx-auto bg-blue-600 rounded-full drop-shadow-sm';
 
+    // Content Styles
+    const imageStyles:      string = 'object-none h-20 w-20 mx-auto rounded-full';
+    const titleStyles:      string = 'text-gray-700 text-2xl font-semibold';
+    const postIDStyles:     string = 'text-gray-500 text-xs text-left mt-1';
+    const contentStyles:    string = 'text-gray-600 my-2';
+    const redirectStyles:   string = 'text-gray-200 text-xs my-2 mx-auto px-5';
+
+    // Sample Data
     const sampleFeed = {
         postID: 1,
-        title: 'Developing a new website!',
+        title: 'Developing a New Website!',
         date: '01/23/2024',
-        content: 'For the content, include a homepage that briefly introduces you and your expertise. A dedicated portfolio section is essential to showcase your projects. Each project entry should include a description, the technologies used, and what you learned from it. Screenshots, demos, and links to repositories or live sites can provide visitors with a deeper understanding of your work.',
+        content: 'Os iusti meditabitur sapientiam, Et lingua eius loquetur iudicium. Beatus vir qui suffert tentationem, Quoniam cum probatus fuerit accipiet coronam vitae. Kyrie, fons bonitatis Kyrie, ignis divine, eleison O quam sancta, quam serena quam benigna, quam amoena esse Virgo creditur O quam sancta, quam serena, quam benigna, quam amoena O castitatis lilium.',
         image: '/./imgs/sj-pfp.jpg',
     };
 
@@ -28,12 +38,22 @@ const Blog: React.FC = () => {
     return (
         <ContentContainer>
             <div className={containerStyles} style={{  }}>
-                <div className={imageContainerStyles}>
-                    <Image className={imageStyles} src={sampleFeed.image} height={100} width={100} alt={`Blog post ID ${sampleFeed.postID} image.`}/>
+
+                <div className={headerContainerStyles}>
+                    <div className={imageContainerStyles}>
+                        <Image className={imageStyles} src={sampleFeed.image} height={100} width={100} alt={`Blog post ID ${sampleFeed.postID} image.`} draggable={false}/>
+                    </div>
+                    <div className={subheaderContainerStyles}>
+                        <div className={speechContainerStyles}/>
+                        <p className={titleStyles}>{sampleFeed.title}</p>
+                        <p className={postIDStyles}>{`Post no. ${sampleFeed.postID} (${sampleFeed.date})`}</p>
+                        <p className={contentStyles}>{sampleFeed.content}</p>
+                        <motion.div whileHover={{ filter: 'brightness(1.1)', scale: 1.02 }} transition={{ duration: .25, ease: 'easeInOut' }} className={redirectContainerStyles}>
+                            <p className={redirectStyles}>{`View Blog`}</p>
+                        </motion.div>
+                    </div>
                 </div>
-                <p className={titleStyles}>{sampleFeed.title}</p>
-                <p className={dateStyles}>{sampleFeed.date}</p>
-                <p className={contentStyles}>{sampleFeed.content}</p>
+
             </div>
         </ContentContainer>
 

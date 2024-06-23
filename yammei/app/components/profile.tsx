@@ -19,7 +19,7 @@ const Profile: React.FC = () => {
                         {/* LEFT: Texts */}
                         <div className='my-5'>
                             <p className='text-4xl text-left font-semibold text-gray-700'>
-                                Mei Zhang
+                                Mei Zhang 🍻
                             </p>
                             <p className='text text-left text-gray-500 mt-2'>
                                 Santa Clara-based Software Engineer.<br/>
