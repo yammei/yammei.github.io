@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { RedirectIcon } from './redirect_icon';
 
 const Footer: React.FC = () => {
 
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
                         whileHover={{ borderColor: linkHoverStyles }}
                         transition={{ duration: .25, ease: 'easeInOut' }}
                         target='_blank'>
-                        Career
+                        Professional
                     </motion.a>
                     <motion.a
                         className={linkStyles}
@@ -43,6 +44,14 @@ const Footer: React.FC = () => {
                         transition={{ duration: .25, ease: 'easeInOut' }}
                         target='_blank'>
                         Dev Blog
+                    </motion.a>
+                    <motion.a
+                        className={linkStyles}
+                        href=''
+                        whileHover={{ borderColor: linkHoverStyles }}
+                        transition={{ duration: .25, ease: 'easeInOut' }}
+                        target='_blank'>
+                        Resume
                     </motion.a>
                 </div>
 
@@ -90,7 +99,10 @@ const Footer: React.FC = () => {
                         whileHover={{ borderColor: linkHoverStyles }}
                         transition={{ duration: .25, ease: 'easeInOut' }}
                         target='_blank'>
-                        Github
+                        <p className='flex flex-row'>
+                            Github 
+                            <RedirectIcon size={8} mt={0} mb={3}/>
+                        </p>
                     </motion.a>
                     <motion.a
                         className={linkStyles}
@@ -98,7 +110,10 @@ const Footer: React.FC = () => {
                         whileHover={{ borderColor: linkHoverStyles }}
                         transition={{ duration: .25, ease: 'easeInOut' }}
                         target='_blank'>
-                        Linkedin
+                        <p className='flex flex-row'>
+                            Linkedin 
+                            <RedirectIcon size={8} mt={0} mb={3}/>
+                        </p>
                     </motion.a>
                 </div>
 

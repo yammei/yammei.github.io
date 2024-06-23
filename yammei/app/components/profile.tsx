@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+
 import Image from 'next/image';
 import ProfileContainer from './profile_container';
 import { motion } from 'framer-motion';
+import { RedirectIcon } from './redirect_icon';
 
 const Profile: React.FC = () => {
 
@@ -31,7 +33,7 @@ const Profile: React.FC = () => {
                                 {`💻`}
                             </motion.p>
                         </div>
-                        <motion.div 
+                        <motion.div
                             whileHover={{filter: 'brightness(1.05)'}}
                             className='absolute bottom-3 h-10 w-fit bg-gray-200 border-2 border-gray-100 rounded-full drop-shadow-sm z-10'
                             style={{ 
@@ -59,7 +61,10 @@ const Profile: React.FC = () => {
                             </motion.p>
                             <p className='text text-left text-gray-500 mt-2'>
                                 Santa Clara-based Software Engineer<br/>
-                                <a className='hover:text-gray-700' href='mailto:meizhang.dev@gmail.com'>meizhang.dev@gmail.com</a>
+                                <a className='flex flex-row hover:text-gray-700' href='mailto:meizhang.dev@gmail.com'>
+                                    meizhang.dev@gmail.com
+                                    <RedirectIcon size={10} mt={0} mb={0}/>
+                                </a>
                             </p>
                         </div>
 
