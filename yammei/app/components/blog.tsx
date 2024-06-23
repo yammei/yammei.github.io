@@ -17,8 +17,8 @@ const Blog: React.FC = () => {
 
     // Content Styles
     const imageStyles:      string = 'object-none h-20 w-20 mx-auto rounded-full';
-    const titleStyles:      string = 'text-gray-700 text-2xl font-semibold';
-    const postIDStyles:     string = 'text-gray-500 text-xs text-left mt-1';
+    const titleStyles:      string = 'text-gray-700 text-2xl font-semibold my-2';
+    const postIDStyles:     string = 'text-gray-500 text-xs text-left';
     const contentStyles:    string = 'text-gray-600 my-2';
     const redirectStyles:   string = 'text-gray-200 text-xs my-2 mx-auto px-5';
 
@@ -46,10 +46,10 @@ const Blog: React.FC = () => {
                     <div className={subheaderContainerStyles}>
                         <div className={speechContainerStyles}/>
                         <p className={titleStyles}>{sampleFeed.title}</p>
-                        <p className={postIDStyles}>{`Post no. ${sampleFeed.postID} (${sampleFeed.date})`}</p>
+                        <p className={postIDStyles}>{`Posted ${sampleFeed.date}`}</p>
                         <p className={contentStyles}>{sampleFeed.content}</p>
-                        <motion.div whileHover={{ filter: 'brightness(1.1)', scale: 1.02 }} transition={{ duration: .25, ease: 'easeInOut' }} className={redirectContainerStyles}>
-                            <p className={redirectStyles}>{`View Blog`}</p>
+                        <motion.div whileHover={{ filter: 'brightness(1.1)'}} transition={{ duration: 0, ease: 'easeInOut' }} className={redirectContainerStyles}>
+                            <motion.p className={redirectStyles}>{`View Blog`}</motion.p>
                         </motion.div>
                     </div>
                 </div>
