@@ -15,12 +15,12 @@ const Home: React.FC = () => {
         <NavBar/>
         <Profile/>
         <Portfolio>
-          <Project title='Mender' imageSRC='/./imgs/Blueprint Skewed.png'/>
-          <Project title="May's Menu" imageSRC='/./imgs/Blueprint Skewed.png'/>
-          <Project title='Stocked' imageSRC='/./imgs/Blueprint Skewed.png'/>
-          <Project title='Nyeow' imageSRC='/./imgs/Blueprint Skewed.png'/>
-          <Project title='re.wear' imageSRC='/./imgs/Blueprint Skewed.png'/>
-          <Project title='Scarab Scanner' imageSRC='/./imgs/Blueprint Skewed.png'/>
+          <Project index={1} title='Mender'/>
+          <Project index={2} title="May's Menu"/>
+          <Project index={3} title='Stocked'/>
+          <Project index={4} title='Nyeow'/>
+          <Project index={5} title='re.wear'/>
+          <Project index={6} title='Scarab Scanner'/>
         </Portfolio>
         <Blog/>
         <Footer/>
