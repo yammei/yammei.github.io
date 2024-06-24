@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
                     {/* Top Section: Profile Picture */}
                     <div className='relative flex flex-col top-0 h-min w-min -mt-28'>
                          <div className='h-28 w-28 my-5 mx-auto outline outline-4 outline-gray-200 overflow-hidden rounded-full'>
-                            <Image className='-mt-5 object-none brightness-100' src='/imgs/sj-pfp.jpg' width={150} height={150} alt='Profile picture of Mei Zhang.' draggable={false}/>
+                            <Image className='mt-0 object-fill brightness-200' src='/imgs/museum-pfp.jpg' width={150} height={150} alt='Profile picture of Mei Zhang.' draggable={false}/>
                         </div>
                         <div className='cursor-pointer absolute bottom-3 right-0 h-10 w-10 border-2 border-gray-100 bg-gray-200 rounded-full overflow-hidden drop-shadow-sm z-20'>
                             <motion.p 

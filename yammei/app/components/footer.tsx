@@ -6,13 +6,18 @@ import { RedirectIcon } from './redirect_icon';
 
 const Footer: React.FC = () => {
 
+    // Container stylings.
+    const containerStyles:          string = 'flex flex-col h-50 w-full pt-10 pb-10 px-12 bg-gray-200 rounded-t-xl drop-shadow';
+    const siteInfoContainerStyles:  string = 'flex mt-20 mb-3';
+    const linkContainerStyles:      string = 'flex flex-row';
+    
     // Element stylings.
-    const containerStyles: string = 'flex flex-col h-50 w-full pt-10 pb-10 px-5 bg-gray-200 rounded-t-xl drop-shadow';
-    const linkContainerStyles: string = 'flex flex-row mx-auto';
-    const categoryStyles: string = 'font-semibold text-gray-700 my-2';
-    const linkStyles: string = 'text-sm text-gray-500 hover:text-gray-700 my-1 -ml-3 pl-2 border-l-4 border-gray-200';
-    const columnStyles: string = 'flex flex-col w-24 mx-10';
-    const linkHoverStyles: string = '#ffcc00';
+    const siteInfoStyles:       string = 'flex flex-row text-xs text-gray-500';
+    const siteInfoLinksStyles:  string = 'hover:text-gray-700'
+    const categoryStyles:       string = 'font-semibold text-gray-700 my-2';
+    const linkStyles:           string = 'text-sm text-gray-500 hover:text-gray-700 my-1 -ml-3 pl-2 border-l-4 border-gray-200';
+    const columnStyles:         string = 'flex flex-col w-24 mr-10';
+    const linkHoverStyles:      string = '#ffcc00';
 
     return (
         <div className={containerStyles}>
@@ -117,6 +122,14 @@ const Footer: React.FC = () => {
                     </motion.a>
                 </div>
 
+            </div>
+
+            <div className={siteInfoContainerStyles}>
+                <p className={siteInfoStyles}>
+                    <a className={siteInfoLinksStyles} href=''>Privacy Policy</a>
+                    <span className='mx-2' style={{ userSelect: 'none' }}>{'|'}</span>
+                    <a className={siteInfoLinksStyles} href=''>Terms of Use </a>
+                </p>
             </div>
 
         </div>
