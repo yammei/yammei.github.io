@@ -24,4 +24,10 @@ npm start
 gcloud run deploy
 ```
 
-Notes: Server to be deployed in any us-west location.
+Notes: Server to be deployed in any us-west location. <br>
+
+[June 24, 2024] Update: 
+Tailwind <b>sucks</b>. 
+It's better to just use your own pre-defined styles. 
+I don't know why nano-syntaxed CSS won't take dynamic values. 
+I will die on this hill!!

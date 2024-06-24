@@ -10,12 +10,21 @@ interface Props {
 
 const Showcase: React.FC<Props> = ({ projectIndex }) => {
 
-    const containerStyles = 'h-fill w-fill bg-red-500';
+    const containerStyles = {
+        height: 'fit-content',
+        width: '100%',
+        backgroundColor: '#E5E7EB',
+        border:
+    }
+    const textStyles = {
+        color: 'rgb(50, 50, 50)',
+        fontSize: '12pt',
+    };
 
     return (
-        <div className={containerStyles}>
-            <p>hallaur world</p>
-            <p>{projectIndex}</p>
+        <div style={containerStyles}>
+            <p style={textStyles}>hallaur world</p>
+            <p style={textStyles}>{projectIndex}</p>
         </div>
     );
 
