@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import Profile from './components/profile';
-import NavBar from './components/navbar';
-import Portfolio from './components/portfolio';
-import Project from './components/project';
-import Blog from './components/blog';
-import Footer from './components/footer';
+import Profile from './components/profile/profile';
+import NavBar from './components/menus/navbar';
+import Portfolio from './components/portfolio/portfolio';
+import Project from './components/portfolio/project';
+import Showcase from './components/portfolio/showcase';
+import Blog from './components/blog/blog';
+import Footer from './components/menus/footer';
 
 const Home: React.FC = () => {
 

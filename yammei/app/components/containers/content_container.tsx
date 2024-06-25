@@ -7,7 +7,7 @@ interface Props {
 const ContentContainer: React.FC<Props> = ({ children }) => {
 
     return (
-        <div className='flex flex-col w-auto h-auto my-10 p-5 bg-gray-200 rounded-xl overflow-hidden drop-shadow'>
+        <div className='flex flex-col w-auto h-auto my-4 p-5 bg-gray-200 rounded-xl overflow-hidden drop-shadow'>
             { children }
         </div>
 

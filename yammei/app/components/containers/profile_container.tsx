@@ -8,7 +8,7 @@ interface Props {
 const ProfileContainer: React.FC<Props> = ({ children }) => {
 
     return (
-        <div className='flex flex-col my-10 overflow-hidden drop-shadow'>
+        <div className='flex flex-col mt-12 mb-4 overflow-hidden drop-shadow'>
             <div className='rounded-t-xl w-auto h-20 bg-gray-200 overflow-y-hidden'>
                 <Image className='object-fill h-auto w-full -mt-40' height={1080} width={1920} src='/./imgs/profile-bg.jpg' draggable={false} alt='Background picture of profile section.'/>
             </div>

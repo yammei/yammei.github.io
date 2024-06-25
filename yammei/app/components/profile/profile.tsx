@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 
 import Image from 'next/image';
-import ProfileContainer from './profile_container';
+import ProfileContainer from '../containers/profile_container';
 import { motion } from 'framer-motion';
-import { RedirectIcon } from './redirect_icon';
+import { RedirectIcon } from '../assets/redirect_icon';
 
 const Profile: React.FC = () => {
 

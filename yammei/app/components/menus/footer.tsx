@@ -2,15 +2,15 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { RedirectIcon } from './redirect_icon';
+import { RedirectIcon } from '../assets/redirect_icon';
 
 const Footer: React.FC = () => {
 
     // Container stylings.
-    const containerStyles:          string = 'flex flex-col h-50 w-full pt-10 pb-10 px-12 bg-gray-200 rounded-t-xl drop-shadow';
+    const containerStyles:          string = 'flex flex-col h-50 w-full mt-10 pt-10 pb-10 px-12 bg-gray-200 rounded-t-xl drop-shadow';
     const siteInfoContainerStyles:  string = 'flex mt-20 mb-3';
     const linkContainerStyles:      string = 'flex flex-row';
-    
+
     // Element stylings.
     const siteInfoStyles:       string = 'flex flex-row text-xs text-gray-500';
     const siteInfoLinksStyles:  string = 'hover:text-gray-700'
@@ -129,6 +129,8 @@ const Footer: React.FC = () => {
                     <a className={siteInfoLinksStyles} href=''>Privacy Policy</a>
                     <span className='mx-2' style={{ userSelect: 'none' }}>{'|'}</span>
                     <a className={siteInfoLinksStyles} href=''>Terms of Use </a>
+                    <span className='mx-2' style={{ userSelect: 'none' }}>{'|'}</span>
+                    <a className={siteInfoLinksStyles} href=''>Site Map </a>
                 </p>
             </div>
 

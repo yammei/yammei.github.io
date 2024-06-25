@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import ContentContainer from './content_container';
+import ContentContainer from '../containers/content_container';
 
 const Blog: React.FC = () => {
 
