@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Props {
     size: number,
@@ -8,9 +9,9 @@ interface Props {
 
 export const RedirectIcon: React.FC<Props> = ({ size, mt, mb }) => {
     return (
-        <img
-            style={{ marginTop: mt, marginBottom: mb, marginLeft: '4px'}} 
-            src='/./svgs/redirect.svg' 
+        <Image
+            style={{ marginTop: mt, marginBottom: mb, marginLeft: '4px'}}
+            src='/./svgs/redirect.svg'
             alt='Redirection link icon to new page.'
             height={size}
             width={size}
