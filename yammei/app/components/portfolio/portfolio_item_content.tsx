@@ -11,13 +11,16 @@ interface Props {
     setActiveProjectIndex: (index: number) => void;
 };
 
-const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
+const PortfolioItemContent: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
 
     const [ visibilityStatus, setVisibilityStatus ] = useState('block');
+    const [ syncedParentIndex, setSyncedParentIndex ] = useState(1);
+    const [ prevIndex, setPrevIndex ] = useState(syncedParentIndex);
+    useEffect(() => { setPrevIndex(syncedParentIndex) },  [syncedParentIndex]);
 
     const sampleData = {
         'section1': {
-            'header'        :   'Mental Mender',
+            'header'        :   `Mental Mender #${syncedParentIndex}`,
             'subheader'     :   'The Web Tool for Therapists.',
             'content'       :   `Mender is an application that streamlines patient assessment, 
                                 enabling therapist full control of developing new tests and analyzing data. 
@@ -45,7 +48,8 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
         marginRight: 'auto',
         margin: 'auto',
         borderRadius: '10px',
-        overflow: 'scroll',
+        transition: 'left 1s ease-in-out, opacity 1s ease-in-out, background-color 1s ease-in-out',
+        overflow: 'hidden',
         zIndex: 9999,
     };
     const sectionContainerStyles = {
@@ -54,12 +58,23 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
         margin: 'auto',
         // backgroundColor: 'cyan'
     };
+    const switchedIndexStyles = (prevIndex: number, currIndex: number) => {
+        console.log(`Previous Index: ${prevIndex}. Current Index: ${currIndex}.`);
+        return {
+            // left: prevIndex !== currIndex ? '-600px' : '0px',
+            // opacity: prevIndex !== currIndex ? 0 : 1,
+            // backgroundColor: prevIndex !== currIndex ? 'red' : 'cyan',
+        };
+    };
 
     // Image
     const imageContainerStyles = {
         height: '50%',
         width: '100%',
         margin: 'auto',
+        backgroundColor: '#0f131d',
+        borderRadius: '5px',
+        boxShadow: 'inset 0 0 10px rgba(0, 0, 0, .25)',
         overflow: 'hidden',
     };
     const imageStyles = {
@@ -108,11 +123,10 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
         zIndex: 20,
     };
 
-
-    const getProjectData = () => {
+    const getProjectData = (): void => {
         console.log(`Function Reached: getProjectData().`);
     };
-    const toggleVisibility = () => {
+    const toggleVisibility = (): void => {
         setVisibilityStatus('none');
         setActiveProjectIndex(0);
     };
@@ -121,13 +135,14 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
         <div style={parentContainerStyles}>
             <div style={backgroundBlurStyles} onClick={toggleVisibility}/>
 
-            <div className='flex flex-col max-w-mobile p-10 bg-gray-900 rounded-lg drop-shadow' style={containerStyles}>
+            <div className='flex flex-col max-w-mobile p-10 bg-gray-900 rounded-lg drop-shadow' style={{ ...containerStyles, ...switchedIndexStyles(prevIndex, syncedParentIndex) }}>
 
                 <div style={sectionContainerStyles}>
                     <div style={imageContainerStyles}>
                         <Image style={imageStyles} src={sampleData.section1.image} height={1080} width={1920} alt={`Background image for project no. ${projectIndex}.`} draggable={false}/>
                     </div>
                     <div style={textContainerStyle}>
+                        <br/>
                         <p style={headerStyles}>    {sampleData.section1.header}    </p>
                         <p style={subHeaderStyles}> {sampleData.section1.subheader} </p>
                         <p style={textStyles}>      {sampleData.section1.content}   </p>
@@ -135,8 +150,7 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
                     {/* Grandchild Container */}
                 </div>
 
-                <IndexedNavigation/>
-
+                <IndexedNavigation setSyncedParentIndex={setSyncedParentIndex}/>
             {/* Child Container */}
             </div>
         {/* Parent Container */}
@@ -145,4 +159,4 @@ const Showcase: React.FC<Props> = ({ projectIndex, setActiveProjectIndex }) => {
 
 }
 
-export default Showcase;
+export default PortfolioItemContent;

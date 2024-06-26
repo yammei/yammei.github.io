@@ -4,7 +4,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { BackwardIcon, ForwardIcon } from './navigation_icons';
 import { motion } from 'framer-motion';
 
-const IndexedNavigation: React.FC = () => {
+interface Props {
+    setSyncedParentIndex: (index: number) => void;
+}
+
+const IndexedNavigation: React.FC<Props> = ({ setSyncedParentIndex }) => {
 
     const indices: number[] = [1, 2, 3];
     const [ isCurrentIndex, setIsCurrentIndex ] = useState(1);
@@ -32,6 +36,15 @@ const IndexedNavigation: React.FC = () => {
         borderRadius: '999px',
         transition: 'scale .25s ease-in-out, background-color .25s ease-in-out',
     };
+    const indexDisplayTextStyles = {
+        userSelect: 'none',
+        position: 'absolute',
+        color: 'rgb(150, 150, 150)',
+        fontSize: '11pt',
+        right: '0',
+        marginTop: '2px',
+        marginRight: '10%'
+    }
 
     const conditionalIndexCircleStyles = (index: number) => {
         return {
@@ -47,11 +60,13 @@ const IndexedNavigation: React.FC = () => {
             case 'prev':
                 const conditionedPrevIndex = (isCurrentIndex === indices[0] ? indices[indices.length-1] : isCurrentIndex-1);
                 setIsCurrentIndex(conditionedPrevIndex);
+                setSyncedParentIndex(conditionedPrevIndex);
                 console.log(`...to ${conditionedPrevIndex}.`);
                 return;
             case 'next':
                 const conditionedNextIndex = (isCurrentIndex === indices[indices.length-1] ? indices[0] : isCurrentIndex+1)
                 setIsCurrentIndex(conditionedNextIndex);
+                setSyncedParentIndex(conditionedNextIndex);
                 console.log(`...to ${conditionedNextIndex}.`);
                 return;
             default:
@@ -87,6 +102,8 @@ const IndexedNavigation: React.FC = () => {
                 >
                 <ForwardIcon size={8}/>
             </motion.div>
+
+            <p style={indexDisplayTextStyles}>{isCurrentIndex}</p>
 
         </div>
     );

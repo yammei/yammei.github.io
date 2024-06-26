@@ -12,7 +12,7 @@ interface Props {
     setActiveProjectIndex: (index: number) => void;
 };
 
-const Project: React.FC<Props> = ({ index, imageSRC='/./imgs/Blueprint Skewed.png', title='Project Title', setActiveProjectIndex }) => {
+const PortfolioItem: React.FC<Props> = ({ index, imageSRC='/./imgs/Blueprint Skewed.png', title='Project Title', setActiveProjectIndex }) => {
 
     return (
         <a className=''>
@@ -34,4 +34,4 @@ const Project: React.FC<Props> = ({ index, imageSRC='/./imgs/Blueprint Skewed.pn
 
 };
 
-export default Project;
+export default PortfolioItem;

@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Profile from './components/profile/profile';
 import NavBar from './components/menus/navbar';
 import Portfolio from './components/portfolio/portfolio';
-import Project from './components/portfolio/project';
-import Showcase from './components/portfolio/showcase';
+import Project from './components/portfolio/portfolio_item';
+import Showcase from './components/portfolio/portfolio_item_content';
 import Blog from './components/blog/blog';
 import Footer from './components/menus/footer';
 
