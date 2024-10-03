@@ -12,18 +12,18 @@
         }
         .page {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             height: fit-content;
-            width: 1250px;
+            width: 1150px;
             margin: 20px auto;
         }
         .section-title {
             display: flex;
             flex-direction: column;
-            scale: .9;
+            scale: 1;
             height: 40px;
             width: 500px;
-            margin: auto auto;
+            margin: 20px auto;
             padding: 20px 0px;
             background-color: rgb(66, 54, 65);
             /* border: 2px dashed rgb(150, 150, 150); */
@@ -40,13 +40,13 @@
         }
         .section {
             position: relative;
-            scale: .9;
+            scale: 1;
             display: flex;
             flex-direction: row;
             height: auto;
             width: 675px;
-            margin: 10px 0px;
-            padding: 20px 0px;
+            margin: 20px auto;
+            padding: 0px 0px;
             background-color: rgb(66, 54, 65);
             /* border: 2px dashed rgb(150, 150, 150); */
             border-radius: 20px;
@@ -54,8 +54,8 @@
         }
         .trinket {
             position: absolute;
-            top: 135px;
-            left: 180px;
+            top: 110px;
+            left: 200px;
             height: 30px;
             width: 30px;
             border-radius: 999px;
@@ -64,8 +64,8 @@
         .icon {
             font-size: 30pt;
             transform: rotate(30deg);
-            filter: brightness(0);
-            opacity: .3;
+            filter: brightness(0) blur(.5px);
+            opacity: .30;
         }
         .shadow {
             font-size: 30pt;
