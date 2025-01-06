@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
     <style>
         body {
             color: rgb(250, 250, 250);
@@ -18,7 +20,7 @@
             height: fit-content;
             width: 500px;
             margin: 0px auto;
-            background-color: rgb(47, 46, 45);
+            background-color: rgb(25, 25, 25);
         }
         .header {
             font-family: 'Cedarville Cursive', cursive;
@@ -55,8 +57,8 @@
             width: 400px;
             margin: 10px auto;
             padding: 10px 0px;
-            background-color: rgb(67, 64, 58);
-            border: 1px solid rgb(200, 200, 200);
+            background-color: rgb(35, 35, 35);
+            /* border: 1px solid rgb(200, 200, 200); */
             border-radius: 15px;
             /* box-shadow: 7.5px 10px 1px rgba(50, 50, 50, .25); */
             transition: 
@@ -69,7 +71,7 @@
         .spot:hover {
             scale: 1.025;
             margin: 15px auto;
-            background-color: rgb(82, 70, 116);
+            /* background-color: rgb(82, 70, 116); */
             border: 1px solid #cea3e9;
         }
         .spot:hover .image-container {
@@ -83,10 +85,12 @@
             margin: auto;
         }
         .attraction {
+            font-family: "Instrument Serif", serif;
             text-align: center;
-            font-size: 14pt;
-            font-weight: 1000;
+            font-size: 20pt;
+            font-weight: 500;
             margin: 2px 0px;
+            margin-top: 10px;
         }
         .location {
             color: rgb(200, 200, 200);
@@ -97,8 +101,8 @@
         .description {
             color: rgb(225, 225, 225);
             text-align: center;
-            font-size: 7pt;
-            width: 350px;
+            font-size: 6pt;
+            width: 300px;
             max-width: 400px;
             margin: 10px auto;
             margin-top: 20px;
@@ -124,17 +128,25 @@
             width: 100%;
             object-fit: cover;
         }
-        .totop-btn {
-            fill: rgba(200, 200, 200, .5);
+        .totop-btn-container {
             position: fixed;
             bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: fit-content;
+            transition:
+                opacity .25s ease-in-out,
+            ;
+        }
+        .totop-btn {
+            fill: rgba(200, 200, 200, .5);
             cursor: pointer;
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 20px;
             width: 20px;
-            margin-left: 00px;
             padding: 0px 15px;
             background-color: rgb(67, 64, 58, .5);
             border: 1px solid rgba(200, 200, 200, .5);
@@ -169,7 +181,7 @@
     </p>
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Winchester's Mystery House 🕵️</p>
+            <p class="attraction">Winchester's Mystery House</p>
             <p class="location">
                 <a class="link" href="https://winchestermysteryhouse.com/" target="_blank">winchestermysteryhouse.com</a>
                     • 
@@ -188,7 +200,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Rosicrucian Egyptian Museum 🌴</p>
+            <p class="attraction">Rosicrucian Egyptian Museum</p>
             <p class="location">
                 <a class="link" href="https://egyptianmuseum.org/" target="_blank">egyptianmuseum.org</a>
                 • 
@@ -207,7 +219,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">OMESCAPE 🏃‍♀️</p>
+            <p class="attraction">OMESCAPE</p>
             <p class="location">
                 <a class="link" href="https://omescape.us/sunnyvale/escape-games/" target="_blank">omescape.us</a>
                 • 
@@ -224,7 +236,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">San Pedro Square Market 🍻</p>
+            <p class="attraction">San Pedro Square Market</p>
             <p class="location">
                 <a class="link" href="https://sanpedrosquaremarket.com/" target="_blank">sanpedrosquaremarket.com</a>
                 • 
@@ -241,7 +253,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Santo Market 🍣</p>
+            <p class="attraction">Santo Market</p>
             <p class="location">
                 <a class="link" href="https://santomarket.com/" target="_blank">santomarket.com</a>
                 • 
@@ -258,7 +270,7 @@
     
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Giovanni's Pizzeria 🍕</p>
+            <p class="attraction">Giovanni's Pizzeria</p>
             <p class="location">
                 <a class="link" href="https://www.giovannisnypizza.com/" target="_blank">giovannisnypizza.com</a>
                 • 
@@ -276,7 +288,7 @@
         
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">La Casa Mia 🍝</p>
+            <p class="attraction">La Casa Mia</p>
             <p class="location">
                 <a class="link" href="https://www.lacasamiarestaurant.com/santaclara-location" target="_blank">lacasamiarestaurant.com</a>
                 • 
@@ -295,7 +307,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Enka Izakaya 🍱</p>
+            <p class="attraction">Enka Izakaya</p>
             <p class="location">
                 <a class="link" href="https://www.enkajapaneseizakaya.com/" target="_blank">enkajapaneseizakaya.com</a>
                 • 
@@ -313,7 +325,7 @@
 
     <div class="spot">
         <div class="spot-content">
-            <p class="attraction">Moon Tea 🍵</p>
+            <p class="attraction">Moon Tea</p>
             <p class="location">
                 <a class="link" href="https://www.moontea.xyz/#chappuccino" target="_blank">moontea.xyz</a>
                 • 
@@ -331,15 +343,17 @@
         </div>
     </div>
 
-    <svg id="totop-btn" class="totop-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+    <div id="totop-btn" class="totop-btn-container">
+        <svg class="totop-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+    </div>
     <script>
         window.addEventListener('scroll', () => {
-            const message = document.getElementById('totop-btn');
+            const ttb = document.getElementById('totop-btn');
             
             if (window.scrollY >= 50) {
-                message.style.opacity = 1;
+                ttb.style.opacity = 1;
             } else {
-                message.style.opacity = 0;
+                ttb.style.opacity = 0;
             }
         });
 
