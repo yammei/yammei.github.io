@@ -1,487 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mei & Yuhui Zhang Photos Together</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>May's T2DinSJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <style>
         body {
-            display: flex;
-            background-color: rgb(255, 255, 255);
-        }
-        .page {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
-            height: fit-content;
-            width: 1150px;
-            margin: 20px auto;
-        }
-        .section-title {
+            color: rgb(250, 250, 250);
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
-            scale: 1;
-            height: 40px;
-            width: 500px;
-            margin: auto;
-            padding: 20px 0px;
-            background-color: rgb(225, 225, 225);
-            /* border: 2px dashed rgb(150, 150, 150); */
-            border-radius: 999px;
-            box-shadow: 5px 10px 1px rgba(0, 0, 0, 0.2);
-        }
-        .title {
-            font-size: 15pt;
-            height: 35px;
-            width: fit-content;
-            color: rgb(25, 25, 25);
-            margin: auto;
-            padding-top: 4px;
-        }
-        .section {
-            position: relative;
-            scale: 1;
-            display: flex;
-            flex-direction: row;
-            height: auto;
-            width: 675px;
-            margin: 20px auto;
-            padding: 0px 0px;
-            background-color: rgb(225, 225, 225);
-            /* border: 2px dashed rgb(150, 150, 150); */
-            border-radius: 20px;
-            box-shadow: 5px 10px 1px rgba(0, 0, 0, 0.2);
-        }
-        .trinket {
-            position: absolute;
-            top: 110px;
-            left: 200px;
-            height: 30px;
-            width: 30px;
-            border-radius: 999px;
-            z-index: 101;
-        }
-        .icon {
-            font-size: 30pt;
-            transform: rotate(30deg);
-            filter: brightness(0) blur(.5px);
-            opacity: .30;
-        }
-        .shadow {
-            font-size: 30pt;
-            margin-top: -105px;
-            margin-left: -5px;
-            transform: rotate(20deg);
-        }
-        .content {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
+            align-items: center;
             height: fit-content;
-            width: 600px;
-            z-index: 100;
+            width: 500px;
+            margin: 0px auto;
+            background-color: rgb(47, 46, 45);
         }
-        .picture {
-            scale: .75;
+        .header {
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 28pt;
+            text-align: center;
+            margin: 10px auto;
+            margin-bottom: 5px;
+        }
+        .subheader {
+            font-size: 7pt;
+            text-align: left;
+            color: rgb(225, 225, 225);
+            max-width: 350px;
+            margin: 5px auto;
+        }
+        .disclaimer {
+            font-size: 5pt;
+            text-align: center;
+            color: rgb(150, 150, 150);
+            max-width: 300px;
+            margin: 5px auto;
+            margin-bottom: 10px;
+        }
+        .spot {
+            height: fit-content;
+            width: 400px;
+            margin: 10px auto;
+            padding: 20px 0px;
+            background-color: rgb(67, 64, 58);
+            border: 1px solid black;
+            border-radius: 15px;
+            /* box-shadow: 7.5px 10px 1px rgba(50, 50, 50, .25); */
+            transition: 
+                width .5s ease-in-out, 
+                background-color .5s ease-in-out, 
+                margin .5s ease-in-out,
+                border .5s ease-in-out
+            ;
+        }
+        .spot:hover {
+            width: 500px;
+            background-color: rgb(82, 70, 116);
+            margin: 25px auto;
+            border: 1px solid #cea3e9;
+        }
+        .spot-content {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 90%;
+            margin: auto;
+        }
+        .attraction {
+            text-align: center;
+            font-size: 14pt;
+            font-weight: 1000;
+            margin: 2px 0px;
+        }
+        .location {
+            color: rgb(200, 200, 200);
+            text-align: center;
+            font-size: 6pt;
+            margin: 2px 0px;
+        }
+        .description {
+            color: rgb(225, 225, 225);
+            text-align: center;
+            font-size: 8pt;
+            width: 350px;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+        .link {
+            color: #8fb4ff;
+            font-size: 6pt;
+            margin: 2px auto;
+        }
+        .image-container {
             height: 200px;
-            width: 200px;
-            margin-right: 0px;
-            border: 2px solid rgb(250, 250,250);
-            border-radius: 10px;
+            width: 95%;
+            margin: 10px auto;
             overflow: hidden;
-            box-shadow: 5px 10px 1px rgba(0, 0, 0, 0.2);
         }
         .image {
+            border-radius: 10px;
+            border: none;
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-        .labels {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: 25px;
+        .totop-btn {
+            position: fixed;
+            bottom: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            margin-left: 600px;
+            background-color: rgb(67, 64, 58);
+            border: 1px solid black;
+            border-radius: 25px;
+            transition:
+                background-color .25s ease-in-out,
+                border .25s ease-in-out,
+                opacity .25s ease-in-out
+            ;
         }
-        .texts {
-            width: 350px;
-            color: rgb(25, 25, 25);
-            margin: auto;
+        .totop-btn:hover {
+            background-color: rgb(82, 70, 116);
+            border: 1px solid #cea3e9;
         }
     </style>
-</head>
-<body>
-<div class="page">
-    <div class="section-title">
-        <pre class="title">
-<span style="font-size: 12pt;">★ ❤︎ </span><b>Mei</b> <span style="font-size: 11pt;">&</span> <b>Yuhui</b><span style="font-size: 12pt;"> ❤ ★ </span>
-        </pre>
-    </div>
-
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">💍</p>
-            <p class="shadow">💍</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i9.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-1. Wedding Day
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     County officiated wedding
-                 ceremony.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     May 11, 2023 | 2:15 PM
-Location:        Santa Clara County Clerk
-                 -Recorder's Office
-                 @ San Jose, CA
-                </pre>
+  </head>
+  <body>
+    <p id="top" class="header">may's south bay list</p>
+    <p class="subheader">
+        A list of spots I recommend visiting in south bay. 
+        I'd include Milpitas and some of the penninsula, but I'm trying to keep a scope here. Hehe. <br><br>
+        I'd avoid Valley Fair and Santana Row since parking is usually awful/anxiety-inducing, 
+        but if you can go there on a good day, woohoo.<br>
+    </p>
+    <p class="disclaimer">
+        Disclaimer: I don't own any of these pictures nor do I earn money from them. 
+        I just referenced them from the business websites/reviews/etc. 
+        Also, I'm not sponsored to review/promote any of these spots. 
+    </p>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Winchester's Mystery House</p>
+            <p class="location">
+                <a class="link" href="https://winchestermysteryhouse.com/" target="_blank">winchestermysteryhouse.com</a>
+                    • 
+                <i>525 S Winchester Blvd, San Jose, CA 95128</i>
+            </p>
+            <p class="description">
+                If you like eerie places to explore.
+                Even in broad daylight you can't help but feel it's creepy. 
+                Definitely do the afterdark flashlight tour.
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://lh5.googleusercontent.com/p/AF1QipN9j_k1RDzMXTOQCkwGKrHWMQV-VVvnCPhHFbZ_=w810-h468-n-k-no"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">⛴️</p>
-            <p class="shadow">⛴️</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i1.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-2. Ferry Ride
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Ferry tour of Seattle's bay.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     July 6, 2024 | 7:50 PM
-Location:        Elliot Bay
-                 @ Seattle, WA
-                </pre>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Rosicrucian Egyptian Museum</p>
+            <p class="location">
+                <a class="link" href="https://egyptianmuseum.org/" target="_blank">egyptianmuseum.org</a>
+                • 
+                <i>1660 Park Ave, San Jose, CA 95191</i>
+            </p>
+            <p class="description">
+                Near the SJ Rose Garden, an egyption museum with archtectural sight-seeing. 
+                After exploring through the museum inside, take time to adventure the outside area. 
+                It's a beaut.
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://www.sanjose.org/sites/default/files/2018-01/rosicrucian-2_c.jpg"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🚂</p>
-            <p class="shadow">🚂</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i2.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-3. Redwood Forest
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Locomotive tour of Redwood.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     December 19, 2023 | 9:58 AM
-Location:        Roaring Camp Railroads
-                 @ Felton, CA
-                </pre>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">OMESCAPE</p>
+            <p class="location">
+                <a class="link" href="https://omescape.us/sunnyvale/escape-games/" target="_blank">omescape.us/sunnyvale/escape-games</a>
+                • 
+                <i>1135 E Arques Ave, Sunnyvale, CA 94085</i>
+            </p>
+            <p class="description">
+                If you like having fun. Giga unique stories and amazing room design. 
+                I did "The Apartment Next Door", and it was the funnest escape room I've ever done. </p>
+            <div class="image-container">
+                <img class="image" src="https://omescape.us/wp-content/themes/omescape/images/locations/sv.jpeg"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🏖️<p>
-
-            <p class="shadow">🏖️<p>
-</div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i3.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-4. Beach Sunset
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Sunset beach walk.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     Novermber 23, 2023 | 3:18 PM
-Location:        Half Moon Bay Beach
-                 @ Half Moon Bay, CA
-                </pre>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">San Pedro Square Market</p>
+            <p class="location">
+                <a class="link" href="https://sanpedrosquaremarket.com/" target="_blank">sanpedrosquaremarket.com</a>
+                • 
+                <i>87 N San Pedro St, San Jose, CA 95110</i>
+            </p>
+            <p class="description">
+                In DTSJ, a variety of delish foods, local shops, and live entertainment. 
+                Parking is decent, and price is a bit expensive, but if its your vibe, visit at least once.</p>
+            <div class="image-container">
+                <img class="image" src="https://thevendry.com/cdn-cgi/image/width=3840,quality=75,fit=contain,metadata=none,format=auto/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fuploads.thevendry.co%2F24983%2F1670325654499_239300883_4309772495744772_21854454610642588_n.jpg"/>
             </div>
         </div>
     </div>
 
-    <!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🎬</p>
-            <p class="shadow">🎬</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i4.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-5. Universal Studios
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Universal Studios globe.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     July 3, 2023 | 10:00 AM
-Location:        Universal Studios Hollywood
-                 @ Universal City, CA
-                </pre>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Santo Market</p>
+            <p class="location">
+                <a class="link" href="https://santomarket.com/" target="_blank">santomarket.com</a>
+                • 
+                <i>245 E Taylor St, San Jose, CA 95112</i>
+            </p>
+            <p class="description">
+                Fresh poke and Hawaiian food lovers unite. 
+                Great tailgating spot (during non-busy hours since there's not a lot of parking spots).</p>
+            <div class="image-container">
+                <img class="image" src="https://d2s742iet3d3t1.cloudfront.net/restaurant_service/restaurants/c1a36cc9-050e-4252-af27-f1531a99e57a/Restaurant/6364f55d-6a83-4d98-bc5b-0842c50c1fc0.jpg"/>
             </div>
         </div>
     </div>
-
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🔎</p>
-            <p class="shadow">🔎</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i8.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-6. Escape Room
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Post-escape room lobby.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     January 13, 2024 | 9:51 PM
-Location:        Cubic Escape
-                 @ San Jose, CA
-                </pre>
+    
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Giovanni's Pizzeria</p>
+            <p class="location">
+                <a class="link" href="https://www.giovannisnypizza.com/" target="_blank">giovannisnypizza.com</a>
+                • 
+                <i>1127 Lawrence Expy, Sunnyvale, CA 94089</i>
+            </p>
+            <p class="description">
+                O mamamia. You just know you're getting served real good pizza the moment you step inside. 
+                It's next to a gas station and the expressway. Tailgate, and how much more American can you get?
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://www.giovannisnypizza.com/images/cove2r.jpg"/>
             </div>
         </div>
     </div>
-
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🌲</p>
-            <p class="shadow">🌲</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i6.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-7. National Park
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Shoreside park trip.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     April 29, 2023 | 5:50 PM
-Location:        Del Valle East Shore Beach
-                 @ Lake Del Valle, CA
-                </pre>
+        
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">La Casa Mia</p>
+            <p class="location">
+                <a class="link" href="https://www.lacasamiarestaurant.com/santaclara-location" target="_blank">lacasamiarestaurant.com</a>
+                • 
+                <i>3548 Homestead Rd, Santa Clara, CA 95051</i>
+            </p>
+            <p class="description">
+                Yummilicious Japanese-Italian fusion. 
+                Get the bolognese or the mentaiko pizza. Yummmm !!
+                You'll most likely want reserve sets to secure eating here.
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://static.wixstatic.com/media/ab7daa_055afe2f8d21475bb1dc73a770a097c5~mv2.jpg/v1/fit/w_1274,h_1219,q_90/ab7daa_055afe2f8d21475bb1dc73a770a097c5~mv2.webp"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
-
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">🪼</p>
-            <p class="shadow">🪼</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i7.png" class="image" style="filter: brightness(1.5);"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-8. Aquarium
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Within an aquarium hallway.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     September 9, 2023 | 4:30 PM
-Location:        Monterey Bay Aquarium
-                 @ Monterey, CA
-                </pre>
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Enka Izakaya</p>
+            <p class="location">
+                <a class="link" href="https://www.enkajapaneseizakaya.com/" target="_blank">enkajapaneseizakaya.com</a>
+                • 
+                <i>500 Lawrence Expy ste 100a, Sunnyvale, CA 94085</i>
+            </p>
+            <p class="description">
+                The best izakaya I've been to .. It's lowkey and everything they serve just melts in your mouth. 
+                Somewhat expensive, but treat yourself every now and then. :-)
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://website-cdn.menusifu.com/wp-content/uploads/enkajapaneseizakaya.com/2023/11/59060061-83b8-46a1-aba7-8cd2b777a4a8.jpg"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Moon Tea</p>
+            <p class="location">
+                <a class="link" href="https://www.moontea.xyz/#chappuccino" target="_blank">moontea.xyz</a>
+                • 
+                <i>513 S Pastoria Ave, Sunnyvale, CA 94086</i>
+            </p>
+            <p class="description">
+                Milk tea quality of the highest caliber. 
+                Jasmine Milk Tea + Changsha Stinky Tofu .. I'm in heaven. 
+                They are my go-to tea and snack shop.
 
-    <div class="section">
-        <div class="trinket">
-            <p class="icon">👩‍🍳</p>
-            <p class="shadow">👩‍🍳</p>
-        </div>
-        <div class="content">
-            <div class="picture">
-                <img src="./images/i10.png" class="image"/>
-            </div>
-            <div class="labels">
-                <pre class="texts">
-9. Italian Restaurant
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Valentine's day dinner date.
-People:          Mei Zhang & Yuhui Zhang
-Date & Time:     February 11, 2023 | 4:18 PM
-Location:        Westfield Valley Fair: Eataly
-                 @ San Jose, CA
-                </pre>
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://framerusercontent.com/images/KPoRxVkJX9HudRe6uhEsLPpwLw.jpg?scale-down-to=512"/>
             </div>
         </div>
     </div>
 
-<!-- ############################################## -->
-<!-- ############################################## -->
-
-    <div class="section-title">
-        <pre class="title">
-<span style="font-size: 12pt;">★ ❤︎ </span<b">Lantin Family</b><span style="font-size: 12pt;"> ❤ ★ </span>
-        </pre>
+    <div id="totop-btn" class="totop-btn">
+        <p 
+            style="
+                display: inline-block;
+                height: fit-content;
+                width: fit-content;
+                color: rgb(225, 225, 225);
+                font-size: 8pt;
+                margin: 0px;
+                padding: 5px 15px;
+                "
+        >
+            To Top
+        </p>
     </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            const message = document.getElementById('totop-btn');
+            
+            if (window.scrollY >= 50) {
+                message.style.opacity = 1;
+            } else {
+                message.style.opacity = 0;
+            }
+        });
 
-<!-- ############################################## -->
-
-<div class="section">
-    <div class="trinket">
-        <p class="icon">🍜</p>
-        <p class="shadow">🍜</p>
-    </div>
-    <div class="content">
-        <div class="picture">
-            <img src="./images/f1.png" class="image"/>
-        </div>
-        <div class="labels">
-            <pre class="texts">
-1. Japanese Restaurant
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Early birthday celebration.
-People (L→R):    Left Bench: Clara Lantin,
-                 Leilani Lantin, Roberto Lantin.
-                 Right Bench: Mei Zhang,
-                 Yuhui Zhang, Carlos Lantin
-Date & Time:     April 6, 2024 | 11:43 AM
-Location:        Gyukaku
-                 @ Cupertino, CA
-                </pre>
-            </div>
-        </div>
-    </div>
-
-
-<!-- ############################################## -->
-
-<div class="section">
-    <div class="trinket">
-        <p class="icon">🎁</p>
-        <p class="shadow">🎁</p>
-    </div>
-    <div class="content">
-        <div class="picture">
-            <img src="./images/f2.png" class="image"/>
-        </div>
-        <div class="labels">
-            <pre class="texts">
-2. Christmas Eve 22'
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Christmas Eve family gathering.
-People (L→R):    Roberto Lantin, Clara Lantin,
-                 Tofu Lantin (Dog), Leilani
-                 Lantin, Carlos Lantin, Mei
-                 Zhang, Yuhui Zhang.
-Date & Time:     December 24, 2022 | 11:05 PM
-Location:        4068 St. Tropez Ct.
-                 @ Merced, CA
-            </pre>
-        </div>
-    </div>
-</div>
-
-
-<!-- ############################################## -->
-
-<div class="section">
-    <div class="trinket">
-        <p class="icon">🍷</p>
-        <p class="shadow">🍷</p>
-    </div>
-    <div class="content">
-        <div class="picture">
-            <img src="./images/f3.png" class="image"/>
-        </div>
-        <div class="labels">
-            <pre class="texts">
-3. Christmas Eve 23'
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Christmas Eve family dinner.
-People (L→R):    Roberto Lantin, Leilani Lantin,
-                 Carlos Lantin, Yuhui Zhang,
-                 Mei Zhang, Clara Lantin,
-                 Wei Cheng-Chang.
-Date & Time:     December 24, 2022 | 7:01 PM
-Location:        4068 St. Tropez Ct.
-                @ Merced, CA
-            </pre>
-        </div>
-    </div>
-</div>
-
-
-<!-- ############################################## -->
-
-<div class="section">
-    <div class="trinket">
-        <p class="icon">🥬</p>
-        <p class="shadow">🥬</p>
-    </div>
-    <div class="content">
-        <div class="picture">
-            <img src="./images/f4.png" class="image"/>
-        </div>
-        <div class="labels">
-            <pre class="texts">
-4. Korean Restaurant
-<span style="color: rgb(150, 150,150);">____________________________________________</span>
-
-Description:     Graduation lunch for Mei.
-People (L→R):    Leilani Lantin, Carlos Lantin,
-                 Clara Lantin, Mei Zhang,
-                 Yuhui Zhang, Roberto Lantin.
-Date & Time:     September 9, 2023 | 4:30 PM
-Location:        Jeonju
-                 @ San Jose, CA
-            </pre>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</body>
+        const scrollToTop = document.getElementById('totop-btn');
+        scrollToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+  </body>
 </html>
