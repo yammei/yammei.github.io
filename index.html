@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>may's south bay list</title>
+    <title>May's Menu: South Bay</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
 
     <style>
         body {
@@ -24,10 +26,13 @@
         }
         .header {
             font-family: 'Cedarville Cursive', cursive;
+            /* font-family: "Instrument Serif", serif; */
+            /* text-decoration: underline; */
+            /* letter-spacing: 10px; */
             font-size: 28pt;
             text-align: center;
             margin: 10px auto;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         .subheader {
             font-size: 8pt;
@@ -35,7 +40,7 @@
             color: rgb(225, 225, 225);
             max-width: 350px;
             margin: 5px auto;
-            margin-top: -5px;
+            margin-top: -10px;
         }
         .subheader2 {
             font-size: 6pt;
@@ -43,33 +48,35 @@
             color: rgb(200, 200, 200);
             max-width: 350px;
             margin: 5px auto;
+            margin-top: 10px;
         }
         .disclaimer {
             font-size: 5pt;
             text-align: center;
             color: rgb(150, 150, 150);
-            max-width: 300px;
+            max-width: 350px;
             margin: 5px auto;
             margin-bottom: 10px;
         }
         .spot {
             height: fit-content;
-            width: 400px;
+            width: 350px;
             margin: 10px auto;
             padding: 10px 0px;
             background-color: rgb(35, 35, 35);
-            /* border: 1px solid rgb(200, 200, 200); */
+            border: 1px solid rgb(200, 200, 200, 0);
+            border-top: 1px solid rgb(150, 150, 150);
             border-radius: 15px;
             /* box-shadow: 7.5px 10px 1px rgba(50, 50, 50, .25); */
             transition: 
                 scale .25s ease-in-out,
                 margin .25s ease-in-out,
                 background-color .25s ease-in-out, 
-                border .25s ease-in-out
+                border .75s ease-in-out
             ;
         }
         .spot:hover {
-            scale: 1.025;
+            scale: 1.05;
             margin: 15px auto;
             /* background-color: rgb(82, 70, 116); */
             border: 1px solid #cea3e9;
@@ -86,9 +93,11 @@
         }
         .attraction {
             font-family: "Instrument Serif", serif;
+            /* font-family: 'Cedarville Cursive', cursive; */
+            color: rgb(225, 225, 225);
             text-align: center;
-            font-size: 20pt;
-            font-weight: 500;
+            font-size: 15pt;
+            font-weight: lighter;
             margin: 2px 0px;
             margin-top: 10px;
         }
@@ -105,7 +114,7 @@
             width: 300px;
             max-width: 400px;
             margin: 10px auto;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .link {
             color: #8fb4ff;
@@ -113,7 +122,7 @@
             margin: 2px auto;
         }
         .image-container {
-            height: 175px;
+            height: 150px;
             width: 100%;
             margin: 10px auto;
             overflow: hidden;
@@ -127,6 +136,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+            filter: saturate(.5);
         }
         .totop-btn-container {
             position: fixed;
@@ -165,9 +175,9 @@
     </style>
   </head>
   <body>
-    <p id="top" class="header">may's south bay list</p>
+    <p id="top" class="header">yam's yums</p>
     <p class="subheader">
-        ( my personal recommendation list )
+        ( south bay yumsies and funsies )
     </p>
     <p class="subheader2">
         I'd include Milpitas and some of the penninsula, but I'm trying to keep a scope here. Hehe. 
@@ -335,10 +345,28 @@
                 Milk tea quality of the highest caliber. 
                 Jasmine Milk Tea + Changsha Stinky Tofu .. I'm in heaven. 
                 They are my go-to tea and snack shop.
-
             </p>
             <div class="image-container">
                 <img class="image" src="https://framerusercontent.com/images/KPoRxVkJX9HudRe6uhEsLPpwLw.jpg?scale-down-to=512"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="spot">
+        <div class="spot-content">
+            <p class="attraction">Clover Bakery & Cafe</p>
+            <p class="location">
+                <a class="link" href="https://www.cloverbakery.com/" target="_blank">cloverbakery.com</a>
+                • 
+                <i>4342 Moorpark Ave, San Jose, CA 95129</i>
+            </p>
+            <p class="description">
+                Fresh baked goodsies for the tummy. 
+                It's small and cozy, with a tiny coffee shop. 
+                Try out the spaghetti bun !!
+            </p>
+            <div class="image-container">
+                <img class="image" src="https://www.cloverbakery.com/images/inside_clover_sized.jpg"/>
             </div>
         </div>
     </div>
